@@ -14,7 +14,7 @@ Versatile and results-driven Data Scientist with hands-on experience in developi
 ## 🚀 Projects
 
 ### 🔹 [AI-Powered Assignment Solver](https://project-2-vercel-app-llm-agent-1.onrender.com)
-Developed a FastAPI-based LLM agent using Mistral AI to securely execute user-submitted code and analyze ZIP, PDF, and CSV files in-memory.
+Developed a FastAPI-based LLM agent using Mistral AI to securely execute LLM-generated code and analyze ZIP, PDF, and CSV files in-memory.
 
 ### 🔹 [Automated Task Handler with Flask](https://hub.docker.com/r/wasimansariiitm/my-ai-agent)
 Built a web service to automate 20+ tasks like SQL, APIs, and web scraping with language detection and directory sandboxing.
