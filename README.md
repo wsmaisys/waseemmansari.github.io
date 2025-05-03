@@ -13,6 +13,9 @@ Versatile and results-driven Data Scientist with hands-on experience in developi
 
 ## 🚀 Projects
 
+### 🔹 [Text Similarity Detector](https://hub.docker.com/r/wasimansariiitm/text-similarity-detector)
+Matchy is a Flask-based web app that detects whether two questions are duplicates, providing both predictions and confidence scores with a clean, user-friendly interface.
+
 ### 🔹 [AI-Powered Assignment Solver](https://project-2-vercel-app-llm-agent-1.onrender.com)
 Developed a FastAPI-based LLM agent using Mistral AI to securely execute LLM-generated code and analyze ZIP, PDF, and CSV files in-memory.
 
