@@ -13,6 +13,9 @@ Versatile and results-driven Data Scientist with hands-on experience in developi
 
 ## 🚀 Projects
 
+### 🔹 [Photo Journal App: Google Cloud](https://blog-app-699175796072.asia-south2.run.app/)
+A simple yet powerful journal-style application deployed on Google Cloud Run. Users can create and view blog posts with image uploads, thanks to seamless integration with multiple Google Cloud services.
+
 ### 🔹 [Text Similarity Detector](https://hub.docker.com/r/wasimansariiitm/text-similarity-detector)
 Matchy is a Flask-based web app that detects whether two questions are duplicates, providing both predictions and confidence scores with a clean, user-friendly interface.
 
