@@ -1,4 +1,4 @@
-# 👨‍💼 Wasim Ansari
+# 👨‍💼 Waseem M Ansari
 
 **Data Scientist | LLM Agent Developer | IIT Madras Alumnus**  
 📫 [Email](mailto:wsmaisys@gmail.com) • [GitHub](https://github.com/wsmaisys) • [LinkedIn](www.linkedin.com/in/wsmaisys)
