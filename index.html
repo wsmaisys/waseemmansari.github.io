@@ -1,903 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wasim Ansari - Data Scientist | AI/ML Engineer | IIT Madras</title>
-    <meta
-      name="description"
-      content="Wasim Ansari - Data Scientist and AI Engineer with IIT Madras background. Specializing in LLM agents, machine learning, and AI solutions. Available for hire."
-    />
-    <meta
-      name="keywords"
-      content="data scientist, AI engineer, machine learning, LLM agents, Python, IIT Madras, data science portfolio, AI developer"
-    />
-    <meta name="author" content="Wasim Ansari" />
-    <meta property="og:title" content="Wasim Ansari - Data Scientist & AI Engineer" />
-    <meta
-      property="og:description"
-      content="Experienced Data Scientist specializing in AI/ML solutions, LLM agents, and machine learning models. IIT Madras alumnus seeking new opportunities."
-    />
-    <meta property="og:type" content="website" />
-    <link rel="canonical" href="https://wsmaisys.github.io/" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <style>
-      /* Reset & base */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        background: linear-gradient(135deg, #0b1f39 0%, #142a4c 100%);
-        color: #e1e9f0;
-        min-height: 100vh;
-        overflow-x: hidden;
-      }
-
-      a {
-        color: #76a9ea;
-        text-decoration: none;
-        transition: color 0.3s ease;
-      }
-      a:hover,
-      a:focus {
-        color: #a1c8ff;
-        outline: none;
-      }
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Wasim Ansari | Data Scientist & LLM Agent Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #11131a;
+      --card: #191c24;
+      --accent: #5f8cff;
+      --text: #e6eaf3;
+      --muted: #a0aec0;
+      --border: #23263a;
+      --shadow: 0 4px 32px 0 rgba(40,60,100,0.15);
+      --radius: 18px;
+      --transition: 0.18s cubic-bezier(.4,0,.2,1);
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      letter-spacing: 0.01em;
+    }
+    .container {
+      max-width: 820px;
+      margin: 48px auto;
+      padding: 32px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #23263a 80%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 4px 16px 0 rgba(95,140,255,0.25);
+    }
+    .intro h1 {
+      font-size: 2.2rem;
+      margin: 0 0 6px 0;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .intro p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin: 0;
+    }
+    .links {
+      margin-top: 8px;
+      display: flex;
+      gap: 18px;
+    }
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color var(--transition);
+    }
+    .links a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 36px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      margin-top: 0;
+      letter-spacing: 0.04em;
+      font-weight: 700;
+    }
+    .project-list, .exp-list, .edu-list, .cert-list, .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project {
+      background: #1e2230;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 2px 10px 0 rgba(95,140,255,0.04);
+      transition: background var(--transition);
+    }
+    .project:hover {
+      background: #23263a;
+    }
+    .project-title {
+      font-weight: 600;
+      color: #fff;
+      font-size: 1.08rem;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .project-title a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color var(--transition);
+    }
+    .project-title a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .project-desc {
+      color: var(--muted);
+      font-size: 0.99rem;
+      margin: 0;
+    }
+    .exp-role {
+      font-weight: 600;
+      color: #fff;
+      font-size: 1.05rem;
+    }
+    .exp-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .exp-desc {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin: 0 0 8px 0;
+    }
+    .edu-list, .cert-list {
+      color: var(--muted);
+      font-size: 1.01rem;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 8px;
+    }
+    .skill {
+      background: #23263a;
+      color: var(--accent);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 0.97rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      letter-spacing: 0.01em;
+      border: 1px solid #23263a;
+      transition: background var(--transition), color var(--transition);
+    }
+    .skill:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+    blockquote {
+      border-left: 4px solid var(--accent);
+      padding-left: 18px;
+      color: var(--muted);
+      font-style: italic;
+      margin: 18px 0;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin-top: 44px;
+      padding-bottom: 8px;
+    }
+    @media (max-width: 600px) {
       .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        background: rgba(20, 38, 66, 0.85);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        box-shadow: 0 0 28px 2px rgba(56, 102, 198, 0.3);
-        border-radius: 16px;
-        min-height: 100vh;
-        padding-top: 64px;
-        display: flex;
-        flex-direction: column;
+        padding: 16px;
+        margin: 14px;
       }
-
       header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 64px;
-        background: rgba(10, 24, 46, 0.9);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        border-bottom: 2px solid #4e7ac7;
-        box-shadow: 0 0 12px 0 #4e7ac7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-        padding: 0 2rem;
-        transition: box-shadow 0.3s ease;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
       }
-
-      header:hover,
-      header:focus-within {
-        box-shadow: 0 0 24px 4px #4e7ac7;
-      }
-
-      .header-content {
-        color: #8fb2e0;
-        text-align: center;
-        user-select: none;
-      }
-
-      h1 {
-        font-size: clamp(2rem, 5vw, 2.5rem);
-        font-weight: 700;
-        letter-spacing: 1.1px;
-        margin-bottom: 0.2rem;
-        color: #d7e2f1;
-        text-shadow:
-          0 1px 3px rgba(23, 43, 79, 0.75);
-      }
-
-      .subtitle {
-        font-size: clamp(1rem, 2vw, 1.2rem);
-        color: #a2b9da;
-        opacity: 0.85;
-        font-weight: 500;
-        margin-bottom: 0.6rem;
-        text-shadow:
-          0 1px 2px rgba(23, 43, 79, 0.6);
-      }
-
-      main {
-        flex: 1 1 auto;
-        padding: 2rem 2rem 4rem;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      section {
-        margin-bottom: 3rem;
-        animation: fadeInUp 0.7s ease-out forwards;
-        opacity: 0;
-        transform: translateY(18px);
-      }
-      section:nth-child(1) {
-        animation-delay: 0.1s;
-      }
-      section:nth-child(2) {
-        animation-delay: 0.2s;
-      }
-      section:nth-child(3) {
-        animation-delay: 0.3s;
-      }
-      section:nth-child(4) {
-        animation-delay: 0.4s;
-      }
-      section:nth-child(5) {
-        animation-delay: 0.5s;
-      }
-
-      @keyframes fadeInUp {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      h2 {
-        color: #a1c8ff;
-        font-size: clamp(1.75rem, 4vw, 2rem);
-        margin-bottom: 1.5rem;
-        position: relative;
-        padding-left: 1.2rem;
-        font-weight: 600;
-        text-shadow:
-          0 0 8px rgba(161, 200, 255, 0.75);
-      }
-
-      h2::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 4px;
-        bottom: 4px;
-        width: 6px;
-        background: linear-gradient(180deg, #76a9ea, #315a9f);
-        border-radius: 3px;
-        box-shadow:
-          0 0 12px 3px rgba(118, 169, 234, 0.8);
-      }
-
-      .about-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-        align-items: start;
-      }
-
-      .about-text {
-        font-size: clamp(1rem, 1.4vw, 1.1rem);
-        line-height: 1.8;
-        color: #c5d2e8;
-      }
-
-      .highlight {
-        background: linear-gradient(120deg, #628ad5 0%, #93b8f9 100%);
-        padding: 0.2rem 0.4rem;
-        border-radius: 6px;
-        font-weight: 600;
-        color: #152c5b;
-        user-select: text;
-        box-shadow:
-          0 0 6px rgba(147, 184, 249, 0.8);
-      }
-
-      .stats {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .stat-item {
-        background: rgba(103, 130, 193, 0.15);
-        padding: 1rem;
-        border-radius: 12px;
-        text-align: center;
-        border-left: 4px solid #547eda;
-        box-shadow:
-          0 0 10px inset #547eda;
-        transition: background-color 0.3s ease;
-      }
-      .stat-item:hover,
-      .stat-item:focus-within {
-        background: rgba(103, 130, 193, 0.3);
-        outline: none;
-      }
-
-      .stat-number {
-        font-size: clamp(1.3rem, 3vw, 1.6rem);
-        font-weight: 700;
-        color: #8eb2f5;
-        text-shadow:
-          0 0 10px rgba(142, 178, 245, 0.8);
-      }
-
-      .stat-label {
-        font-size: 0.95rem;
-        color: #a8b9db;
-        font-weight: 600;
-        user-select: none;
-      }
-
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 2rem;
-      }
-
-      .project-card {
-        background: rgba(28, 52, 93, 0.7);
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 8px 20px rgba(56, 102, 198, 0.4);
-        transition: all 0.3s ease;
-        border: 1px solid #547eda;
-        backdrop-filter: blur(8px);
-      }
-
-      .project-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 14px 32px rgba(86, 134, 235, 0.7);
-        border-color: #a1c8ff;
-      }
-
-      .project-header {
-        background: linear-gradient(45deg, #3b5799, #7b9aff);
-        color: #e1e9f0;
-        padding: 1.5rem;
-        position: relative;
-        overflow: hidden;
-        font-weight: 700;
-        border-radius: 0 0 30px 30px;
-        text-shadow:
-          0 0 4px rgba(0, 0, 0, 0.3);
-      }
-
-      .project-header::after {
-        content: '';
-        position: absolute;
-        top: -40%;
-        right: -40%;
-        width: 200%;
-        height: 230%;
-        background: rgba(255, 255, 255, 0.1);
-        transform: rotate(45deg);
-        transition: all 0.3s ease;
-        pointer-events: none;
-        border-radius: 100%;
-      }
-
-      .project-card:hover .project-header::after {
-        right: -20%;
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      .project-title {
+      .avatar {
+        width: 60px;
+        height: 60px;
         font-size: 1.3rem;
-        margin-bottom: 0.4rem;
-        position: relative;
-        z-index: 10;
-        color: #e1e9f0;
       }
-
-      .project-tech {
-        font-size: 0.85rem;
-        opacity: 0.85;
-        position: relative;
-        z-index: 10;
-        color: #c7d3ee;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-      }
-
-      .project-body {
-        padding: 1.5rem 1.5rem 2rem;
-      }
-
-      .project-description {
-        color: #bbc7dc;
-        font-weight: 500;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-        user-select: text;
-      }
-
-      .project-link {
-        display: inline-block;
-        color: #8eb2f5;
-        font-weight: 600;
-        text-decoration: underline;
-        transition: color 0.3s ease;
-      }
-
-      .project-link:hover,
-      .project-link:focus {
-        color: #a1c8ff;
-        outline: none;
-      }
-
-      .experience-timeline {
-        position: relative;
-        padding-left: 2rem;
-      }
-
-      .experience-timeline::before {
-        content: '';
-        position: absolute;
-        left: 1rem;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: linear-gradient(to bottom, #547eda, #3165a1);
-        box-shadow: 0 0 10px 2px #547eda;
-        border-radius: 3px;
-      }
-
-      .experience-item {
-        position: relative;
-        margin-bottom: 2rem;
-        background: rgba(68, 102, 163, 0.55);
-        padding: 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 5px 15px rgba(68, 102, 163, 0.45);
-        border-left: 4px solid #547eda;
-        transition: background-color 0.3s ease;
-      }
-
-      .experience-item:hover,
-      .experience-item:focus-within {
-        background: rgba(68, 102, 163, 0.75);
-        outline: none;
-      }
-
-      .experience-item::before {
-        content: '';
-        position: absolute;
-        left: -2.5rem;
-        top: 1.4rem;
-        width: 1rem;
-        height: 1rem;
-        background: #547eda;
-        border-radius: 50%;
-        border: 3px solid rgba(68, 102, 163, 0.15);
-        box-shadow: 0 0 8px 3px #547eda;
-      }
-
-      .experience-title {
-        font-size: 1.2rem;
-        color: #a1c8ff;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        text-shadow: 0 0 6px #547eda;
-      }
-
-      .experience-company {
-        color: #76a9ea;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-      }
-
-      .experience-date {
-        color: #b3c3e3;
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-        font-weight: 500;
-      }
-
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-      }
-
-      .skill-category {
-        background: rgba(56, 102, 198, 0.25);
-        padding: 1.5rem;
-        border-radius: 16px;
-        border-top: 4px solid #547eda;
-        box-shadow: 0 5px 15px rgba(56, 102, 198, 0.3);
-      }
-
-      .skill-category h3 {
-        color: #8eb2f5;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-shadow: 0 0 6px #547eda;
-      }
-
-      .skill-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-      }
-
-      .skill-tag {
-        background: linear-gradient(135deg, #76a9ea, #547eda);
-        color: #e1e9f0;
-        padding: 0.4rem 1rem;
-        border-radius: 30px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        box-shadow:
-          0 0 8px 0 #547eda;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        user-select: none;
-        cursor: default;
-      }
-
-      .skill-tag:hover,
-      .skill-tag:focus {
-        transform: scale(1.05);
-        box-shadow:
-          0 0 14px 5px #a1c8ff;
-        outline: none;
-      }
-
-      .education-item,
-      .cert-item {
-        background: rgba(110, 136, 204, 0.25);
-        padding: 1.5rem;
-        border-radius: 12px;
-        margin-bottom: 1rem;
-        border-left: 4px solid #6f8ee1;
-        box-shadow: 0 3px 10px rgba(111, 142, 225, 0.35);
-        transition: background-color 0.3s ease;
-      }
-
-      .education-item:hover,
-      .education-item:focus-within,
-      .cert-item:hover,
-      .cert-item:focus-within {
-        background: rgba(111, 142, 225, 0.4);
-        outline: none;
-      }
-
-      .education-title,
-      .cert-title {
-        color: #9ebffb;
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-        text-shadow: 0 0 6px #547eda;
-      }
-
-      .education-school,
-      .cert-org {
-        color: #84a0da;
-        font-weight: 600;
-      }
-
-      footer {
-        background: rgba(10, 24, 46, 0.9);
-        color: #a1c8ff;
-        text-align: center;
-        padding: 2rem 1rem;
-        margin-top: auto;
-        font-size: 0.85rem;
-        user-select: none;
-        border-top: 2px solid #4e7ac7;
-        box-shadow: 0 0 12px 0 #4e7ac7;
-      }
-
-      .cta-section {
-        background: linear-gradient(135deg, #3e5a95, #597fc9);
-        color: #e1e9f0;
-        padding: 3rem 2rem;
-        text-align: center;
-        margin: 3rem 0;
-        border-radius: 20px;
-        box-shadow: 0 0 24px 4px rgba(89, 127, 201, 0.75);
-        user-select: none;
-      }
-
-      .cta-title {
-        font-size: clamp(1.8rem, 3vw, 2.5rem);
-        margin-bottom: 1rem;
-        font-weight: 700;
-        text-shadow:
-          0 0 10px #4e7ac7,
-          0 0 18px #3b5998;
-      }
-
-      .cta-button {
-        display: inline-block;
-        background: #142a4c;
-        color: #a1c8ff;
-        padding: 1rem 2.5rem;
-        border-radius: 60px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: clamp(1rem, 2vw, 1.2rem);
-        box-shadow: 0 0 12px 2px #4e7ac7;
-        border: 2px solid #4e7ac7;
-        transition:
-          background-color 0.3s ease,
-          color 0.3s ease,
-          box-shadow 0.3s ease;
-        user-select: none;
-      }
-      .cta-button:hover,
-      .cta-button:focus {
-        background-color: #4e7ac7;
-        color: #142a4c;
-        box-shadow: 0 0 20px 6px #597fc9;
-        outline: none;
-      }
-
-      .contact-links {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-top: 1rem;
-      }
-
-      .contact-link {
-        color: #a1c8ff;
-        text-decoration: none;
-        padding: 0.5rem 1.2rem;
-        background: rgba(66, 95, 149, 0.35);
-        border-radius: 25px;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(12px);
-        font-weight: 600;
-        box-shadow:
-          0 0 8px 0 #597fc9;
-        user-select: none;
-      }
-
-      .contact-link:hover,
-      .contact-link:focus {
-        background: rgba(66, 95, 149, 0.55);
-        box-shadow:
-          0 0 20px 6px #597fc9;
-        transform: translateY(-2px);
-        outline: none;
-      }
-
-      /* Responsive */
-
-      @media (max-width: 768px) {
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
-        .skills-grid {
-          grid-template-columns: 1fr;
-        }
-        h1 {
-          font-size: 2rem;
-        }
-        main {
-          padding: 1rem 1rem 3rem;
-        }
-        .contact-links {
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-
-      /* Scrollbar */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0b1f39;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #547eda;
-        border-radius: 20px;
-        border: 2px solid #0b1f39;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #a1c8ff;
-      }
-    </style>
+    }
+  </style>
 </head>
 <body>
-    <div class="container" role="main">
+  <div class="container">
+    <header>
+      <div class="avatar">WA</div>
+      <div class="intro">
+        <h1>Wasim Ansari</h1>
+        <p>Data Scientist | LLM Agent Developer | IIT Madras Alumnus<br>
+           Transitioning professional passionate about building intelligent, impactful solutions.</p>
+        <div class="links">
+          <a href="mailto:wsmaisys@gmail.com">Email</a>
+          <a href="https://github.com/wsmaisys" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/wsmaisys" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </header>
 
-        <header role="banner" aria-label="Site Header">
-            <div class="header-content" tabindex="0">
-                <h1>Wasim Ansari</h1>
-                <p class="subtitle">Data Scientist | LLM Agent Developer | IIT Madras Alumnus</p>
-                <div class="contact-links" aria-label="Contact Links">
-                    <a href="mailto:wsmaisys@gmail.com" class="contact-link" aria-label="Email Wasim Ansari">📧 Email</a>
-                    <a href="https://github.com/wsmaisys" class="contact-link" target="_blank" rel="noopener" aria-label="GitHub profile of Wasim Ansari">🔗 GitHub</a>
-                    <a href="https://www.linkedin.com/in/wsmaisys" class="contact-link" target="_blank" rel="noopener" aria-label="LinkedIn profile of Wasim Ansari">💼 LinkedIn</a>
-                </div>
-            </div>
-        </header>
+    <section>
+      <h2>About Me</h2>
+      <blockquote>
+        Versatile data scientist and AI developer with a foundation in law, retail, and entrepreneurship. Currently pursuing a Data Science Diploma at IIT Madras, I specialize in building LLM agents, machine learning models, and end-to-end AI solutions. I leverage diverse experience and strong technical skills to deliver practical, impactful results. Open to Data Science, AI Engineering, and Agentic AI roles.
+      </blockquote>
+      <p>
+        My journey reflects adaptability and a passion for solving real-world problems through technology. I thrive in environments that value innovation, continuous learning, and cross-disciplinary thinking.
+      </p>
+    </section>
 
-        <main>
-            <section id="about" tabindex="0" aria-labelledby="about-header">
-                <h2 id="about-header">🧠 About Me</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I'm a <span class="highlight">versatile and results-driven Data Scientist</span> with extensive hands-on experience in developing and deploying AI/ML solutions. Currently pursuing my Data Science Diploma from <strong>IIT Madras</strong>, I bring a unique blend of technical expertise and diverse professional background.</p>
-                        <p>My journey spans from law and retail business to the cutting-edge world of artificial intelligence. I specialize in <span class="highlight">LLM agents, machine learning models, and AI-powered solutions</span> using Python, Scikit-learn, FastAPI, and Docker.</p>
-                        <p>With a strong foundation in mathematics, statistics, and machine learning, I'm passionate about leveraging data to build impactful AI solutions that solve real-world problems.</p>
-                    </div>
-                    <div class="stats" aria-label="Professional statistics">
-                        <div class="stat-item" tabindex="0">
-                            <div class="stat-number">6+</div>
-                            <div class="stat-label">AI/ML Projects</div>
-                        </div>
-                        <div class="stat-item" tabindex="0">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <section>
+      <h2>Featured Projects</h2>
+      <ul class="project-list">
+        <li class="project">
+          <div class="project-title">
+            <span>AI Interview Prep Assistant</span>
+            <a href="https://interview-prep-assistant.streamlit.app/" target="_blank">[Live Demo]</a>
+          </div>
+          <div class="project-desc">
+            AI-powered web app for mock interview prep. Generates tailored questions and answers in real time, with topic and difficulty selection. Built with Streamlit, Mistral AI, and LangChain.
+          </div>
+        </li>
+        <li class="project">
+          <div class="project-title">
+            <span>BikeValuePro: ML Price Predictor</span>
+            <a href="https://used-bike-price-predictor.streamlit.app/" target="_blank">[Live Demo]</a>
+          </div>
+          <div class="project-desc">
+            Achieved 94.9% accuracy in predicting used bike prices in India using XGBoost. Features smart dropdowns and domain-driven feature engineering for accurate, user-friendly pricing.
+          </div>
+        </li>
+        <li class="project">
+          <div class="project-title">
+            <span>AI-Powered Assignment Solver</span>
+            <a href="https://project-2-vercel-app-llm-agent-1.onrender.com" target="_blank">[Live Demo]</a>
+          </div>
+          <div class="project-desc">
+            FastAPI-based LLM agent using Mistral AI for secure code execution and in-memory analysis of ZIP, PDF, and CSV files.
+          </div>
+        </li>
+        <li class="project">
+          <div class="project-title">
+            <span>Photo Journal App</span>
+            <a href="https://blog-app-699175796072.asia-south2.run.app/" target="_blank">[Live Demo]</a>
+          </div>
+          <div class="project-desc">
+            Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.
+          </div>
+        </li>
+        <li class="project">
+          <div class="project-title">
+            <span>Text Similarity Detector</span>
+            <a href="https://hub.docker.com/r/wasimansariiitm/text-similarity-detector" target="_blank">[Docker Hub]</a>
+          </div>
+          <div class="project-desc">
+            Flask web app to detect duplicate questions, providing predictions and confidence scores with a clean UI. Containerized with Docker for easy deployment.
+          </div>
+        </li>
+        <li class="project">
+          <div class="project-title">
+            <span>System Threat Forecaster (Kaggle Top 5%)</span>
+            <a href="https://www.kaggle.com/wasimansari786" target="_blank">[Kaggle]</a>
+          </div>
+          <div class="project-desc">
+            Supervised ML pipeline (Random Forest, XGBoost) for threat classification, ranked in the top 5% on Kaggle.
+          </div>
+        </li>
+      </ul>
+    </section>
 
-            <section id="projects" tabindex="0" aria-labelledby="projects-header">
-                <h2 id="projects-header">🚀 Featured Projects</h2>
-                <div class="projects-grid" role="list">
-                    <article class="project-card" role="listitem" tabindex="0">
-                        <header class="project-header">
-                            <h3 class="project-title">🤖 AI Interview Prep Assistant</h3>
-                            <p class="project-tech">Streamlit • Mistral AI • LangChain</p>
-                        </header>
-                        <div class="project-body">
-                            <p class="project-description">An intelligent mock interview Q&A generator powered by AI. Features real-time question generation, topic selection, difficulty levels, and a sleek dark UI. Perfect for job seekers to prepare smarter and faster!</p>
-                            <a href="https://interview-prep-assistant.streamlit.app/" class="project-link" target="_blank" rel="noopener">🔗 Live Demo</a>
-                        </div>
-                    </article>
+    <section>
+      <h2>Professional Experience</h2>
+      <ul class="exp-list">
+        <li>
+          <span class="exp-role">Retail Manager</span> — AHAAN LIMITED (UK)
+          <div class="exp-meta">Dec 2022 – Sep 2023</div>
+          <div class="exp-desc">
+            Increased revenue by 20% through data-driven sales and analytics. Managed staffing, reporting, and compliance with advanced dashboards. Implemented digital solutions for inventory and customer insights.
+          </div>
+        </li>
+        <li>
+          <span class="exp-role">Import Export Entrepreneur</span> — AHLAN EXPORTS (India)
+          <div class="exp-meta">Sep 2021 – Nov 2022</div>
+          <div class="exp-desc">
+            Oversaw logistics, marketing, and compliance for global carpet exports. Applied data analysis for market expansion and optimized supply chains.
+          </div>
+        </li>
+        <li>
+          <span class="exp-role">Real Estate Consultant</span> — FAHZAM PROPERTIES (Dubai)
+          <div class="exp-meta">Feb 2015 – Jan 2020</div>
+          <div class="exp-desc">
+            Facilitated high-value sales and led market training. Enhanced lead generation and client management using digital tools.
+          </div>
+        </li>
+        <li>
+          <span class="exp-role">Legal Associate</span> — QUISLEX LEGAL SERVICES (Hyderabad)
+          <div class="exp-meta">Sep 2013 – Mar 2014</div>
+          <div class="exp-desc">
+            Conducted legal document reviews for financial litigation. Improved case management through systematic data analysis.
+          </div>
+        </li>
+      </ul>
+    </section>
 
-                    <article class="project-card" role="listitem" tabindex="0">
-                        <header class="project-header">
-                            <h3 class="project-title">🏍️ BikeValuePro: ML Price Predictor</h3>
-                            <p class="project-tech">XGBoost • Streamlit • Python</p>
-                        </header>
-                        <div class="project-body">
-                            <p class="project-description">Achieved 94.9% accuracy in predicting used bike prices in India using XGBoost. Features intelligent dependent dropdowns and domain-driven feature engineering for superior pricing intelligence.</p>
-                            <a href="https://used-bike-price-predictor.streamlit.app/" class="project-link" target="_blank" rel="noopener">🔗 Live Demo</a>
-                        </div>
-                    </article>
+    <section>
+      <h2>Education & Certifications</h2>
+      <ul class="edu-list">
+        <li><strong>Diploma in Data Science</strong> – IIT Madras (2024–Present)</li>
+        <li><strong>Bachelor of Law (LLB)</strong> – University of Pune (2007–2012)</li>
+      </ul>
+      <ul class="cert-list">
+        <li>Digital Marketing – Codestar & Udemy (2020)</li>
+        <li>Real Estate Broker – Dubai Real Estate Institute (2015)</li>
+      </ul>
+    </section>
 
-                    <article class="project-card" role="listitem" tabindex="0">
-                        <header class="project-header">
-                            <h3 class="project-title">🔍 AI-Powered Assignment Solver</h3>
-                            <p class="project-tech">FastAPI • Mistral AI • Python</p>
-                        </header>
-                        <div class="project-body">
-                            <p class="project-description">FastAPI-based LLM agent that securely executes AI-generated code and analyzes ZIP, PDF, and CSV files in-memory. Demonstrates advanced AI integration and security practices.</p>
-                            <a href="https://project-2-vercel-app-llm-agent-1.onrender.com" class="project-link" target="_blank" rel="noopener">🔗 Live Demo</a>
-                        </div>
-                    </article>
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Bash</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">Scikit-learn</span>
+        <span class="skill">XGBoost</span>
+        <span class="skill">Numpy</span>
+        <span class="skill">Matplotlib</span>
+        <span class="skill">Seaborn</span>
+        <span class="skill">LLMs</span>
+        <span class="skill">Prompt Engineering</span>
+        <span class="skill">NLP</span>
+        <span class="skill">RAG</span>
+        <span class="skill">FastAPI</span>
+        <span class="skill">Flask</span>
+        <span class="skill">Docker</span>
+        <span class="skill">Git</span>
+        <span class="skill">GitHub Actions</span>
+        <span class="skill">CI/CD</span>
+        <span class="skill">MLOps</span>
+        <span class="skill">DVC</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Project Management</span>
+      </div>
+    </section>
 
-                    <article class="project-card" role="listitem" tabindex="0">
-                        <header class="project-header">
-                            <h3 class="project-title">📊 Photo Journal App</h3>
-                            <p class="project-tech">Google Cloud Run • Python • Flask</p>
-                        </header>
-                        <div class="project-body">
-                            <p class="project-description">A powerful journal-style application deployed on Google Cloud Run with seamless image upload capabilities. Showcases cloud deployment expertise and full-stack development skills.</p>
-                            <a href="https://blog-app-699175796072.asia-south2.run.app/" class="project-link" target="_blank" rel="noopener">🔗 Live Demo</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem" tabindex="0">
-                        <header class="project-header">
-                            <h3 class="project-title">🔄 Text Similarity Detector</h3>
-                            <p class="project-tech">Flask • Docker • NLP</p>
-                        </header>
-                        <div class="project-body">
-                            <p class="project-description">Advanced NLP application that detects duplicate questions with confidence scores. Features a clean, user-friendly interface and is containerized with Docker for easy deployment.</p>
-                            <a href="https://hub.docker.com/r/wasimansariiitm/text-similarity-detector" class="project-link" target="_blank" rel="noopener">🔗 Docker Hub</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem" tabindex="0">
-                        <header class="project-header">
-                            <h3 class="project-title">🛡️ System Threat Forecaster</h3>
-                            <p class="project-tech">Random Forest • XGBoost • Kaggle</p>
-                        </header>
-                        <div class="project-body">
-                            <p class="project-description">Top 5% Kaggle performance in cybersecurity threat classification. Built a comprehensive ML pipeline achieving 63% accuracy in identifying system threats using ensemble methods.</p>
-                            <a href="https://www.kaggle.com/wasimansari786" class="project-link" target="_blank" rel="noopener">🔗 Kaggle Profile</a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section
-              id="experience"
-              tabindex="0"
-              aria-labelledby="experience-header"
-            >
-              <h2 id="experience-header">💼 Professional Experience</h2>
-              <div class="experience-timeline" role="list">
-                <article class="experience-item" role="listitem" tabindex="0">
-                  <h3 class="experience-title">Retail Manager</h3>
-                  <p class="experience-company">AHAAN LIMITED (UK)</p>
-                  <p class="experience-date">Dec 2022 – Sep 2023</p>
-                  <ul>
-                    <li>Increased revenue by 20% through data-driven sales strategies and analytics</li>
-                    <li>Managed comprehensive staffing, reporting, and compliance using Excel dashboards</li>
-                    <li>Implemented digital solutions for inventory management and customer insights</li>
-                  </ul>
-                </article>
-
-                <article class="experience-item" role="listitem" tabindex="0">
-                  <h3 class="experience-title">Import Export Entrepreneur</h3>
-                  <p class="experience-company">AHLAN EXPORTS (India)</p>
-                  <p class="experience-date">Sep 2021 – Nov 2022</p>
-                  <ul>
-                    <li>Managed end-to-end logistics, marketing, and global compliance for handmade carpet exports</li>
-                    <li>Developed data-driven market analysis for international expansion</li>
-                    <li>Optimized supply chain operations using analytical approaches</li>
-                  </ul>
-                </article>
-
-                <article class="experience-item" role="listitem" tabindex="0">
-                  <h3 class="experience-title">Real Estate Consultant</h3>
-                  <p class="experience-company">FAHZAM PROPERTIES (Dubai)</p>
-                  <p class="experience-date">Feb 2015 – Jan 2020</p>
-                  <ul>
-                    <li>Facilitated high-value property sales and conducted comprehensive market training</li>
-                    <li>Optimized lead generation processes using digital marketing tools and analytics</li>
-                    <li>Developed client relationship management systems for improved conversion rates</li>
-                  </ul>
-                </article>
-
-                <article class="experience-item" role="listitem" tabindex="0">
-                  <h3 class="experience-title">Legal Associate</h3>
-                  <p class="experience-company">QUISLEX LEGAL SERVICES (Hyderabad)</p>
-                  <p class="experience-date">Sep 2013 – Mar 2014</p>
-                  <ul>
-                    <li>Conducted detailed legal document reviews for financial litigation investigations</li>
-                    <li>Analyzed large datasets of legal documents using systematic approaches</li>
-                    <li>Developed efficient case management and documentation processes</li>
-                  </ul>
-                </article>
-              </div>
-            </section>
-
-            <section id="skills" tabindex="0" aria-labelledby="skills-header">
-              <h2 id="skills-header">🧰 Technical Skills</h2>
-              <div class="skills-grid">
-                <div class="skill-category">
-                  <h3>Programming &amp; Libraries</h3>
-                  <div class="skill-tags" aria-label="Programming and libraries skills">
-                    <span class="skill-tag" tabindex="0">Python</span>
-                    <span class="skill-tag" tabindex="0">SQL</span>
-                    <span class="skill-tag" tabindex="0">Bash</span>
-                    <span class="skill-tag" tabindex="0">Pandas</span>
-                    <span class="skill-tag" tabindex="0">NumPy</span>
-                    <span class="skill-tag" tabindex="0">Scikit-learn</span>
-                    <span class="skill-tag" tabindex="0">XGBoost</span>
-                    <span class="skill-tag" tabindex="0">Matplotlib</span>
-                    <span class="skill-tag" tabindex="0">Seaborn</span>
-                  </div>
-                </div>
-
-                <div class="skill-category">
-                  <h3>AI &amp; Machine Learning</h3>
-                  <div class="skill-tags" aria-label="Artificial intelligence and machine learning skills">
-                    <span class="skill-tag" tabindex="0">LLMs</span>
-                    <span class="skill-tag" tabindex="0">Prompt Engineering</span>
-                    <span class="skill-tag" tabindex="0">NLP</span>
-                    <span class="skill-tag" tabindex="0">RAG</span>
-                    <span class="skill-tag" tabindex="0">LangChain</span>
-                    <span class="skill-tag" tabindex="0">Mistral AI</span>
-                    <span class="skill-tag" tabindex="0">Model Deployment</span>
-                    <span class="skill-tag" tabindex="0">MLOps</span>
-                  </div>
-                </div>
-
-                <div class="skill-category">
-                  <h3>Development &amp; DevOps</h3>
-                  <div class="skill-tags" aria-label="Development and devops skills">
-                    <span class="skill-tag" tabindex="0">FastAPI</span>
-                    <span class="skill-tag" tabindex="0">Flask</span>
-                    <span class="skill-tag" tabindex="0">Streamlit</span>
-                    <span class="skill-tag" tabindex="0">Docker</span>
-                    <span class="skill-tag" tabindex="0">Git</span>
-                    <span class="skill-tag" tabindex="0">GitHub Actions</span>
-                    <span class="skill-tag" tabindex="0">CI/CD</span>
-                    <span class="skill-tag" tabindex="0">Google Cloud</span>
-                  </div>
-                </div>
-
-                <div class="skill-category">
-                  <h3>Business &amp; Analysis</h3>
-                  <div class="skill-tags" aria-label="Business and analysis skills">
-                    <span class="skill-tag" tabindex="0">Data Visualization</span>
-                    <span class="skill-tag" tabindex="0">Statistical Analysis</span>
-                    <span class="skill-tag" tabindex="0">Project Management</span>
-                    <span class="skill-tag" tabindex="0">Legal Research</span>
-                    <span class="skill-tag" tabindex="0">Business Strategy</span>
-                    <span class="skill-tag" tabindex="0">Market Analysis</span>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section
-              id="education"
-              tabindex="0"
-              aria-labelledby="education-header"
-            >
-              <h2 id="education-header">🎓 Education &amp; Certifications</h2>
-              <div>
-                <div class="education-item" tabindex="0">
-                  <h3 class="education-title">Diploma in Data Science</h3>
-                  <p class="education-school">Indian Institute of Technology (IIT) Madras</p>
-                  <p class="education-date">2024 – Present</p>
-                </div>
-                <div class="education-item" tabindex="0">
-                  <h3 class="education-title">Bachelor of Law (LLB)</h3>
-                  <p class="education-school">University of Pune</p>
-                  <p class="education-date">2007 – 2012</p>
-                </div>
-                <div class="cert-item" tabindex="0">
-                  <h3 class="cert-title">Digital Marketing Certification</h3>
-                  <p class="cert-org">Codestar &amp; Udemy • 2020</p>
-                </div>
-                <div class="cert-item" tabindex="0">
-                  <h3 class="cert-title">Real Estate Broker License</h3>
-                  <p class="cert-org">Dubai Real Estate Institute • 2015</p>
-                </div>
-              </div>
-            </section>
-
-            <div class="cta-section" tabindex="0" aria-label="Contact call to action">
-              <h2 class="cta-title">Ready to Transform Your Data into Insights?</h2>
-              <p>I'm actively seeking opportunities in Data Science, AI Engineering, and Agentic AI Development. Let's discuss how I can contribute to your team's success.</p>
-              <a href="mailto:wsmaisys@gmail.com" class="cta-button" aria-label="Email Wasim Ansari">Get In Touch</a>
-            </div>
-        </main>
-
-        <footer role="contentinfo">
-            <p>© 2025 Wasim Ansari — Transforming careers through AI and Data Science</p>
-            <p>Open to roles in Data Science, AI Engineering, and Agentic AI Development</p>
-        </footer>
-    </div>
-
-    <script>
-      // Smooth scrolling for navigation anchors
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault()
-          const target = document.querySelector(this.getAttribute('href'))
-          if(target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-          }
-        });
-      });
-
-      // Fade in body on load
-      window.addEventListener('load', () => {
-        document.body.style.opacity = '0';
-        document.body.style.transition = 'opacity 0.5s ease-in-out';
-        setTimeout(() => {
-          document.body.style.opacity = '1';
-        }, 100);
-      });
-    </script>
+    <footer>
+      &copy; 2025 Wasim Ansari — Open to Data Science, AI Engineering, and Agentic AI opportunities.
+    </footer>
+  </div>
 </body>
 </html>
