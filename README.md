@@ -38,17 +38,17 @@ Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% ac
 
 ## 💼 Work Experience
 
-**Retail Manager** — AHAAN LIMITED (UK) | *Dec 2022 – Sep 2023*  
+**Retail Manager** — AHAAN LIMITED (Kingston Upon Hull, UK) | *Dec 2022 – Sep 2023*  
 - Increased revenue by 20% with data-driven sales strategies  
 - Managed staffing, reporting, and compliance using Excel dashboards  
 
-**Import Export Entrepreneur** — AHLAN EXPORTS (India) | *Sep 2021 – Nov 2022*  
+**Import Export Entrepreneur** — AHLAN EXPORTS (Dehradun, India) | *Sep 2021 – Nov 2022*  
 - Managed logistics, marketing, and global compliance for handmade carpet exports  
 
-**Real Estate Consultant** — FAHZAM PROPERTIES (Dubai) | *Feb 2015 – Jan 2020*  
+**Real Estate Consultant** — FAHZAM PROPERTIES (Dubai, UAE) | *Feb 2015 – Jan 2020*  
 - Facilitated sales, conducted training, and optimized lead generation with digital tools  
 
-**Legal Associate** — QUISLEX LEGAL SERVICES (Hyderabad) | *Sep 2013 – Mar 2014*  
+**Legal Associate** — QUISLEX LEGAL SERVICES (Hyderabad, India) | *Sep 2013 – Mar 2014*  
 - Conducted legal document reviews for financial litigation investigations  
 
 ---
