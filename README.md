@@ -13,11 +13,14 @@ Versatile and results-driven Data Scientist with hands-on experience in developi
 
 ## 🚀 Projects
 
+### 🔹 [Jurisol: AI-Powered Indian Legal Assistant](https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant)
+AI-powered legal research assistant for Indian law, using Retrieval-Augmented Generation (RAG) and Qdrant vector search. Provides referenced answers to legal queries from Indian statutes and case law. Built with FastAPI, Streamlit, Qdrant, and MistralAI. **Not yet deployed as a web app.**
+
 ### 🔹 [AI Agent: Interview Prep Assistant (Langchain Gen AI Mini Project)](https://interview-prep-assistant.streamlit.app/)
 Mock Interview Q&A Generator – An AI-powered web app built with Streamlit and Mistral AI to generate custom mock interview questions and detailed answers. Features real-time Q&A, topic selection, difficulty levels, and a sleek dark UI. Perfect for job seekers to prep smarter and faster!
 
-### 🔹 [BikeValuePro: Regression based ML model for bike prediction](https://used-bike-price-predictor.streamlit.app/)
-Built a 94.9% accurate ML model using XGBoost to estimate the resale value of used bikes in India. Developed a user-friendly Streamlit interface with dependent dropdowns (State → City, Brand → Model). Applied domain-driven feature engineering and model optimization for pricing intelligence.
+### 🔹 [BikeValuePro: Regression based ML model for bike prediction](https://usedbike-price-predictor-mlmodel.onrender.com/)
+Built a 94.9% accurate ML model using XGBoost to estimate the resale value of used bikes in India. Developed a user-friendly web interface with dependent dropdowns (State → City, Brand → Model). Applied domain-driven feature engineering and model optimization for pricing intelligence.
 
 ### 🔹 [Photo Journal App: Google Cloud](https://blog-app-699175796072.asia-south2.run.app/)
 A simple yet powerful journal-style application deployed on Google Cloud Run. Users can create and view blog posts with image uploads, thanks to seamless integration with multiple Google Cloud services.
