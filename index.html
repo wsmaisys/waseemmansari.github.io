@@ -102,100 +102,69 @@
       padding: 18px 20px;
       margin-bottom: 16px;
       border-left: 4px solid var(--accent);
-      box-shadow: 0 2px 10px 0 rgba(95,140,255,0.04);
-      transition: background var(--transition);
-    }
-    .project:hover {
-      background: #23263a;
     }
     .project-title {
       font-weight: 600;
-      color: #fff;
-      font-size: 1.08rem;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 8px;
     }
     .project-title a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color var(--transition);
-    }
-    .project-title a:hover {
-      color: #fff;
-      text-decoration: underline;
+      font-size: 0.9rem;
     }
     .project-desc {
-      color: var(--muted);
-      font-size: 0.99rem;
-      margin: 0;
+      line-height: 1.5;
     }
     .exp-role {
       font-weight: 600;
-      color: #fff;
-      font-size: 1.05rem;
+      color: var(--accent);
     }
     .exp-meta {
       color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 4px;
+      font-size: 0.9rem;
+      margin: 4px 0 8px 0;
     }
     .exp-desc {
-      color: var(--muted);
-      font-size: 0.98rem;
-      margin: 0 0 8px 0;
-    }
-    .edu-list, .cert-list {
-      color: var(--muted);
-      font-size: 1.01rem;
+      line-height: 1.5;
     }
     .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 18px;
-      margin-top: 8px;
+      gap: 8px;
     }
     .skill {
       background: #23263a;
-      color: var(--accent);
-      border-radius: 8px;
-      padding: 6px 14px;
-      font-size: 0.97rem;
-      font-weight: 500;
-      margin-bottom: 6px;
-      letter-spacing: 0.01em;
-      border: 1px solid #23263a;
-      transition: background var(--transition), color var(--transition);
-    }
-    .skill:hover {
-      background: var(--accent);
-      color: #fff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
     }
     blockquote {
-      border-left: 4px solid var(--accent);
-      padding-left: 18px;
-      color: var(--muted);
+      border-left: 3px solid var(--accent);
+      padding-left: 16px;
+      margin-left: 0;
       font-style: italic;
-      margin: 18px 0;
+      color: var(--muted);
     }
     footer {
       text-align: center;
       color: var(--muted);
-      font-size: 0.96rem;
-      margin-top: 44px;
-      padding-bottom: 8px;
+      font-size: 0.9rem;
+      margin-top: 32px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .container {
-        padding: 16px;
-        margin: 14px;
+        margin: 24px auto;
+        padding: 24px;
       }
       header {
         flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
+        text-align: center;
+        gap: 16px;
+      }
+      .links {
+        justify-content: center;
       }
       .avatar {
         width: 60px;
@@ -236,56 +205,87 @@
       <ul class="project-list">
         <li class="project">
           <div class="project-title">
-            <span>Jurisol: AI-Powered Indian Legal Assistant</span>
-            <a href="https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant" target="_blank">[Docker Hub]</a>
+            <span>Mogambo Voice AI Scheduler</span>
+            <a href="https://mogambo-voice-ai-scheduler-124439177573.asia-south2.run.app/" target="_blank">[Live Demo]</a>
+            <a href="https://github.com/wsmaisys/mogambo-voice-ai-scheduler" target="_blank">[GitHub]</a>
           </div>
           <div class="project-desc">
-            AI-powered legal research assistant for Indian law, using Retrieval-Augmented Generation (RAG) and Qdrant vector search. Provides referenced answers to legal queries from Indian statutes and case law. Built with FastAPI, Streamlit, Qdrant, and MistralAI.
+            Privacy-first, expert-grade calendar assistant for Google Calendar. Combines advanced AI, robust voice recognition, and seamless automation for context-aware scheduling and natural conversation—via both text and voice.<br>
+            <strong>Key Features:</strong> Voice & Text Input, Google Calendar Automation, Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.<br>
+            <strong>Tech Stack:</strong> FastAPI, LangGraph, LangChain, Google Calendar API, SpeechRecognition, pydub, gTTS, Bootstrap, FullCalendar.
+          </div>
+        </li>
+        <li class="project">
+          <div class="project-title">
+            <span>Jurisol: AI-Powered Indian Legal Assistant</span>
+            <a href="https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant" target="_blank">[Docker Hub]</a>
+            <a href="https://github.com/wsmaisys/Jurisol-legal-assistant-RAG" target="_blank">[GitHub]</a>
+          </div>
+          <div class="project-desc">
+            Intelligent, AI-powered legal research assistant for Indian law. Leverages Retrieval-Augmented Generation (RAG) and Qdrant vector database to deliver precise, context-aware answers to legal queries by searching and synthesizing information from a curated database of Indian legal documents.<br>
+            <strong>Key Features:</strong> Instant Legal Insights, AI-Powered Search, Indian Law Focus, User-Friendly Interface, Transparent Citations.<br>
+            <strong>Tech Stack:</strong> Python, FastAPI, Streamlit, Qdrant, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
           </div>
         </li>
         <li class="project">
           <div class="project-title">
             <span>AI Interview Prep Assistant</span>
             <a href="https://interview-prep-assistant.streamlit.app/" target="_blank">[Live Demo]</a>
+            <a href="https://github.com/wsmaisys/Interview_Prep_Assistant" target="_blank">[GitHub]</a>
           </div>
           <div class="project-desc">
-            AI-powered web app for mock interview prep. Generates tailored questions and answers in real time, for job title and corresponding rounds. Built with Streamlit, Mistral AI, and LangChain.
+            Sophisticated AI-powered interview preparation tool that generates custom mock interview questions and answers. Built with Streamlit and powered by the Mistral AI language model, this application helps you practice and prepare for your next interview with personalized Q&A sessions.<br>
+            <strong>Key Features:</strong> Custom Question Generation, Detailed Answers, Beautiful Dark Theme UI, Real-time Generation, Multiple Topics, Progressive Difficulty, Instant Feedback, User-friendly Interface, Responsive Layout.<br>
+            <strong>Tech Stack:</strong> Streamlit, Python, Mistral AI, Custom CSS.
           </div>
         </li>
         <li class="project">
           <div class="project-title">
             <span>BikeValuePro: ML Price Predictor</span>
             <a href="https://usedbike-price-predictor-mlmodel.onrender.com/" target="_blank">[Live Demo]</a>
+            <a href="https://github.com/wsmaisys/usedbike_price_predictor_mlmodel" target="_blank">[GitHub]</a>
+            <a href="https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor" target="_blank">[Docker Hub]</a>
           </div>
           <div class="project-desc">
-            Achieved 94.9% accuracy in predicting used bike prices in India using XGBoost. Features smart dropdowns and domain-specific feature engineering for accurate, user-friendly pricing.
+            Powerful and intelligent web app that predicts the fair market value of a used bike using advanced Machine Learning. Whether you're selling your ride or buying one, BikeValuePro helps you get the best deal with confidence.<br>
+            <strong>Key Features:</strong> Accurate Price Prediction, AI-Driven Insights, User-Friendly Interface, Smart Feedback, Market Context Analysis.<br>
+            <strong>Tech Stack:</strong> Streamlit, Python, Scikit-learn, XGBoost, ColumnTransformer.
           </div>
         </li>
         <li class="project">
           <div class="project-title">
             <span>AI-Powered Assignment Solver</span>
             <a href="https://project-2-vercel-app-llm-agent-1.onrender.com" target="_blank">[Live Demo]</a>
+            <a href="https://github.com/wsmaisys/Assignment_Solving_Agent" target="_blank">[GitHub]</a>
           </div>
           <div class="project-desc">
-            FastAPI-based LLM agent using Mistral AI for secure code execution and in-memory analysis of ZIP, PDF, and CSV files. Queried using multiline cURL commands.
+            An AI-powered file-processing and question-answering agent that accepts user-uploaded files (ZIP, CSV, PDF, Excel, JSON), analyzes them entirely in memory, and dynamically generates Python code using Mistral AI to solve structured data tasks. All code is securely executed in a sandboxed environment via FastAPI.<br>
+            <strong>Key Features:</strong> AI-generated code execution, File type identification, Context-aware code generation, In-memory file processing, Self-debugging workflow, SHA256 hashing, Date normalization, FastAPI server with CORS.<br>
+            <strong>Tech Stack:</strong> Python, FastAPI, Mistral API, Pandas, pdfplumber, openpyxl, numpy, PIL, Docker.
           </div>
         </li>
         <li class="project">
           <div class="project-title">
             <span>Photo Journal App</span>
             <a href="https://blog-app-699175796072.asia-south2.run.app/" target="_blank">[Live Demo]</a>
+            <a href="https://github.com/wsmaisys/google-cloud-app" target="_blank">[GitHub]</a>
           </div>
           <div class="project-desc">
-            Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.
+            Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.<br>
+            <strong>Key Features:</strong> Upload blog posts with images, Add your name, title, and content, View all posts in reverse chronological order.<br>
+            <strong>Tech Stack:</strong> Python, Flask, Google Cloud SQL (MySQL), Google Cloud Storage, Google Cloud Run, HTML + CSS.
           </div>
         </li>
         <li class="project">
           <div class="project-title">
             <span>Text Similarity Detector</span>
             <a href="https://hub.docker.com/r/wasimansariiitm/text-similarity-detector" target="_blank">[Docker Hub]</a>
+            <a href="https://github.com/wsmaisys/Text_similarity_detection" target="_blank">[GitHub]</a>
           </div>
           <div class="project-desc">
-            Flask web app to detect duplicate texts, providing predictions and confidence scores with a clean UI. Containerized with Docker for easy deployment.
+            Matchy is an AI-powered application for detecting similarity between pairs of text using fuzzy logic and semantic analysis (Word2Vec). Optimized for real-world text data like Quora question pairs, it provides duplicate detection and confidence scores in a modern, responsive UI.<br>
+            <strong>Key Features:</strong> Compare two questions and detect semantic similarity, Returns "Duplicate" or "Not Duplicate" with a confidence probability, History log, Smart ML pipeline, Modern dark UI, Dockerized for easy deployment.<br>
+            <strong>Tech Stack:</strong> Python, Flask, XGBoost, Word2Vec, Docker, HTML + CSS.
           </div>
         </li>
         <li class="project">
@@ -294,7 +294,9 @@
             <a href="https://www.kaggle.com/wasimansari786" target="_blank">[Kaggle]</a>
           </div>
           <div class="project-desc">
-            Supervised ML pipeline (Random Forest, XGBoost) for malware detection, ranked in the top 5% on University Kaggle Competition.
+            Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% accuracy in classifying threats.<br>
+            <strong>Key Features:</strong> Threat classification, Feature engineering, High accuracy, Kaggle competition ranking.<br>
+            <strong>Tech Stack:</strong> Python, Random Forest, XGBoost, Pandas, Scikit-learn.
           </div>
         </li>
       </ul>
@@ -306,23 +308,26 @@
         <li>
           <span class="exp-role">Retail Manager</span> — AHAAN LIMITED (Kingston Upon Hull, UK)
           <div class="exp-meta">Dec 2022 – Sep 2023</div>
-          <div class="exp-desc">
-            Increased revenue by 20% through data-driven sales and analytics. Managed staffing, reporting and compliance with advanced business techniques. Implemented digital solutions for marketing, inventory and customer insights.
-          </div>
+            <div class="exp-desc">
+              • Led compliance and strategic sales planning that boosted revenue by 20%.<br>
+              • Inspired ML-based solutions for pricing, demand forecasting and retail analytics.
+            </div>
         </li>
         <li>
           <span class="exp-role">Import Export Entrepreneur</span> — AHLAN EXPORTS (Dehradun, India)
           <div class="exp-meta">Sep 2021 – Nov 2022</div>
-          <div class="exp-desc">
-            Oversaw logistics, marketing and compliance for global carpet exports. Applied data analysis for product identification, market expansion and optimized supply chains.
-          </div>
+            <div class="exp-desc">
+              • Managed international B2B logistics, compliance and digital marketing funnels.<br>
+              • Experience translates into AI interest in supply chain modeling and optimization.
+            </div>
         </li>
         <li>
           <span class="exp-role">Real Estate Consultant</span> — FAHZAM PROPERTIES (Dubai, UAE)
           <div class="exp-meta">Feb 2015 – Jan 2020</div>
-          <div class="exp-desc">
-            Facilitated high-value transactions and led team training. Enhanced lead generation and client management using online tools.
-          </div>
+            <div class="exp-desc">
+              • Managed property portfolios & client legal clearances. Certified RERA Broker.<br>
+              • Insights now inform AI projects in real estate valuation and docs automation.
+            </div>
         </li>
         <li>
           <span class="exp-role">Legal Associate</span> — QUISLEX LEGAL SERVICES (Hyderabad, India)
@@ -352,26 +357,58 @@
         <span class="skill">Python</span>
         <span class="skill">SQL</span>
         <span class="skill">Bash</span>
-        <span class="skill">Pandas</span>
+        <span class="skill">LLMs (Mistral, LangChain, LangGraph)</span>
+        <span class="skill">Prompt Engineering</span>
+        <span class="skill">Retrieval-Augmented Generation (RAG)</span>
+        <span class="skill">NLP</span>
+        <span class="skill">Text Similarity</span>
+        <span class="skill">Semantic Search</span>
         <span class="skill">Scikit-learn</span>
         <span class="skill">XGBoost</span>
+        <span class="skill">Random Forest</span>
+        <span class="skill">Pandas</span>
         <span class="skill">Numpy</span>
-        <span class="skill">Matplotlib</span>
-        <span class="skill">Seaborn</span>
-        <span class="skill">LLMs</span>
-        <span class="skill">Prompt Engineering</span>
-        <span class="skill">NLP</span>
-        <span class="skill">RAG</span>
+        <span class="skill">pdfplumber</span>
+        <span class="skill">openpyxl</span>
+        <span class="skill">Word2Vec</span>
+        <span class="skill">Qdrant</span>
+        <span class="skill">PyPDF2</span>
+        <span class="skill">BeautifulSoup4</span>
         <span class="skill">FastAPI</span>
         <span class="skill">Flask</span>
+        <span class="skill">Streamlit</span>
+        <span class="skill">Bootstrap</span>
+        <span class="skill">FullCalendar</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">Custom UI/UX</span>
+        <span class="skill">SpeechRecognition</span>
+        <span class="skill">pydub</span>
+        <span class="skill">gTTS</span>
         <span class="skill">Docker</span>
+        <span class="skill">Google Cloud Run</span>
+        <span class="skill">Google Cloud SQL</span>
+        <span class="skill">Google Cloud Storage</span>
+        <span class="skill">Render</span>
         <span class="skill">Git</span>
         <span class="skill">GitHub Actions</span>
-        <span class="skill">CI/CD</span>
-        <span class="skill">MLOps</span>
-        <span class="skill">DVC</span>
+        <span class="skill">CI/CD Pipelines</span>
+        <span class="skill">API Automation</span>
+        <span class="skill">Web Scraping</span>
+        <span class="skill">Business Task Automation</span>
+        <span class="skill">File Processing</span>
+        <span class="skill">Secure Execution</span>
+        <span class="skill">CORS</span>
+        <span class="skill">Markdown</span>
+        <span class="skill">OpenCV</span>
+        <span class="skill">requests</span>
+        <span class="skill">SQLite</span>
         <span class="skill">Data Visualization</span>
+        <span class="skill">Legal Research</span>
         <span class="skill">Project Management</span>
+        <span class="skill">Retail Analytics</span>
+        <span class="skill">Supply Chain Modeling</span>
+        <span class="skill">Real Estate Valuation Automation</span>
       </div>
     </section>
 
