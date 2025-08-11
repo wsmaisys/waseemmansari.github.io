@@ -13,6 +13,24 @@ Versatile and results-driven Data Scientist with hands-on experience in developi
 
 ## 🚀 Projects
 
+### 🔹 [RudeBot 😈 - Your Sassy AI Companion](https://github.com/wsmaisys/RudeBot)
+[Live Demo](https://rudebot-mistral.streamlit.app/)
+
+Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready for brutally honest answers wrapped in hilarious sarcasm. Perfect for when polite chatbots just bore you to tears.
+
+**Key Features:**
+- Unfiltered Sass: Finally, an AI that roasts you while answering your questions
+- Surprisingly Helpful: Behind the attitude lies actual useful information
+- Persistent Memory: Remembers your conversations (and probably holds grudges)
+- Real-time Streaming: Watch the insults unfold in real-time
+- Threaded Conversations: Switch between different roast sessions effortlessly
+- VS Code Dark Theme: Easy on the eyes during your verbal beatdown
+
+**Tech Stack:**
+- Python, Mistral AI, LangGraph, Prompt Engineering
+- Streamlit, Docker
+
+
 ### 🔹 [Mogambo Voice AI Scheduler](https://github.com/wsmaisys/mogambo-voice-ai-scheduler)
 [Live App](https://mogambo-voice-ai-scheduler-124439177573.asia-south2.run.app/)
 
@@ -123,6 +141,8 @@ Welcome to the Blog App — a simple yet powerful journal-style application depl
 - HTML + CSS (frontend templating)
 
 ### 🔹 [Matchy: Text Similarity Detector](https://hub.docker.com/r/wasimansariiitm/text-similarity-detector)
+
+**Live Demo:** [text-similarity-detector.onrender.com](https://text-similarity-detector.onrender.com/)
 **GitHub:** [wsmaisys/Text_similarity_detection](https://github.com/wsmaisys/Text_similarity_detection)
 
 **Summary:**
@@ -145,8 +165,9 @@ Matchy is an AI-powered application for detecting similarity between pairs of te
 - HTML + CSS (frontend)
 
 ### 🔹 [AI-Powered Assignment Solver](https://project-2-vercel-app-llm-agent-1.onrender.com)
+
+**Live Demo:** [assignment-solving-agent.onrender.com](https://assignment-solving-agent.onrender.com/)
 **GitHub:** [wsmaisys/Assignment_Solving_Agent](https://github.com/wsmaisys/Assignment_Solving_Agent)
-**Live App:** [Assignment Solver](https://project-2-vercel-app-llm-agent-1.onrender.com)
 
 **Summary:**
 An AI-powered file-processing and question-answering agent that accepts user-uploaded files (ZIP, CSV, PDF, Excel, JSON), analyzes them entirely in memory, and dynamically generates Python code using Mistral AI to solve structured data tasks. All code is securely executed in a sandboxed environment via FastAPI.
