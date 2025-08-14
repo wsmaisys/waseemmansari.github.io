@@ -32,7 +32,7 @@ Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready fo
 
 
 ### 🔹 [Mogambo Voice AI Scheduler](https://github.com/wsmaisys/mogambo-voice-ai-scheduler)
-[Live App](https://mogambo-voice-ai-scheduler-124439177573.asia-south2.run.app/)
+[Live App](https://mogambo-calendar-assistant.onrender.com)
 
 Privacy-first, expert-grade calendar assistant for Google Calendar. Combines advanced AI, robust voice recognition, and seamless automation for context-aware scheduling and natural conversation—via both text and voice.
 
