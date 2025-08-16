@@ -1,485 +1,781 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Waseem M Ansari | Data Scientist & LLM Agent Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #11131a;
-      --card: #191c24;
-      --accent: #5f8cff;
-      --text: #e6eaf3;
-      --muted: #a0aec0;
-      --border: #23263a;
-      --shadow: 0 4px 32px 0 rgba(40,60,100,0.15);
-      --radius: 18px;
-      --transition: 0.18s cubic-bezier(.4,0,.2,1);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      letter-spacing: 0.01em;
-      line-height: 1.5;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 48px auto;
-      padding: 32px;
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      margin-bottom: 32px;
-    }
-
-    .avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), #23263a 80%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #fff;
-      box-shadow: 0 4px 16px 0 rgba(95,140,255,0.25);
-      flex-shrink: 0;
-    }
-
-    .intro h1 {
-      font-size: 2.2rem;
-      margin: 0 0 6px 0;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      line-height: 1.2;
-    }
-
-    .intro p {
-      color: var(--muted);
-      font-size: 1.08rem;
-      margin: 0;
-    }
-
-    .links {
-      margin-top: 12px;
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color var(--transition);
-    }
-
-    a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    section {
-      margin-bottom: 36px;
-    }
-
-    h2 {
-      color: var(--accent);
-      font-size: 1.3rem;
-      margin-bottom: 16px;
-      margin-top: 0;
-      letter-spacing: 0.04em;
-      font-weight: 700;
-    }
-
-    .project-list, .exp-list, .edu-list, .cert-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .project {
-      background: #1e2230;
-      border-radius: 12px;
-      padding: 18px 20px;
-      margin-bottom: 16px;
-      border-left: 4px solid var(--accent);
-    }
-
-    .project-title {
-      font-weight: 600;
-      margin-bottom: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .project-title span {
-      margin-right: 8px;
-    }
-
-    .project-title a {
-      font-size: 0.9rem;
-      white-space: nowrap;
-    }
-
-    .project-desc {
-      line-height: 1.6;
-    }
-
-    .project-desc strong {
-      color: var(--accent);
-    }
-
-    .exp-role {
-      font-weight: 600;
-      color: var(--accent);
-    }
-
-    .exp-meta {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin: 4px 0 8px 0;
-    }
-
-    .exp-desc {
-      line-height: 1.6;
-    }
-
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .skill {
-      background: #23263a;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      white-space: nowrap;
-    }
-
-    blockquote {
-      border-left: 3px solid var(--accent);
-      padding-left: 16px;
-      margin-left: 0;
-      font-style: italic;
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 32px;
-      padding-top: 16px;
-      border-top: 1px solid var(--border);
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        margin: 24px 16px;
-        padding: 20px;
-      }
-
-      header {
-        flex-direction: column;
-        text-align: center;
-        gap: 16px;
-      }
-
-      .links {
-        justify-content: center;
-      }
-
-      .avatar {
-        width: 70px;
-        height: 70px;
-        font-size: 1.8rem;
-      }
-
-      .intro h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Waseem M Ansari | Data Scientist & LLM Agent Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #11131a;
+            --card: #191c24;
+            --accent: #5f8cff;
+            --text: #e6eaf3;
+            --muted: #a0aec0;
+            --border: #23263a;
+            --shadow: 0 4px 32px 0 rgba(40,60,100,0.15);
+            --radius: 18px;
+            --transition: 0.18s cubic-bezier(.4,0,.2,1);
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            letter-spacing: 0.01em;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 48px auto;
+            padding: 32px;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #23263a 80%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 4px 16px 0 rgba(95,140,255,0.25);
+            flex-shrink: 0;
+        }
+        .intro h1 {
+            font-size: 2.2rem;
+            margin: 0 0 6px 0;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+        }
+        .intro p {
+            color: var(--muted);
+            font-size: 1.08rem;
+            margin: 0;
+        }
+        .links {
+            margin-top: 12px;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition);
+        }
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 36px;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            margin-top: 0;
+            letter-spacing: 0.04em;
+            font-weight: 700;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .project {
+            background: #1e2230;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--accent);
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+        }
+        .project-image {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+        }
+        .project-details {
+            flex: 1;
+        }
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+        .project-title span {
+            margin-right: 8px;
+        }
+        .project-title a {
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .project-desc {
+            line-height: 1.6;
+        }
+        .project-desc strong {
+            color: var(--accent);
+        }
+        @media (max-width: 900px) {
+            .container {
+                margin: 24px 8px;
+                padding: 12px;
+            }
+            .project {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .project-image {
+                width: 100%;
+                height: 180px;
+                margin-bottom: 12px;
+            }
+        }
+        .exp-list, .edu-list, .cert-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .exp-role {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        .exp-meta {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin: 4px 0 8px 0;
+        }
+        .exp-desc {
+            line-height: 1.6;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill {
+            background: #23263a;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 16px;
+            margin-left: 0;
+            font-style: italic;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="avatar">WA</div>
-      <div class="intro">
-        <h1>Waseem M Ansari</h1>
-        <p>Data Scientist | LLM Agent Developer | IIT Madras Alumnus<br>
-           Transitioning professional passionate about building intelligent, impactful solutions.</p>
-        <div class="links">
-          <a href="mailto:wsmaisys@gmail.com">Email</a>
-          <a href="https://github.com/wsmaisys" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <div class="container">
+        <header>
+            <div class="avatar">WA</div>
+            <div class="intro">
+                <h1>Waseem M Ansari</h1>
+                <p>AI/ML Solutions Engineer | Generative AI Developer | IITM Alumnus<br>
+                     Transitioning professional passionate about building intelligent, impactful solutions.</p>
+                <div class="links">
+                    <a href="mailto:wsmaisys@gmail.com">Email</a>
+                    <a href="https://github.com/wsmaisys" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <blockquote>
+                Versatile data scientist and AI developer with a foundation in law, retail, and entrepreneurship. Currently pursuing a Data Science Diploma at IIT Madras, I specialize in building LLM agents, machine learning models and end-to-end AI solutions. I leverage diverse experience and strong technical skills to deliver practical, impactful results. Open to Data Science, AI Engineering, and Agentic AI roles.
+            </blockquote>
+            <p>
+                My journey reflects adaptability and a passion for solving real-world problems through technology. I thrive in environments that value innovation, continuous learning and cross-disciplinary thinking.
+            </p>
+        </section>
+        <section>
+            <h2>Featured Projects</h2>
+            <ul class="project-list">
+                <li class="project">
+                      <img class="project-image" src="images/RudeBot.png" alt="RudeBot">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>RudeBot - Your Sassy AI Companion</span>
+                            <a href="https://rudebot-mistral.streamlit.app/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://github.com/wsmaisys/RudeBot" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready for brutally honest answers wrapped in hilarious sarcasm. Perfect for when polite chatbots just bore you to tears.<br>
+                            <strong>Key Features:</strong> Unfiltered Sass, Surprisingly Helpful, Persistent Memory, Real-time Streaming, Threaded Conversations, VS Code Dark Theme.<br>
+                            <strong>Tech Stack:</strong> Python, Mistral AI, LangGraph, Streamlit, Docker.<br>
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/mogambo.png" alt="Mogambo">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Mogambo Voice AI Scheduler</span>
+                            <a href="https://mogambo-calendar-assistant.onrender.com" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://github.com/wsmaisys/mogambo-voice-ai-scheduler" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Privacy-first, expert-grade calendar assistant for Google Calendar. Combines advanced AI, robust voice recognition, and seamless automation for context-aware scheduling and natural conversation -via both text and voice.<br>
+                            <strong>Key Features:</strong> Voice & Text Input, Google Calendar Automation, Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.<br>
+                            <strong>Tech Stack:</strong> FastAPI, LangGraph, LangChain, Google Calendar API, SpeechRecognition, pydub, gTTS, Bootstrap, FullCalendar.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/Jurisol.png" alt="Jurisol">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Jurisol: AI-Powered Indian Legal Assistant</span>
+                            <a href="https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
+                            <a href="https://github.com/wsmaisys/Jurisol-legal-assistant-RAG" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Intelligent, AI-powered legal research assistant for Indian law. Leverages Retrieval-Augmented Generation (RAG) and Qdrant vector database to deliver precise, context-aware answers to legal queries by searching and synthesizing information from a curated database of Indian legal documents.<br>
+                            <strong>Key Features:</strong> Instant Legal Insights, AI-Powered Search, Indian Law Focus, User-Friendly Interface, Transparent Citations.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Streamlit, Qdrant, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/interview-prep.png" alt="Interview Prep">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>AI Interview Prep Assistant</span>
+                            <a href="https://interview-prep-assistant.streamlit.app/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://github.com/wsmaisys/Interview_Prep_Assistant" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Sophisticated AI-powered interview preparation tool that generates custom mock interview questions and answers. Built with Streamlit and powered by the Mistral AI language model, this application helps you practice and prepare for your next interview with personalized Q&A sessions.<br>
+                            <strong>Key Features:</strong> Custom Question Generation, Detailed Answers, Beautiful Dark Theme UI, Real-time Generation, Multiple Topics, Progressive Difficulty, Instant Feedback, User-friendly Interface, Responsive Layout.<br>
+                            <strong>Tech Stack:</strong> Streamlit, Python, Mistral AI, Custom CSS.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/bikevaluepro.png" alt="Bike Value Pro">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>BikeValuePro: ML Price Predictor</span>
+                            <a href="https://usedbike-price-predictor-mlmodel.onrender.com/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://github.com/wsmaisys/usedbike_price_predictor_mlmodel" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                            <a href="https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Powerful and intelligent web app that predicts the fair market value of a used bike using advanced Machine Learning. Whether you're selling your ride or buying one, BikeValuePro helps you get the best deal with confidence.<br>
+                            <strong>Key Features:</strong> Accurate Price Prediction, AI-Driven Insights, User-Friendly Interface, Smart Feedback, Market Context Analysis.<br>
+                            <strong>Tech Stack:</strong> Streamlit, Python, Scikit-learn, XGBoost, ColumnTransformer.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/assignment-solver.png" alt="Assignment Solver">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>AI-Powered Assignment Solver</span>
+                            <a href="https://assignment-solving-agent.onrender.com/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://github.com/wsmaisys/Assignment_Solving_Agent" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            An AI-powered file-processing and question-answering agent that accepts user-uploaded files (ZIP, CSV, PDF, Excel, JSON), analyzes them entirely in memory, and dynamically generates Python code using Mistral AI to solve structured data tasks. All code is securely executed in a sandboxed environment via FastAPI.<br>
+                            <strong>Key Features:</strong> AI-generated code execution, File type identification, Context-aware code generation, In-memory file processing, Self-debugging workflow, SHA256 hashing, Date normalization, FastAPI server with CORS.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Mistral API, Pandas, pdfplumber, openpyxl, numpy, PIL, Docker.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/google-cloud.png" alt="Google Cloud Project">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Photo Journal App</span>
+                            <a href="https://blog-app-699175796072.asia-south2.run.app/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://github.com/wsmaisys/google-cloud-app" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.<br>
+                            <strong>Key Features:</strong> Upload blog posts with images, Add your name, title, and content, View all posts in reverse chronological order.<br>
+                            <strong>Tech Stack:</strong> Python, Flask, Google Cloud SQL (MySQL), Google Cloud Storage, Google Cloud Run, HTML + CSS.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/Matchy.png" alt="Matchy">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Text Similarity Detector</span>
+                            <a href="https://text-similarity-detector.onrender.com/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
+                            <a href="https://hub.docker.com/r/wasimansariiitm/text-similarity-detector" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
+                            <a href="https://github.com/wsmaisys/Text_similarity_detection" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            Matchy is an AI-powered application for detecting similarity between pairs of text using fuzzy logic and semantic analysis (Word2Vec). Optimized for real-world text data like Quora question pairs, it provides duplicate detection and confidence scores in a modern, responsive UI.<br>
+                            <strong>Key Features:</strong> Compare two questions and detect semantic similarity, Returns "Duplicate" or "Not Duplicate" with a confidence probability, History log, Smart ML pipeline, Modern dark UI, Dockerized for easy deployment.<br>
+                            <strong>Tech Stack:</strong> Python, Flask, XGBoost, Word2Vec, Docker, HTML + CSS.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                      <img class="project-image" src="images/system-threat.png" alt="System Threat">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>System Threat Forecaster (Kaggle Top 5%)</span>
+                            <a href="https://www.kaggle.com/wasimansari786" target="_blank" rel="noopener noreferrer">[Kaggle]</a>
+                        </div>
+                        <div class="project-desc">
+                            Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% accuracy in classifying threats.<br>
+                            <strong>Key Features:</strong> Threat classification, Feature engineering, High accuracy, Kaggle competition ranking.<br>
+                            <strong>Tech Stack:</strong> Python, Random Forest, XGBoost, Pandas, Scikit-learn.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Professional Experience</h2>
+            <ul class="exp-list">
+                <li>
+                    <span class="exp-role">Retail Manager</span> — AHAAN LIMITED (Kingston Upon Hull, UK)
+                    <div class="exp-meta">Dec 2022 – Sep 2023</div>
+                    <div class="exp-desc">
+                        • Led compliance and strategic sales planning that boosted revenue by 20%.<br>
+                        • Inspired ML-based solutions for pricing, demand forecasting and retail analytics.
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <span class="exp-role">Import Export Entrepreneur</span> — AHLAN EXPORTS (Dehradun, India)
+                    <div class="exp-meta">Sep 2021 – Nov 2022</div>
+                    <div class="exp-desc">
+                        • Managed international B2B logistics, compliance and digital marketing funnels.<br>
+                        • Experience translates into AI interest in supply chain modeling and optimization.
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <span class="exp-role">Real Estate Consultant</span> — FAHZAM PROPERTIES (Dubai, UAE)
+                    <div class="exp-meta">Feb 2015 – Jan 2020</div>
+                    <div class="exp-desc">
+                        • Managed property portfolios & client legal clearances. Certified RERA Broker.<br>
+                        • Insights now inform AI projects in real estate valuation and docs automation.
+                    </div>
+                </li>
+                <br>
+                <li>
+                    <span class="exp-role">Legal Associate</span> — QUISLEX LEGAL SERVICES (Hyderabad, India)
+                    <div class="exp-meta">Sep 2013 – Mar 2014</div>
+                    <div class="exp-desc">
+                        • Conducted legal document reviews for litigation support. <br>
+                        • Improved case management through systematic data discovery, analysis and reporting.
+                    </div>
+                </li>
+            </ul>
+        </section>
+                <div class="grid-row">
+                    <div class="grid-col">
+                        <section class="info-card">
+                            <h2>Education</h2>
+                            <ul class="edu-list">
+                                <li><strong>Diploma in Data Science</strong><br><span class="edu-meta">Indian Institute of Technology, Madras (2024–Present)</span><br>
+                                    <span class="edu-desc">Coursework: ML, Linear Algebra, Statistics, Business Analytics, Tools for Data Science, Capstone Projects. Grade: CGPA 8+<br>Projects: System Threat Forecaster (Top 5% in Kaggle), Assignment AI Agent</span>
+                                </li>
+                                <li><strong>Bachelor of Laws (LLB, 5 years integrated)</strong><br><span class="edu-meta">Savitribai Phule Pune University (2007–2012)</span><br>
+                                    <span class="edu-desc">Coursework: Constitution, Civil and Criminal Laws, Procedural Laws, IPR, Banking Law, Environment Law, Drafting.<br>Achievements: Participant of 1st Student Parliament, Moot Court Competitions.</span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="info-card">
+                            <h2>Certifications</h2>
+                            <ul class="cert-list">
+                                <li>Understanding Google Cloud Platform</li>
+                                <li>Google Digital Marketing</li>
+                                <li>Dubai RERA Certification</li>
+                                <li>Digital Marketing – Codestar & Udemy (2020)</li>
+                                <li>Real Estate Broker – Dubai Real Estate Institute (2015)</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="grid-col">
+                        <section class="info-card">
+                            <h2>Languages</h2>
+                            <ul class="cert-list">
+                                <li>Urdu — Native or Bilingual</li>
+                                <li>Hindi — Native or Bilingual</li>
+                                <li>English — IELTS 7 Band</li>
+                            </ul>
+                        </section>
+                        <section class="info-card">
+                            <h2>Publications & Thought Leadership</h2>
+                            <ul class="cert-list">
+                                <li><strong>Hallucinations in AI Legal Research: A Lawyer’s Worst Nightmare?</strong> — <a href="https://www.linkedin.com/pulse/hallucinations-ai-legal-research-lawyers-worst-nightmare-ansari-etkue/" target="_blank">LinkedIn Article</a><br>
+                                    <span class="pub-desc">Authored an article on AI hallucinations in legal research, highlighting real-world risks of fabricated case law and the need for prompt precision. Advocated safe AI adoption in law through domain-specific models and ethical safeguards.</span>
+                                </li>
+                                <li><strong>Adapting Export Strategies for Indian Handmade Carpets: A Response to Rising Global Tariffs</strong> — <a href="https://medium.com/@wsmaisys/adapting-export-strategies-for-indian-handmade-carpets-a-response-to-rising-global-tariffs-070a2796d762" target="_blank">Medium Article</a><br>
+                                    <span class="pub-desc">Discover a data-driven export strategy for India's handmade carpet industry navigating rising U.S. tariffs with advanced Python-led trade analytics, market opportunity scoring, and competitive benchmarking.</span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="info-card">
+                            <h2>Download My CV</h2>
+                            <a href="Wasim-Ansari-Detailed-CV.pdf" target="_blank" class="cv-link">Download Detailed CV (PDF)</a>
+                        </section>
+                    </div>
+                </div>
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Bash</span>
+                <span class="skill">LLMs (Mistral, LangChain, LangGraph)</span>
+                <span class="skill">Prompt Engineering</span>
+                <span class="skill">Retrieval-Augmented Generation (RAG)</span>
+                <span class="skill">NLP</span>
+                <span class="skill">Text Similarity</span>
+                <span class="skill">Semantic Search</span>
+                <span class="skill">Scikit-learn</span>
+                <span class="skill">XGBoost</span>
+                <span class="skill">Random Forest</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">Numpy</span>
+                <span class="skill">Matplotlib</span>
+                <span class="skill">Seaborn</span>
+                <span class="skill">TensorFlow</span>
+                <span class="skill">Keras</span>
+                <span class="skill">PyTorch</span>
+                <span class="skill">Hugging Face Transformers</span>
+                <span class="skill">OpenAI API</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Git & GitHub</span>
+                <span class="skill">MLflow</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">MLOps</span>
+                <span class="skill">Model Deployment</span>
+                <span class="skill">pdfplumber</span>
+                <span class="skill">openpyxl</span>
+                <span class="skill">Word2Vec</span>
+                <span class="skill">Qdrant</span>
+                <span class="skill">PyPDF2</span>
+                <span class="skill">BeautifulSoup4</span>
+                <span class="skill">FastAPI</span>
+                <span class="skill">Flask</span>
+                <span class="skill">Streamlit</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">FullCalendar</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Custom UI/UX</span>
+                <span class="skill">SpeechRecognition</span>
+                <span class="skill">pydub</span>
+                <span class="skill">gTTS</span>
+                    <style>
+                        :root {
+                            --bg: #11131a;
+                            --card: #191c24;
+                            --accent: #5f8cff;
+                            --text: #e6eaf3;
+                            --muted: #a0aec0;
+                            --border: #23263a;
+                            --shadow: 0 4px 32px 0 rgba(40,60,100,0.15);
+                            --radius: 18px;
+                            --transition: 0.18s cubic-bezier(.4,0,.2,1);
+                        }
+                        body {
+                            background: var(--bg);
+                            color: var(--text);
+                            font-family: 'Inter', sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            min-height: 100vh;
+                            letter-spacing: 0.01em;
+                            line-height: 1.5;
+                        }
+                        .container {
+                            max-width: 1100px;
+                            margin: 48px auto;
+                            padding: 32px;
+                            background: var(--card);
+                            border-radius: var(--radius);
+                            box-shadow: var(--shadow);
+                            border: 1px solid var(--border);
+                        }
+                        header {
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                            margin-bottom: 32px;
+                        }
+                        .avatar {
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            background: linear-gradient(135deg, var(--accent), #23263a 80%);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 2.2rem;
+                            font-weight: 700;
+                            color: #fff;
+                            box-shadow: 0 4px 16px 0 rgba(95,140,255,0.25);
+                            flex-shrink: 0;
+                        }
+                        .intro h1 {
+                            font-size: 2.2rem;
+                            margin: 0 0 6px 0;
+                            font-weight: 700;
+                            letter-spacing: 0.02em;
+                            line-height: 1.2;
+                        }
+                        .intro p {
+                            color: var(--muted);
+                            font-size: 1.08rem;
+                            margin: 0;
+                        }
+                        .links {
+                            margin-top: 12px;
+                            display: flex;
+                            gap: 18px;
+                            flex-wrap: wrap;
+                        }
+                        a {
+                            color: var(--accent);
+                            text-decoration: none;
+                            font-weight: 500;
+                            transition: color var(--transition);
+                        }
+                        a:hover {
+                            color: #fff;
+                            text-decoration: underline;
+                        }
+                        section {
+                            margin-bottom: 36px;
+                        }
+                        h2 {
+                            color: var(--accent);
+                            font-size: 1.3rem;
+                            margin-bottom: 16px;
+                            margin-top: 0;
+                            letter-spacing: 0.04em;
+                            font-weight: 700;
+                        }
+                        .grid-row {
+                            display: flex;
+                            gap: 32px;
+                            margin-bottom: 36px;
+                        }
+                        .grid-col {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 32px;
+                        }
+                        .info-card {
+                            background: #1e2230;
+                            border-radius: 12px;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+                            border: 1px solid var(--border);
+                            padding: 24px 28px;
+                            margin-bottom: 0;
+                        }
+                        .info-card ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .edu-list li, .cert-list li {
+                            margin-bottom: 18px;
+                            padding-bottom: 10px;
+                            border-bottom: 1px solid #23263a;
+                        }
+                        .edu-list li:last-child, .cert-list li:last-child {
+                            border-bottom: none;
+                        }
+                        .edu-meta {
+                            color: var(--muted);
+                            font-size: 1rem;
+                            font-weight: 500;
+                            display: block;
+                            margin-bottom: 4px;
+                        }
+                        .edu-desc {
+                            color: #bfc8e2;
+                            font-size: 0.98rem;
+                            display: block;
+                            margin-top: 2px;
+                        }
+                        .pub-desc {
+                            color: #bfc8e2;
+                            font-size: 0.98rem;
+                            display: block;
+                            margin-top: 2px;
+                        }
+                        .cv-link {
+                            display: inline-block;
+                            margin-top: 8px;
+                            padding: 10px 18px;
+                            background: var(--accent);
+                            color: #fff !important;
+                            border-radius: 8px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            box-shadow: 0 2px 8px rgba(95,140,255,0.10);
+                            transition: background var(--transition);
+                        }
+                        .cv-link:hover {
+                            background: #3a5fcf;
+                            color: #fff;
+                        }
+                        @media (max-width: 900px) {
+                            .container {
+                                margin: 24px 8px;
+                                padding: 12px;
+                            }
+                            .grid-row {
+                                flex-direction: column;
+                                gap: 16px;
+                            }
+                            .grid-col {
+                                gap: 16px;
+                            }
+                        }
+                        .project-list {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .project {
+                            background: #1e2230;
+                            border-radius: 12px;
+                            padding: 18px 20px;
+                            margin-bottom: 24px;
+                            border-left: 4px solid var(--accent);
+                            display: flex;
+                            gap: 32px;
+                            align-items: flex-start;
+                        }
+                        .project-image {
+                            width: 220px;
+                            height: 220px;
+                            object-fit: contain;
+                            border-radius: 12px;
+                            background: #fff;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+                            flex-shrink: 0;
+                            border: 1px solid var(--border);
+                        }
+                        .project-details {
+                            flex: 1;
+                        }
+                        .project-title {
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                        .project-title span {
+                            margin-right: 8px;
+                        }
+                        .project-title a {
+                            font-size: 0.9rem;
+                            white-space: nowrap;
+                        }
+                        .project-desc {
+                            line-height: 1.6;
+                        }
+                        .project-desc strong {
+                            color: var(--accent);
+                        }
+                        .exp-list, .edu-list, .cert-list {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        .exp-role {
+                            font-weight: 600;
+                            color: var(--accent);
+                        }
+                        .exp-meta {
+                            color: var(--muted);
+                            font-size: 0.9rem;
+                            margin: 4px 0 8px 0;
+                        }
+                        .exp-desc {
+                            line-height: 1.6;
+                        }
+                        .skills-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                        }
+                        .skill {
+                            background: #23263a;
+                            padding: 6px 12px;
+                            border-radius: 20px;
+                            font-size: 0.9rem;
+                            white-space: nowrap;
+                        }
+                        blockquote {
+                            border-left: 3px solid var(--accent);
+                            padding-left: 16px;
+                            margin-left: 0;
+                            font-style: italic;
+                            color: var(--muted);
+                            margin-bottom: 16px;
+                        }
+                        footer {
+                            text-align: center;
+                            color: var(--muted);
+                            font-size: 0.9rem;
+                            margin-top: 32px;
+                            padding-top: 16px;
+                            border-top: 1px solid var(--border);
+                        }
+                    </style>
         </div>
-      </div>
-    </header>
-
-    <section>
-      <h2>About Me</h2>
-      <blockquote>
-        Versatile data scientist and AI developer with a foundation in law, retail, and entrepreneurship. Currently pursuing a Data Science Diploma at IIT Madras, I specialize in building LLM agents, machine learning models and end-to-end AI solutions. I leverage diverse experience and strong technical skills to deliver practical, impactful results. Open to Data Science, AI Engineering, and Agentic AI roles.
-      </blockquote>
-      <p>
-        My journey reflects adaptability and a passion for solving real-world problems through technology. I thrive in environments that value innovation, continuous learning and cross-disciplinary thinking.
-      </p>
-    </section>
-
-    <section>
-      <h2>Featured Projects</h2>
-      <ul class="project-list">
-          <li class="project">
-            <div class="project-title">
-              <span>RudeBot - Your Sassy AI Companion</span>
-              <a href="https://rudebot-mistral.streamlit.app/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-              <a href="https://github.com/wsmaisys/RudeBot" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-            </div>
-            <div class="project-desc">
-              Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready for brutally honest answers wrapped in hilarious sarcasm. Perfect for when polite chatbots just bore you to tears.<br>
-              <strong>Key Features:</strong> Unfiltered Sass, Surprisingly Helpful, Persistent Memory, Real-time Streaming, Threaded Conversations, VS Code Dark Theme.<br>
-              <strong>Tech Stack:</strong> Python, Mistral AI, LangGraph, Streamlit, Docker.<br>
-            </div>
-          </li>
-        <li class="project">
-          <div class="project-title">
-            <span>Mogambo Voice AI Scheduler</span>
-            <a href="https://mogambo-calendar-assistant.onrender.com" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-            <a href="https://github.com/wsmaisys/mogambo-voice-ai-scheduler" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          </div>
-          <div class="project-desc">
-            Privacy-first, expert-grade calendar assistant for Google Calendar. Combines advanced AI, robust voice recognition, and seamless automation for context-aware scheduling and natural conversation -via both text and voice.<br>
-            <strong>Key Features:</strong> Voice & Text Input, Google Calendar Automation, Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.<br>
-            <strong>Tech Stack:</strong> FastAPI, LangGraph, LangChain, Google Calendar API, SpeechRecognition, pydub, gTTS, Bootstrap, FullCalendar.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>Jurisol: AI-Powered Indian Legal Assistant</span>
-            <a href="https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
-            <a href="https://github.com/wsmaisys/Jurisol-legal-assistant-RAG" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          </div>
-          <div class="project-desc">
-            Intelligent, AI-powered legal research assistant for Indian law. Leverages Retrieval-Augmented Generation (RAG) and Qdrant vector database to deliver precise, context-aware answers to legal queries by searching and synthesizing information from a curated database of Indian legal documents.<br>
-            <strong>Key Features:</strong> Instant Legal Insights, AI-Powered Search, Indian Law Focus, User-Friendly Interface, Transparent Citations.<br>
-            <strong>Tech Stack:</strong> Python, FastAPI, Streamlit, Qdrant, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>AI Interview Prep Assistant</span>
-            <a href="https://interview-prep-assistant.streamlit.app/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-            <a href="https://github.com/wsmaisys/Interview_Prep_Assistant" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          </div>
-          <div class="project-desc">
-            Sophisticated AI-powered interview preparation tool that generates custom mock interview questions and answers. Built with Streamlit and powered by the Mistral AI language model, this application helps you practice and prepare for your next interview with personalized Q&A sessions.<br>
-            <strong>Key Features:</strong> Custom Question Generation, Detailed Answers, Beautiful Dark Theme UI, Real-time Generation, Multiple Topics, Progressive Difficulty, Instant Feedback, User-friendly Interface, Responsive Layout.<br>
-            <strong>Tech Stack:</strong> Streamlit, Python, Mistral AI, Custom CSS.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>BikeValuePro: ML Price Predictor</span>
-            <a href="https://usedbike-price-predictor-mlmodel.onrender.com/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-            <a href="https://github.com/wsmaisys/usedbike_price_predictor_mlmodel" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-            <a href="https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
-          </div>
-          <div class="project-desc">
-            Powerful and intelligent web app that predicts the fair market value of a used bike using advanced Machine Learning. Whether you're selling your ride or buying one, BikeValuePro helps you get the best deal with confidence.<br>
-            <strong>Key Features:</strong> Accurate Price Prediction, AI-Driven Insights, User-Friendly Interface, Smart Feedback, Market Context Analysis.<br>
-            <strong>Tech Stack:</strong> Streamlit, Python, Scikit-learn, XGBoost, ColumnTransformer.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>AI-Powered Assignment Solver</span>
-              <a href="https://assignment-solving-agent.onrender.com/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-              <a href="https://github.com/wsmaisys/Assignment_Solving_Agent" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          </div>
-          <div class="project-desc">
-            An AI-powered file-processing and question-answering agent that accepts user-uploaded files (ZIP, CSV, PDF, Excel, JSON), analyzes them entirely in memory, and dynamically generates Python code using Mistral AI to solve structured data tasks. All code is securely executed in a sandboxed environment via FastAPI.<br>
-            <strong>Key Features:</strong> AI-generated code execution, File type identification, Context-aware code generation, In-memory file processing, Self-debugging workflow, SHA256 hashing, Date normalization, FastAPI server with CORS.<br>
-            <strong>Tech Stack:</strong> Python, FastAPI, Mistral API, Pandas, pdfplumber, openpyxl, numpy, PIL, Docker.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>Photo Journal App</span>
-            <a href="https://blog-app-699175796072.asia-south2.run.app/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-            <a href="https://github.com/wsmaisys/google-cloud-app" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          </div>
-          <div class="project-desc">
-            Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.<br>
-            <strong>Key Features:</strong> Upload blog posts with images, Add your name, title, and content, View all posts in reverse chronological order.<br>
-            <strong>Tech Stack:</strong> Python, Flask, Google Cloud SQL (MySQL), Google Cloud Storage, Google Cloud Run, HTML + CSS.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>Text Similarity Detector</span>
-            <a href="https://text-similarity-detector.onrender.com/" target="_blank" rel="noopener noreferrer">[Live Demo]</a>
-            <a href="https://hub.docker.com/r/wasimansariiitm/text-similarity-detector" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
-            <a href="https://github.com/wsmaisys/Text_similarity_detection" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          </div>
-          <div class="project-desc">
-            Matchy is an AI-powered application for detecting similarity between pairs of text using fuzzy logic and semantic analysis (Word2Vec). Optimized for real-world text data like Quora question pairs, it provides duplicate detection and confidence scores in a modern, responsive UI.<br>
-            <strong>Key Features:</strong> Compare two questions and detect semantic similarity, Returns "Duplicate" or "Not Duplicate" with a confidence probability, History log, Smart ML pipeline, Modern dark UI, Dockerized for easy deployment.<br>
-            <strong>Tech Stack:</strong> Python, Flask, XGBoost, Word2Vec, Docker, HTML + CSS.
-          </div>
-        </li>
-        <li class="project">
-          <div class="project-title">
-            <span>System Threat Forecaster (Kaggle Top 5%)</span>
-            <a href="https://www.kaggle.com/wasimansari786" target="_blank" rel="noopener noreferrer">[Kaggle]</a>
-          </div>
-          <div class="project-desc">
-            Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% accuracy in classifying threats.<br>
-            <strong>Key Features:</strong> Threat classification, Feature engineering, High accuracy, Kaggle competition ranking.<br>
-            <strong>Tech Stack:</strong> Python, Random Forest, XGBoost, Pandas, Scikit-learn.
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Professional Experience</h2>
-      <ul class="exp-list">
-        <li>
-          <span class="exp-role">Retail Manager</span> — AHAAN LIMITED (Kingston Upon Hull, UK)
-          <div class="exp-meta">Dec 2022 – Sep 2023</div>
-          <div class="exp-desc">
-            • Led compliance and strategic sales planning that boosted revenue by 20%.<br>
-            • Inspired ML-based solutions for pricing, demand forecasting and retail analytics.
-          </div>
-        </li>
-        <li>
-          <span class="exp-role">Import Export Entrepreneur</span> — AHLAN EXPORTS (Dehradun, India)
-          <div class="exp-meta">Sep 2021 – Nov 2022</div>
-          <div class="exp-desc">
-            • Managed international B2B logistics, compliance and digital marketing funnels.<br>
-            • Experience translates into AI interest in supply chain modeling and optimization.
-          </div>
-        </li>
-        <li>
-          <span class="exp-role">Real Estate Consultant</span> — FAHZAM PROPERTIES (Dubai, UAE)
-          <div class="exp-meta">Feb 2015 – Jan 2020</div>
-          <div class="exp-desc">
-            • Managed property portfolios & client legal clearances. Certified RERA Broker.<br>
-            • Insights now inform AI projects in real estate valuation and docs automation.
-          </div>
-        </li>
-        <li>
-          <span class="exp-role">Legal Associate</span> — QUISLEX LEGAL SERVICES (Hyderabad, India)
-          <div class="exp-meta">Sep 2013 – Mar 2014</div>
-          <div class="exp-desc">
-            Conducted legal document reviews for litigation support. Improved case management through systematic data discovery, analysis and reporting.
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Education & Certifications</h2>
-      <ul class="edu-list">
-        <li><strong>Diploma in Data Science</strong> – IIT Madras (2024–Present)</li>
-        <li><strong>Bachelor of Law (LLB)</strong> – University of Pune (2007–2012)</li>
-      </ul>
-      <ul class="cert-list">
-        <li>Digital Marketing – Codestar & Udemy (2020)</li>
-        <li>Real Estate Broker – Dubai Real Estate Institute (2015)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills-list">
-        <span class="skill">Python</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Bash</span>
-        <span class="skill">LLMs (Mistral, LangChain, LangGraph)</span>
-        <span class="skill">Prompt Engineering</span>
-        <span class="skill">Retrieval-Augmented Generation (RAG)</span>
-        <span class="skill">NLP</span>
-        <span class="skill">Text Similarity</span>
-        <span class="skill">Semantic Search</span>
-        <span class="skill">Scikit-learn</span>
-        <span class="skill">XGBoost</span>
-        <span class="skill">Random Forest</span>
-        <span class="skill">Pandas</span>
-        <span class="skill">Numpy</span>
-        <span class="skill">pdfplumber</span>
-        <span class="skill">openpyxl</span>
-        <span class="skill">Word2Vec</span>
-        <span class="skill">Qdrant</span>
-        <span class="skill">PyPDF2</span>
-        <span class="skill">BeautifulSoup4</span>
-        <span class="skill">FastAPI</span>
-        <span class="skill">Flask</span>
-        <span class="skill">Streamlit</span>
-        <span class="skill">Bootstrap</span>
-        <span class="skill">FullCalendar</span>
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">Custom UI/UX</span>
-        <span class="skill">SpeechRecognition</span>
-        <span class="skill">pydub</span>
-        <span class="skill">gTTS</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Google Cloud Run</span>
-        <span class="skill">Google Cloud SQL</span>
-        <span class="skill">Google Cloud Storage</span>
-        <span class="skill">Render</span>
-        <span class="skill">Git</span>
-        <span class="skill">GitHub Actions</span>
-        <span class="skill">CI/CD Pipelines</span>
-        <span class="skill">API Automation</span>
-        <span class="skill">Web Scraping</span>
-        <span class="skill">Business Task Automation</span>
-        <span class="skill">File Processing</span>
-        <span class="skill">Secure Execution</span>
-        <span class="skill">CORS</span>
-        <span class="skill">Markdown</span>
-        <span class="skill">OpenCV</span>
-        <span class="skill">requests</span>
-        <span class="skill">SQLite</span>
-        <span class="skill">Data Visualization</span>
-        <span class="skill">Legal Research</span>
-        <span class="skill">Project Management</span>
-        <span class="skill">Retail Analytics</span>
-        <span class="skill">Supply Chain Modeling</span>
-        <span class="skill">Real Estate Valuation Automation</span>
-      </div>
-    </section>
-
-    <footer>
-      &copy; 2025 Waseem Ansari — Open to Data Science, AI Engineering, and Agentic AI opportunities.
-    </footer>
-  </div>
-</body>
-</html>
+        <footer style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+            <p style="margin: 0 auto;">© 2025 Waseem M Ansari. All rights reserved.</p>
+            <p style="margin: 0 auto;">Crafted with passion and a touch of AI magic.</p>
+        </footer>
