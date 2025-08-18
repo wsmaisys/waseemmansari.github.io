@@ -47,7 +47,7 @@ Privacy-first, expert-grade calendar assistant for Google Calendar. Combines adv
 ### Jurisol: AI-Powered Indian Legal Assistant ⚖️
 <img src="images/Jurisol.png" alt="Jurisol" width="180"/>
 
-[🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant) • [💻 GitHub](https://github.com/wsmaisys/Jurisol-legal-assistant-RAG)
+[� Live Demo](https://jurisol-legal-assistant-rag.onrender.com) • [�🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant) • [💻 GitHub](https://github.com/wsmaisys/Jurisol-legal-assistant-RAG)
 
 Intelligent, AI-powered legal research assistant for Indian law. Leverages Retrieval-Augmented Generation (RAG) and Qdrant vector database to deliver precise, context-aware answers to legal queries by searching and synthesizing information from a curated database of Indian legal documents.
 
