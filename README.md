@@ -18,6 +18,19 @@ My journey reflects adaptability and a passion for solving real-world problems t
 ## 🚀 Featured Projects
 
 
+### Flux Image Generator 🎨✨
+<img src="images/flux-image-generation.png" alt="Flux Image Generator" width="180"/>
+
+[🔗 Live Demo](https://flux-image-generator-bdcdcphnhmbhg6et.centralindia-01.azurewebsites.net/) • [💻 GitHub](https://github.com/wsmaisys/Flux-Image-Generator)
+
+A powerful image generation tool leveraging state-of-the-art AI models to create stunning, customizable images. Built with Hugging Face's Diffusers library, it offers an intuitive interface for generating high-quality images from text descriptions.
+
+**✨ Key Features:** Text-to-Image Generation, Multiple Model Support, Custom Image Settings, Fast Processing, Immediate Downloads.
+**🛠️ Tech Stack:** Python, Azure, Hugging Face Diffusers, PIL, Docker.
+
+---
+
+
 ### RudeBot - Your Sassy AI Companion 😈
 <img src="images/RudeBot.png" alt="RudeBot" width="180"/>
 
