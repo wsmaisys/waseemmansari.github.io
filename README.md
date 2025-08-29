@@ -18,6 +18,19 @@ My journey reflects adaptability and a passion for solving real-world problems t
 ## 🚀 Featured Projects
 
 
+### DocuDroid: AI Document Analysis Bot 📄🤖
+<img src="images/DocuDroid.png" alt="DocuDroid" width="180"/>
+
+[🔗 Live Demo](https://docudroid.lemonbay-750e7928.centralindia.azurecontainerapps.io/) • [💻 GitHub](https://github.com/wsmaisys/DocuDroid)
+
+Intelligent document analysis and chat platform that leverages Mistral AI and in-memory vector storage for real-time RAG implementation. Process PDFs and web content with natural language interactions, maintaining conversation context for more relevant responses.
+
+**✨ Key Features:** Intelligent Chat with LLM, PDF & Web Content Analysis, Real-time Processing, Context-Aware Responses, Modern Dark UI, Live Status Updates.
+**🛠️ Tech Stack:** Python, FastAPI, LangChain, Mistral AI, InMemoryVectorStore, Modern HTML/CSS/JS, Docker, Azure Container Apps.
+
+---
+
+
 ### Flux Image Generator 🎨✨
 <img src="images/flux-image-generation.png" alt="Flux Image Generator" width="180"/>
 
