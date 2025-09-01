@@ -227,7 +227,7 @@
                 <div class="links">
                     <a href="mailto:wsmaisys@gmail.com">Email</a>
                     <a href="https://github.com/wsmaisys" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'linkedin_click', {'event_category': 'social', 'event_label': 'LinkedIn Profile'});">LinkedIn</a>
                 </div>
             </div>
         </header>
@@ -498,7 +498,7 @@
                         </section>
                         <section class="info-card">
                             <h2>Download My CV</h2>
-                            <a href="Wasim-Ansari-Detailed-CV.pdf" target="_blank" class="cv-link">Download Detailed CV (PDF)</a>
+                            <a href="Wasim-Ansari-Detailed-CV.pdf" target="_blank" class="cv-link" onclick="gtag('event', 'cv_download', {'event_category': 'engagement', 'event_label': 'Detailed CV PDF'});">Download Detailed CV (PDF)</a>
                         </section>
                     </div>
                 </div>
@@ -819,3 +819,33 @@
             <p style="margin: 0 auto;">© 2025 Waseem M Ansari. All rights reserved.</p>
             <p style="margin: 0 auto;">Crafted with passion and a touch of AI magic.</p>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Add event listeners to all project links
+                document.querySelectorAll('.project-title').forEach(function(projectTitle) {
+                    // Get project name from the span
+                    const projectName = projectTitle.querySelector('span').textContent.trim();
+                    
+                    // Add click event listeners to all links in this project title
+                    projectTitle.querySelectorAll('a').forEach(function(link) {
+                        link.addEventListener('click', function(e) {
+                            // Determine link type based on text content
+                            let linkType = '';
+                            if (link.textContent.includes('Live Demo')) {
+                                linkType = 'Deployed App';
+                            } else if (link.textContent.includes('GitHub')) {
+                                linkType = 'GitHub Code';
+                            } else if (link.textContent.includes('Docker Hub')) {
+                                linkType = 'Docker Hub';
+                            }
+                            
+                            // Send event to Google Analytics
+                            gtag('event', 'project_click', {
+                                'event_category': 'projects',
+                                'event_label': `${projectName} - ${linkType}`
+                            });
+                        });
+                    });
+                });
+            });
+        </script>
