@@ -227,7 +227,7 @@
                 <div class="links">
                     <a href="mailto:wsmaisys@gmail.com">Email</a>
                     <a href="https://github.com/wsmaisys" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'linkedin_click', {'event_category': 'social', 'event_label': 'LinkedIn Profile'});">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer" data-analytics-type="social" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'LinkedIn Profile', 'social_platform': 'LinkedIn'});">LinkedIn</a>
                 </div>
             </div>
         </header>
@@ -498,7 +498,7 @@
                         </section>
                         <section class="info-card">
                             <h2>Download My CV</h2>
-                            <a href="Wasim-Ansari-Detailed-CV.pdf" target="_blank" class="cv-link" onclick="gtag('event', 'cv_download', {'event_category': 'engagement', 'event_label': 'Detailed CV PDF'});">Download Detailed CV (PDF)</a>
+                            <a href="Wasim-Ansari-Detailed-CV.pdf" target="_blank" class="cv-link" data-analytics-type="download" onclick="gtag('event', 'file_download', {'event_category': 'engagement', 'event_label': 'CV', 'file_type': 'PDF', 'file_name': 'Wasim-Ansari-Detailed-CV.pdf'});">Download Detailed CV (PDF)</a>
                         </section>
                     </div>
                 </div>
@@ -824,25 +824,56 @@
                 // Add event listeners to all project links
                 document.querySelectorAll('.project-title').forEach(function(projectTitle) {
                     // Get project name from the span
-                    const projectName = projectTitle.querySelector('span').textContent.trim();
+                    const projectName = projectTitle.querySelector('span')?.textContent.trim() || 'Unknown Project';
                     
                     // Add click event listeners to all links in this project title
                     projectTitle.querySelectorAll('a').forEach(function(link) {
+                        // Add data attributes for analytics
+                        const linkText = link.textContent.trim();
+                        let linkType = 'Other';
+                        
+                        if (linkText.includes('Live Demo')) {
+                            linkType = 'live_demo';
+                            link.setAttribute('data-analytics-type', 'demo');
+                        } else if (linkText.includes('GitHub')) {
+                            linkType = 'github';
+                            link.setAttribute('data-analytics-type', 'code');
+                        } else if (linkText.includes('Docker Hub')) {
+                            linkType = 'docker';
+                            link.setAttribute('data-analytics-type', 'container');
+                        } else if (linkText.includes('Kaggle')) {
+                            linkType = 'kaggle';
+                            link.setAttribute('data-analytics-type', 'competition');
+                        }
+                        
+                        link.setAttribute('data-project-name', projectName);
+                        link.setAttribute('data-link-type', linkType);
+                        
                         link.addEventListener('click', function(e) {
-                            // Determine link type based on text content
-                            let linkType = '';
-                            if (link.textContent.includes('Live Demo')) {
-                                linkType = 'Deployed App';
-                            } else if (link.textContent.includes('GitHub')) {
-                                linkType = 'GitHub Code';
-                            } else if (link.textContent.includes('Docker Hub')) {
-                                linkType = 'Docker Hub';
-                            }
-                            
-                            // Send event to Google Analytics
-                            gtag('event', 'project_click', {
-                                'event_category': 'projects',
-                                'event_label': `${projectName} - ${linkType}`
+                            // Ensure we have valid values for all parameters
+                            const validLinkType = linkType || 'other';
+                            const validProjectName = projectName || 'Unknown Project';
+                            const validLinkUrl = this.href || window.location.href;
+
+                            // Send event to Google Analytics following best practices
+                            gtag('event', 'project_interaction', {
+                                'event_category': 'engagement',
+                                'event_label': validLinkType,           // GA4 best practice: event_label for interaction type
+                                'project_name': validProjectName,       // Custom dimension for project details
+                                'link_url': validLinkUrl,              // Custom dimension for link tracking
+                                'interaction_details': {                // Structured data for detailed analysis
+                                    'type': validLinkType,
+                                    'project': validProjectName,
+                                    'url': validLinkUrl,
+                                    'timestamp': new Date().toISOString()
+                                }
+                            });
+
+                            // Log event for debugging (remove in production)
+                            console.debug('Project interaction tracked:', {
+                                type: validLinkType,
+                                project: validProjectName,
+                                url: validLinkUrl
                             });
                         });
                     });
