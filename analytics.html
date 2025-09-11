@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #11131a;
+            --card: #191c24;
+            --accent: #5f8cff;
+            --text: #e6eaf3;
+            --muted: #a0aec0;
+            --border: #23263a;
+            --shadow: 0 4px 32px 0 rgba(40,60,100,0.15);
+            --radius: 18px;
+            --transition: 0.18s cubic-bezier(.4,0,.2,1);
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            letter-spacing: 0.01em;
+            line-height: 1.5;
+        }
+        .analytics-container {
+            max-width: 1200px;
+            margin: 48px auto;
+            padding: 32px;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        .header {
+            margin-bottom: 32px;
+        }
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition);
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .back-link:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+            color: var(--text);
+        }
+        .analytics-frame {
+            background: #1e2230;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        iframe {
+            border-radius: 8px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="analytics-container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Portfolio</a>
+            <h1>Portfolio Analytics</h1>
+        </div>
+        <div class="analytics-frame">
+            <iframe width="100%" height="900" src="https://lookerstudio.google.com/embed/reporting/5ac25c38-1fd8-4cb4-ad86-b0d1c17b81e6/page/SVOXF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        </div>
+    </div>
+</body>
+</html>
