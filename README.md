@@ -21,7 +21,7 @@ My journey reflects adaptability and a passion for solving real-world problems t
 ### DocuDroid: AI Document Analysis Bot 📄🤖
 <img src="images/DocuDroid.png" alt="DocuDroid" width="180"/>
 
-[🔗 Live Demo](https://docudroid.lemonbay-750e7928.centralindia.azurecontainerapps.io/) • [💻 GitHub](https://github.com/wsmaisys/DocuDroid)
+[🔗 Live Demo](https://docudroid-114168985695.us-central1.run.app/) • [💻 GitHub](https://github.com/wsmaisys/DocuDroid)
 
 Intelligent document analysis and chat platform that leverages Mistral AI and in-memory vector storage for real-time RAG implementation. Process PDFs and web content with natural language interactions, maintaining conversation context for more relevant responses.
 
