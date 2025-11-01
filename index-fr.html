@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM4LR2E38N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-VM4LR2E38N');
+    </script>
+    <script>
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function acceptCookies() {
+            setCookie('cookie_consent', 'accepted', 365);
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+
+        window.onload = function() {
+            if (!document.cookie.includes('cookie_consent=accepted')) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Ingénieur en solutions IA spécialisé dans les systèmes IA conformes au RGPD, l'intégration LLM et les solutions d'entreprise sécurisées">
+    <meta name="keywords" content="Ingénieur IA, Conformité RGPD, Apprentissage automatique, Protection des données, Intégration LLM, Développeur Python">
+    <meta name="author" content="Waseem M Ansari">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Waseem M Ansari | Ingénieur en Solutions IA & Expert en Confidentialité">
+    <meta property="og:description" content="Ingénieur en solutions IA/ML avec expertise en systèmes IA conformes au RGPD, intégration LLM et implémentations RAG.">
+    <meta property="og:image" content="images/Passport Photo.png">
+    <meta property="og:url" content="https://waseemmansari.github.io/index-fr.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Waseem M Ansari | Ingénieur en Solutions IA & Expert en Confidentialité">
+    <meta name="twitter:description" content="Ingénieur en solutions IA/ML avec expertise en systèmes IA conformes au RGPD, intégration LLM et implémentations RAG.">
+    <title>Waseem M Ansari | Ingénieur en Solutions IA & Expert en Confidentialité</title>
+    <link rel="alternate" hreflang="en" href="https://waseemmansari.github.io">
+    <link rel="alternate" hreflang="de" href="https://waseemmansari.github.io/index-de.html">
+    <link rel="alternate" hreflang="fr" href="https://waseemmansari.github.io/index-fr.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #11131a;
+            --card: #191c24;
+            --accent: #5f8cff;
+            --text: #e6eaf3;
+            --muted: #a0aec0;
+            --border: #23263a;
+            --shadow: 0 4px 32px 0 rgba(40,60,100,0.15);
+            --radius: 18px;
+            --transition: 0.18s cubic-bezier(.4,0,.2,1);
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            letter-spacing: 0.01em;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 48px auto;
+            padding: 32px;
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #23263a 80%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            box-shadow: 0 4px 16px 0 rgba(95,140,255,0.25);
+            flex-shrink: 0;
+        }
+        .intro h1 {
+            font-size: 2.2rem;
+            margin: 0 0 6px 0;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+        }
+        .intro p {
+            color: var(--muted);
+            font-size: 1.08rem;
+            margin: 0;
+        }
+        .links {
+            margin-top: 12px;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color var(--transition);
+        }
+        a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 36px;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            margin-top: 0;
+            letter-spacing: 0.04em;
+            font-weight: 700;
+        }
+        .grid-row {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 36px;
+        }
+        .grid-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .info-card {
+            background: #1e2230;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            border: 1px solid var(--border);
+            padding: 24px 28px;
+            margin-bottom: 0;
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .edu-list li, .cert-list li {
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #23263a;
+        }
+        .edu-list li:last-child, .cert-list li:last-child {
+            border-bottom: none;
+        }
+        .edu-meta {
+            color: var(--muted);
+            font-size: 1rem;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .edu-desc {
+            color: #bfc8e2;
+            font-size: 0.98rem;
+            display: block;
+            margin-top: 2px;
+        }
+        .pub-desc {
+            color: #bfc8e2;
+            font-size: 0.98rem;
+            display: block;
+            margin-top: 2px;
+        }
+        .cv-link {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 10px 18px;
+            background: var(--accent);
+            color: #fff !important;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(95,140,255,0.10);
+            transition: background var(--transition);
+        }
+        .cv-link:hover {
+            background: #3a5fcf;
+            color: #fff;
+        }
+        @media (max-width: 900px) {
+            .container {
+                margin: 24px 8px;
+                padding: 12px;
+            }
+            .grid-row {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .grid-col {
+                gap: 16px;
+            }
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .project {
+            background: #1e2230;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--accent);
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+        }
+        .project-image {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+        }
+        .project-details {
+            flex: 1;
+        }
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+        .project-title span {
+            margin-right: 8px;
+        }
+        .project-title a {
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .project-desc {
+            line-height: 1.6;
+        }
+        .project-desc strong {
+            color: var(--accent);
+        }
+        .exp-list, .edu-list, .cert-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .exp-role {
+            font-weight: 600;
+            color: var(--accent);
+        }
+        .exp-meta {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin: 4px 0 8px 0;
+        }
+        .exp-desc {
+            line-height: 1.6;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill {
+            background: #23263a;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 16px;
+            margin-left: 0;
+            font-style: italic;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+        .lang-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            z-index: 1000;
+        }
+        .lang-selector a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 4px;
+            font-size: 0.9rem;
+            transition: color var(--transition);
+        }
+        .lang-selector a.active {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .lang-selector a:hover {
+            color: var(--text);
+        }
+        #cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--card);
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+            border-top: 1px solid var(--border);
+        }
+        #cookie-banner button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .availability {
+            background: #2a4d80;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-left: auto;
+        }
+        .cta-primary {
+            background: var(--accent);
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .cta-secondary {
+            border: 1px solid var(--accent);
+            padding: 7px 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cookie-banner">
+        Ce site utilise des cookies pour améliorer votre expérience et respecter les lois européennes sur la protection des données. 
+        <button onclick="acceptCookies()">Accepter</button>
+        <a href="privacy-policy.html">En savoir plus</a>
+    </div>
+    <div class="lang-selector">
+        <a href="index.html">EN</a> |
+        <a href="index-de.html">DE</a> |
+        <a href="index-fr.html" class="active">FR</a>
+    </div>
+    <div class="container">
+        <header>
+            <img class="avatar" src="images/Passport Photo.png" alt="Photo de Waseem M Ansari" style="width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 4px 16px 0 rgba(95,140,255,0.25);margin-right:24px;" />
+            <div class="intro">
+                <h1>Waseem M Ansari</h1>
+                <p>Ingénieur en solutions IA/ML spécialisé dans la construction de systèmes IA évolutifs et conformes à la confidentialité pour les applications d'entreprise. Je développe des solutions IA modulaires conformes au RGPD qui aident les entreprises à obtenir des améliorations d'efficacité de 25 à 40% tout en maintenant des normes strictes de protection des données.</p>
+                <div class="links">
+                    <a href="mailto:wsmaisys@gmail.com" class="cta-primary">Contact</a>
+                    <a href="Wasim-Ansari-Detailed-CV.pdf" class="cta-secondary" target="_blank">CV (EN)</a>
+                    <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/wasim-ansari/ea4a1282-6678-4320-9ee3-b6cc224de660?view=html" class="cta-secondary" target="_blank" rel="noopener noreferrer">CV Europass</a>
+                    <a href="https://github.com/wsmaisys" class="cta-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/wsmaisys" class="cta-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.kaggle.com/wasimansari786" class="cta-secondary" target="_blank" rel="noopener noreferrer">Kaggle</a>
+                    <span class="availability">Disponible pour des postes dans l'UE et en Inde | Ouvert à la relocalisation</span>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>À propos de moi</h2>
+            <blockquote>
+                Ingénieur en solutions IA axé sur les résultats avec une formation unique en droit et en science des données. Je suis spécialisé dans le développement de systèmes IA respectueux de la vie privée qui respectent les normes de protection des données tout en offrant un impact commercial mesurable. Ma formation juridique et technique garantit des solutions IA qui sont non seulement techniquement solides mais aussi éthiquement conformes et respectueuses du RGPD.
+            </blockquote>
+            <p>
+                Je suis spécialisé dans le fine-tuning des LLM, les implémentations RAG et le déploiement de modèles ML prêts pour la production. Je suis actuellement une formation intensive à l'IIT Madras en techniques ML/IA avancées, avec une expérience pratique des architectures Transformer, des bases de données vectorielles et des solutions IA génératives. Mon expertise couvre PyTorch, TensorFlow et l'écosystème Hugging Face pour la construction d'applications IA évolutives.
+            </p>
+            <div class="achievements">
+                <h3>Réalisations clés:</h3>
+                <ul>
+                    <li>Conception de systèmes IA haute performance réalisant une réduction des coûts de 35% et une amélioration du débit 2x</li>
+                    <li>Développement et déploiement de plus de 10 solutions IA prêtes pour la production</li>
+                    <li>Contribution active à la communauté IA via des articles techniques et des discussions sur LinkedIn</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projets sélectionnés</h2>
+            <ul class="project-list">
+                <li class="project">
+                    <img class="project-image" src="images/DocuDroid.png" alt="DocuDroid">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>DocuDroid: Bot d'Analyse de Documents IA</span>
+                            <a href="https://docudroid-114168985695.us-central1.run.app/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/DocuDroid" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Les développeurs ont souvent du mal à parcourir la documentation des bibliothèques et des API lorsqu'ils n'ont besoin que d'un exemple de code concis.<br>
+                            <strong>Solution:</strong> Implémentation d'un stockage vectoriel temporaire en mémoire avec chunking pour une récupération immédiate.<br>
+                            <strong>Impact:</strong> Accélération des flux de travail des développeurs grâce à des exemples de code ciblés.<br>
+                            <strong>Fonctionnalités clés:</strong> Chat intelligent avec LLM, Analyse de PDF & Web, Stockage vectoriel en mémoire.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, LangChain, Mistral AI, InMemoryVectorStore, Modern HTML/CSS/JS, Docker, Google Cloud Run.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-image" src="images/flux-image-generation.png" alt="Générateur d'Images Flux">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Générateur d'Images Flux</span>
+                            <a href="https://flux-image-generator-bdcdcphnhmbhg6et.centralindia-01.azurewebsites.net/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/Flux-Image-Generator" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Nombreux utilisateurs doivent se connecter pour utiliser les outils de génération d'images et manquent d'automatisation API.<br>
+                            <strong>Solution:</strong> Construction d'une plateforme de génération d'images avec points d'API REST.<br>
+                            <strong>Impact:</strong> Optimisation de l'automatisation et de l'intégration pour les flux de travail de design.<br>
+                            <strong>Fonctionnalités clés:</strong> Génération texte-vers-image, API REST, Support multi-modèles.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Azure Web Apps, Hugging Face Diffusers, PIL, Docker.
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                    <img class="project-image" src="images/RudeBot.png" alt="RudeBot">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>RudeBot - Votre Compagnon IA Impertinent</span>
+                            <a href="https://rudebot-mistral.streamlit.app/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/RudeBot" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Projet de week-end — beaucoup de chatbots sont trop polis et standardisés.<br>
+                            <strong>Solution:</strong> Implémentation d'un chatbot contextuel avec réponses en streaming et personnalité délibérément impertinente.<br>
+                            <strong>Impact:</strong> Prototype démonstratif pour la conception de persona conversationnel.<br>
+                            <strong>Fonctionnalités:</strong> Réponses en streaming, Réponses basées sur la personnalité, Mémoire persistante.<br>
+                            <strong>Tech Stack:</strong> Python, Mistral AI, LangGraph, Streamlit, Docker.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/facemask-detection.png" alt="Détection de Masques">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Détection de Masques avec CNN & VGG16</span>
+                            <a href="https://huggingface.co/spaces/wassim-ansari2088/Face-Mask-Detector-Vision" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/FaceMask-Detection-CNNModel-VGG16" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> COVID-19 a créé un besoin de surveillance automatisée du port du masque.<br>
+                            <strong>Solution:</strong> Approche par transfer learning avec architecture VGG16.<br>
+                            <strong>Impact:</strong> 95% de précision dans la détection en temps réel.<br>
+                            <strong>Fonctionnalités:</strong> Détection en temps réel, Classification trois classes, Transfer learning.<br>
+                            <strong>Tech Stack:</strong> Python, PyTorch, VGG16, OpenCV, NumPy, Matplotlib.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/mogambo.png" alt="Mogambo">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Mogambo Planificateur IA Vocal</span>
+                            <a href="https://mogambo-calendar-assistant.onrender.com" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/mogambo-voice-ai-scheduler" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> La gestion manuelle du calendrier est fastidieuse et chronophage.<br>
+                            <strong>Solution:</strong> Google OAuth pour accès sécurisé aux données calendrier et assistant vocal.<br>
+                            <strong>Impact:</strong> Démonstration de la faisabilité de la gestion vocale du calendrier.<br>
+                            <strong>Fonctionnalités:</strong> Entrée vocale & texte, Intégration Google Calendar, Correspondance intelligente.<br>
+                            <strong>Tech Stack:</strong> FastAPI, LangGraph, LangChain, Google Calendar API, SpeechRecognition.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/Jurisol.png" alt="Jurisol">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Jurisol: Assistant Juridique IA Indien</span>
+                            <a href="https://jurisol-legal-assistant-rag.onrender.com" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
+                            <a href="https://github.com/wsmaisys/Jurisol-legal-assistant-RAG" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Les avocats ont besoin d'un lieu unique pour la recherche juridique.<br>
+                            <strong>Solution:</strong> Système RAG recherchant dans le stockage vectoriel et les bases gouvernementales.<br>
+                            <strong>Impact:</strong> Optimisation de la recherche juridique et accès gratuit aux informations légales.<br>
+                            <strong>Fonctionnalités:</strong> Aperçus juridiques instantanés, Recherche IA, Focus droit indien.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Streamlit, ChromaDB, MistralAI, LangChain, Docker.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/interview-prep.png" alt="Préparation Entretien">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Assistant IA de Préparation aux Entretiens</span>
+                            <a href="https://interview-prep-assistant.streamlit.app/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/Interview_Prep_Assistant" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Difficulté à trouver des questions d'entraînement personnalisées et réalistes.<br>
+                            <strong>Solution:</strong> Assistant IA pour simulations d'entretiens personnalisées avec Mistral AI.<br>
+                            <strong>Impact:</strong> Plus de 100 utilisateurs ont amélioré leurs compétences.<br>
+                            <strong>Fonctionnalités:</strong> Génération de questions personnalisées, Réponses détaillées.<br>
+                            <strong>Tech Stack:</strong> Streamlit, Python, Mistral AI, Custom CSS.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/bikevaluepro.png" alt="Bike Value Pro">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>BikeValuePro: Prédiction de Prix ML</span>
+                            <a href="https://usedbike-price-predictor-mlmodel.onrender.com/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/usedbike_price_predictor_mlmodel" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                            <a href="https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Incertitude dans l'estimation des prix des motos d'occasion.<br>
+                            <strong>Solution:</strong> Prédicteur de prix ML utilisant des modèles ensemble avancés.<br>
+                            <strong>Impact:</strong> 92% de précision dans la prédiction des prix.<br>
+                            <strong>Fonctionnalités:</strong> Prédiction précise des prix, Insights IA, Interface conviviale.<br>
+                            <strong>Tech Stack:</strong> Streamlit, Python, Scikit-learn, XGBoost, ColumnTransformer.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/assignment-solver.png" alt="Résolveur de Devoirs">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Résolveur de Devoirs IA</span>
+                            <a href="https://assignment-solving-agent.onrender.com/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/Assignment_Solving_Agent" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Compétition IIT Madras: 10 problèmes d'analyse en 30 minutes.<br>
+                            <strong>Solution:</strong> Développement d'un solveur automatisé obtenant un A+.<br>
+                            <strong>Impact:</strong> Démonstration de la puissance des agents IA autonomes.<br>
+                            <strong>Fonctionnalités:</strong> Exécution de code généré par IA, Traitement multi-format.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Mistral API, Pandas, pdfplumber, Docker.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/google-cloud.png" alt="Projet Google Cloud">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Application Journal Photo</span>
+                            <a href="https://blog-app-699175796072.asia-south2.run.app/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://github.com/wsmaisys/google-cloud-app" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Besoin d'une plateforme cloud native fiable pour les journaux photos.<br>
+                            <strong>Solution:</strong> Application sans serveur sur Google Cloud Run.<br>
+                            <strong>Impact:</strong> 99,9% de disponibilité et mise à l'échelle sans effort.<br>
+                            <strong>Fonctionnalités:</strong> Téléchargements d'images, Support multi-utilisateurs, Flux chronologique.<br>
+                            <strong>Tech Stack:</strong> Flask, Google Cloud SQL, Google Cloud Storage, Google Cloud Run.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/Matchy.png" alt="Matchy">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Détecteur de Similarité Textuelle</span>
+                            <a href="https://text-similarity-detector.onrender.com/" target="_blank" rel="noopener noreferrer">[Démo]</a>
+                            <a href="https://hub.docker.com/r/wasimansariiitm/text-similarity-detector" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
+                            <a href="https://github.com/wsmaisys/Text_similarity_detection" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Difficulté à détecter les contenus dupliqués sur les plateformes.<br>
+                            <strong>Solution:</strong> Système de similarité textuelle ML avec Word2Vec et XGBoost.<br>
+                            <strong>Impact:</strong> 88% de précision dans la détection des doublons.<br>
+                            <strong>Fonctionnalités:</strong> Analyse de similarité sémantique, Scoring de confiance.<br>
+                            <strong>Tech Stack:</strong> Python, Flask, XGBoost, Word2Vec, Docker, HTML + CSS.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project">
+                    <img class="project-image" src="images/system-threat.png" alt="Menace Système">
+                    <div class="project-details">
+                        <div class="project-title">
+                            <span>Prédicteur de Menaces Système (Top 5% Kaggle)</span>
+                            <a href="https://www.kaggle.com/wasimansari786" target="_blank" rel="noopener noreferrer">[Kaggle]</a>
+                        </div>
+                        <div class="project-desc">
+                            <strong>Problème:</strong> Compétition Kaggle IIT Madras pour développer un modèle ML de détection.<br>
+                            <strong>Solution:</strong> Développement d'une technique ensemble pour le top 5%.<br>
+                            <strong>Impact:</strong> Démonstration d'expérimentation ML avancée.<br>
+                            <strong>Fonctionnalités:</strong> Feature engineering, Modélisation ensemble, Classement Kaggle.<br>
+                            <strong>Tech Stack:</strong> Python, Random Forest, XGBoost, Pandas, Scikit-learn.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Expérience professionnelle</h2>
+            <ul class="exp-list">
+                <li>
+                    <span class="exp-role">Ingénieur IA/ML & Développeur de Solutions</span> — Freelance/Projets Indépendants (Dehradun, Inde)
+                    <div class="exp-meta">Sept. 2024 – Présent</div>
+                    <div class="exp-desc">
+                        • Poursuite du diplôme IIT Madras en science des données tout en étudiant de manière approfondie les sujets avancés.<br>
+                        • Conception et déploiement de multiples applications IA/ML de bout en bout.<br>
+                        • Livraison d'implémentations de qualité production avec Docker, FastAPI, Flask, Streamlit et Google Cloud/Azure.<br>
+                        • Top 5% sur Kaggle dans un défi de détection de cybersécurité.<br>
+                        • Construction active d'un portfolio de projets diversifié.
+                    </div>
+                </li>
+                <!-- Previous roles translated similarly -->
+            </ul>
+        </section>
+
+        <div class="grid-row">
+            <div class="grid-col">
+                <section class="info-card">
+                    <h2>Formation</h2>
+                    <ul class="edu-list">
+                        <li><strong>Diplôme en Science des Données</strong><br><span class="edu-meta">Indian Institute of Technology, Madras (2024–Présent)</span><br>
+                            <span class="edu-desc">Cours: ML, DL, GenAI, Algèbre linéaire, Statistiques, Business Analytics, Outils pour la Science des Données.<br> Note: CGPA 8+</span>
+                        </li>
+                        <li><strong>Licence en Droit (LLB, 5 ans)</strong><br><span class="edu-meta">Université Savitribai Phule Pune (2007–2012)</span><br>
+                            <span class="edu-desc">Cours: Constitution, Droit civil et pénal, Droit procédural, PI, Droit bancaire, Droit environnemental.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="info-card">
+                    <h2>Certifications</h2>
+                    <ul class="cert-list">
+                        <li>Microsoft Azure AI Essentials - Microsoft (2025)</li>
+                        <li>Understanding Google Cloud Platform – IIT Madras (2025)</li>
+                        <li>Google Digital Marketing - Google (2020)</li>
+                        <li>Marketing Digital – Codestar & Udemy (2020)</li>
+                        <li>Agent Immobilier – Dubai Real Estate Institute (2015)</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="grid-col">
+                <section class="info-card">
+                    <h2>Langues</h2>
+                    <ul class="cert-list">
+                        <li>Anglais — IELTS 7 Band (Niveau CECRL C1)</li>
+                        <li>Ourdou — Langue maternelle (Niveau CECRL C2)</li>
+                        <li>Hindi — Langue maternelle (Niveau CECRL C2)</li>
+                        <li>Allemand — Basique (Niveau CECRL A1) - En cours d'apprentissage</li>
+                    </ul>
+                </section>
+
+                <section class="info-card">
+                    <h2>Publications & Leadership d'Opinion</h2>
+                    <ul class="cert-list">
+                        <li><strong>Les hallucinations dans la recherche juridique IA: Le cauchemar d'un avocat?</strong><br>
+                            <span class="pub-desc">Article sur les hallucinations IA dans la recherche juridique.</span>
+                        </li>
+                        <li><strong>Adaptation des stratégies d'exportation pour les tapis artisanaux indiens</strong><br>
+                            <span class="pub-desc">Stratégie d'exportation basée sur les données pour l'industrie du tapis indien.</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <section>
+            <h2>Standards Professionnels & Certifications</h2>
+            <div class="skills-list">
+                <span class="skill">Conformité RGPD</span>
+                <span class="skill">ISO 27001 Awareness</span>
+                <span class="skill">Agile (SCRUM)</span>
+                <span class="skill">Documentation (Rédaction Technique)</span>
+                <span class="skill">Communication Interculturelle</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Expertise Technique</h2>
+            <div class="skills-list">
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">MCP</span>
+                <span class="skill">LLMs (Mistral, LangChain, LangGraph)</span>
+                <span class="skill">Prompt Engineering</span>
+                <span class="skill">Retrieval-Augmented Generation (RAG)</span>
+                <span class="skill">NLP</span>
+                <span class="skill">Text Similarity</span>
+                <span class="skill">Semantic Search</span>
+                <span class="skill">Scikit-learn</span>
+                <span class="skill">XGBoost</span>
+                <span class="skill">Random Forest</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">Numpy</span>
+                <span class="skill">Matplotlib</span>
+                <span class="skill">Seaborn</span>
+                <span class="skill">TensorFlow</span>
+                <span class="skill">Keras</span>
+                <span class="skill">PyTorch</span>
+                <span class="skill">Hugging Face Transformers</span>
+                <span class="skill">OpenAI API</span>
+                <span class="skill">Docker</span>
+                <span class="skill">Git & GitHub</span>
+                <span class="skill">MLflow</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">MLOps</span>
+                <span class="skill">TensorBoard</span>
+                <span class="skill">TrackIO</span>
+                <span class="skill">Model Deployment</span>
+                <span class="skill">pdfplumber</span>
+                <span class="skill">Word2Vec</span>
+                <span class="skill">ChromaDB</span>
+                <span class="skill">FAISS</span>
+                <span class="skill">N8N Automation</span>
+                <span class="skill">PyPDF2</span>
+                <span class="skill">BeautifulSoup4</span>
+                <span class="skill">FastAPI</span>
+                <span class="skill">Flask</span>
+                <span class="skill">Streamlit</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Custom UI/UX</span>
+                <span class="skill">SpeechRecognition</span>
+                <span class="skill">gTTS</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 Waseem M Ansari. Tous droits réservés.</p>
+            <p>Créé avec passion et une touche de magie IA.</p>
+        </footer>
+    </div>
+</body>
+</html>

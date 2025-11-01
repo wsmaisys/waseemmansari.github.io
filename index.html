@@ -358,6 +358,37 @@
         <button onclick="acceptCookies()">Accept</button>
         <a href="privacy-policy.html">Learn More</a>
     </div>
+    <div class="lang-selector">
+        <a href="index.html" class="active">EN</a> |
+        <a href="index-de.html">DE</a> |
+        <a href="index-fr.html">FR</a>
+    </div>
+    <style>
+        .lang-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            z-index: 1000;
+        }
+        .lang-selector a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 4px;
+            font-size: 0.9rem;
+            transition: color var(--transition);
+        }
+        .lang-selector a.active {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        .lang-selector a:hover {
+            color: var(--text);
+        }
+    </style>
     <div class="container">
         <header>
             <img class="avatar" src="images/Passport Photo.png" alt="Waseem M Ansari Passport Photo" style="width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 4px 16px 0 rgba(95,140,255,0.25);margin-right:24px;" />
