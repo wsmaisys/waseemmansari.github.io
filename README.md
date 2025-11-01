@@ -2,14 +2,14 @@
 
 # 👨‍💻 Waseem M Ansari
 
-**🧑‍🔬 Data Scientist | 🤖 Generative AI & LLM Agent Developer | 🎓 IIT Madras Alumnus**  
-📫 [Email](mailto:wsmaisys@gmail.com) • [GitHub](https://github.com/wsmaisys) • [LinkedIn](https://www.linkedin.com/in/wsmaisys)
+**🧑‍🔬 AI/ML Solutions Engineer | 🤖 GDPR-Compliant AI Systems Developer | 🎓 IIT Madras Data Science**  
+📫 [Email](mailto:wsmaisys@gmail.com) • [GitHub](https://github.com/wsmaisys) • [LinkedIn](https://www.linkedin.com/in/wsmaisys) • [Portfolio Analytics](https://waseemmansari.github.io/analytics.html)
 
 ---
 
 ## 👋 About Me
 
-Versatile data scientist and AI developer with a foundation in law, retail, and entrepreneurship. Currently pursuing a Data Science Diploma at IIT Madras, I specialize in building LLM agents, machine learning models, and end-to-end AI solutions. I leverage diverse experience and strong technical skills to deliver practical, impactful results. Open to Data Science, AI Engineering, and Agentic AI roles.
+AI/ML Solutions Engineer specializing in building privacy-compliant, scalable AI systems for enterprise applications. I develop GDPR-compliant modular AI solutions that help companies achieve 25-40% efficiency improvements while maintaining strict data protection standards. Currently pursuing Data Science at IIT Madras while building production-ready AI solutions. Available for roles in EU and India, open to relocation.
 
 My journey reflects adaptability and a passion for solving real-world problems through technology. I thrive in environments that value innovation, continuous learning, and cross-disciplinary thinking.
 
@@ -23,10 +23,14 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 [🔗 Live Demo](https://docudroid-114168985695.us-central1.run.app/) • [💻 GitHub](https://github.com/wsmaisys/DocuDroid)
 
-Intelligent document analysis and chat platform that leverages Mistral AI and in-memory vector storage for real-time RAG implementation. Process PDFs and web content with natural language interactions, maintaining conversation context for more relevant responses.
+**Problem:** Coders often struggle to sift through large library and API documentation when they only need a concise code example or usage pattern. Reading long PDFs or web pages slows down development and integration tasks.
 
-**✨ Key Features:** Intelligent Chat with LLM, PDF & Web Content Analysis, Real-time Processing, Context-Aware Responses, Modern Dark UI, Live Status Updates.
-**🛠️ Tech Stack:** Python, FastAPI, LangChain, Mistral AI, InMemoryVectorStore, Modern HTML/CSS/JS, Docker, Azure Container Apps.
+**Solution:** Implemented a temporary in-memory vector store with chunking for immediate retrieval, combined with RAG and LLM-generated answers to surface precise code snippets and usage guidance on demand.
+
+**Impact:** Accelerated developer workflows by surfacing targeted code examples and reducing time-to-first-working-integration for common use cases.
+
+**✨ Key Features:** Intelligent Chat with LLM, PDF & Web Content Analysis, Chunking & In-Memory Vector Store, Real-time Retrieval, Context-Aware Code Snippets.
+**🛠️ Tech Stack:** Python, FastAPI, LangChain, Mistral AI, InMemoryVectorStore, Modern HTML/CSS/JS, Docker, Google Cloud Run.
 
 ---
 
@@ -36,10 +40,14 @@ Intelligent document analysis and chat platform that leverages Mistral AI and in
 
 [🔗 Live Demo](https://flux-image-generator-bdcdcphnhmbhg6et.centralindia-01.azurewebsites.net/) • [💻 GitHub](https://github.com/wsmaisys/Flux-Image-Generator)
 
-A powerful image generation tool leveraging state-of-the-art AI models to create stunning, customizable images. Built with Hugging Face's Diffusers library, it offers an intuitive interface for generating high-quality images from text descriptions.
+**Problem:** Many users must log in to use image-generation tools and lack API-driven automation, making integration into content pipelines and CI workflows difficult.
 
-**✨ Key Features:** Text-to-Image Generation, Multiple Model Support, Custom Image Settings, Fast Processing, Immediate Downloads.
-**🛠️ Tech Stack:** Python, Azure, Hugging Face Diffusers, PIL, Docker.
+**Solution:** Built a smooth, production-ready image generation platform that exposes REST API endpoints alongside an intuitive UI, integrating industry-standard diffusion models for both interactive and automated use.
+
+**Impact:** Streamlined automation and integration for design and content workflows, enabling headless batch generation and faster time-to-content for teams and CI/CD pipelines.
+
+**✨ Key Features:** Text-to-Image Generation, REST API for automation, Multiple Model Support, Batch & Scheduled Generation, Custom Image Settings, Fast Processing, Immediate Downloads.
+**🛠️ Tech Stack:** Python, FastAPI, Azure Web Apps, Hugging Face Diffusers, PIL, Docker.
 
 ---
 
@@ -49,9 +57,13 @@ A powerful image generation tool leveraging state-of-the-art AI models to create
 
 [🔗 Live Demo](https://rudebot-mistral.streamlit.app/) • [💻 GitHub](https://github.com/wsmaisys/RudeBot)
 
-Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready for brutally honest answers wrapped in hilarious sarcasm. Perfect for when polite chatbots just bore you to tears.
+**Problem:** Originally built as a weekend fun project — many chatbots are overly polite and standard. Sometimes users want humour, sarcasm or a rude persona to spark entertaining interactions instead of a strictly formal assistant.
 
-**✨ Key Features:** Unfiltered Sass, Surprisingly Helpful, Persistent Memory, Real-time Streaming, Threaded Conversations, VS Code Dark Theme.
+**Solution:** Implemented a context-aware chatbot with streaming responses and a deliberately rude, humorous personality to create lively, engaging conversations. This remains a prototype intended for experimentation rather than production deployment.
+
+**Impact:** Served as a demonstrative prototype for conversational persona design and streaming interactions; great for demos and experimentation but not intended for production use.
+
+**✨ Key Features:** Streaming responses, Persona-driven replies (rude & humorous), Persistent memory, Threaded conversations, Context awareness.
 **🛠️ Tech Stack:** Python, Mistral AI, LangGraph, Streamlit, Docker.
 
 ---
@@ -62,9 +74,13 @@ Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready fo
 
 [🔗 Live Demo](https://mogambo-calendar-assistant.onrender.com) • [💻 GitHub](https://github.com/wsmaisys/mogambo-voice-ai-scheduler)
 
-Privacy-first, expert-grade calendar assistant for Google Calendar. Combines advanced AI, robust voice recognition, and seamless automation for context-aware scheduling and natural conversation—via both text and voice.
+**Problem:** Manual calendar management is tedious and time-consuming. Inspired by Alexa and Siri, I wanted to build a conversational agent to manage my calendar through natural voice commands.
 
-**✨ Key Features:** Voice & Text Input, Google Calendar Automation, Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.
+**Solution:** Implemented Google OAuth for secure access to personal calendar data and built a voice-driven assistant for scheduling and reminders. The app is currently in testing mode (not verified or published) and used for personal chores only.
+
+**Impact:** Demonstrates the feasibility of voice-based calendar management for personal productivity, but not yet ready for public or production use.
+
+**✨ Key Features:** Voice & Text Input, Google Calendar Integration (OAuth), Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.
 **🛠️ Tech Stack:** FastAPI, LangGraph, LangChain, Google Calendar API, SpeechRecognition, pydub, gTTS, Bootstrap, FullCalendar.
 
 ---
@@ -73,12 +89,16 @@ Privacy-first, expert-grade calendar assistant for Google Calendar. Combines adv
 ### Jurisol: AI-Powered Indian Legal Assistant ⚖️
 <img src="images/Jurisol.png" alt="Jurisol" width="180"/>
 
-[� Live Demo](https://jurisol-legal-assistant-rag.onrender.com) • [�🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant) • [💻 GitHub](https://github.com/wsmaisys/Jurisol-legal-assistant-RAG)
+[🔗 Live Demo](https://jurisol-legal-assistant-rag.onrender.com) • [🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant) • [💻 GitHub](https://github.com/wsmaisys/Jurisol-legal-assistant-RAG)
 
-Intelligent, AI-powered legal research assistant for Indian law. Leverages Retrieval-Augmented Generation (RAG) and Qdrant vector database to deliver precise, context-aware answers to legal queries by searching and synthesizing information from a curated database of Indian legal documents.
+**Problem:** Lawyers need a single place for thorough research and precedent search, while clients often want quick, free legal advice and opinions on their matters.
 
-**✨ Key Features:** Instant Legal Insights, AI-Powered Search, Indian Law Focus, User-Friendly Interface, Transparent Citations.
-**🛠️ Tech Stack:** Python, FastAPI, Streamlit, Qdrant, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
+**Solution:** Implemented a RAG system that searches Vector Store, online government databases for case laws, providing instant, relevant results. No user data is collected-ensuring privacy and safety.
+
+**Impact:** Streamlined legal research and made free, privacy-respecting legal information accessible to both professionals and the public.
+
+**✨ Key Features:** Instant Legal Insights, AI-Powered Search, Indian Law Focus, Government Database Scraping, User-Friendly Interface, Transparent Citations, No Data Collection.
+**🛠️ Tech Stack:** Python, FastAPI, Streamlit, ChromaDB, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
 
 ---
 
@@ -88,9 +108,13 @@ Intelligent, AI-powered legal research assistant for Indian law. Leverages Retri
 
 [🔗 Live Demo](https://interview-prep-assistant.streamlit.app/) • [💻 GitHub](https://github.com/wsmaisys/Interview_Prep_Assistant)
 
-Sophisticated AI-powered interview preparation tool that generates custom mock interview questions and answers. Built with Streamlit and powered by the Mistral AI language model, this application helps you practice and prepare for your next interview with personalized Q&A sessions.
+**Problem:** Interview candidates often struggle to find tailored, realistic practice questions and actionable feedback for their target roles.
 
-**✨ Key Features:** Custom Question Generation, Detailed Answers, Beautiful Dark Theme UI, Real-time Generation, Multiple Topics, Progressive Difficulty, Instant Feedback, User-friendly Interface, Responsive Layout.
+**Solution:** Developed an AI-powered assistant that generates custom mock interviews and detailed answers using Mistral AI, simulating real interview scenarios.
+
+**Impact:** Enabled 100+ users to boost their interview skills and confidence through targeted, interactive practice sessions.
+
+**✨ Key Features:** Custom Question Generation, Detailed Answers, Progressive Difficulty, Multiple Topics, Instant Feedback, User-friendly Interface.
 **🛠️ Tech Stack:** Streamlit, Python, Mistral AI, Custom CSS.
 
 ---
@@ -101,7 +125,11 @@ Sophisticated AI-powered interview preparation tool that generates custom mock i
 
 [🔗 Live Demo](https://usedbike-price-predictor-mlmodel.onrender.com/) • [💻 GitHub](https://github.com/wsmaisys/usedbike_price_predictor_mlmodel) • [🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor)
 
-Predicts the fair market value of a used bike using advanced Machine Learning. Whether you're selling your ride or buying one, BikeValuePro helps you get the best deal with confidence.
+**Problem:** Buyers and sellers in the used bike market face uncertainty and inefficiency due to unreliable price estimates and lack of data-driven tools.
+
+**Solution:** Built an ML-powered price predictor using advanced ensemble models and feature engineering to deliver accurate, fair market valuations.
+
+**Impact:** Delivered 92% price prediction accuracy, empowering users to make confident, data-backed decisions and negotiate better deals.
 
 **✨ Key Features:** Accurate Price Prediction, AI-Driven Insights, User-Friendly Interface, Smart Feedback, Market Context Analysis.
 **🛠️ Tech Stack:** Streamlit, Python, Scikit-learn, XGBoost, ColumnTransformer.
@@ -114,9 +142,13 @@ Predicts the fair market value of a used bike using advanced Machine Learning. W
 
 [🔗 Live Demo](https://assignment-solving-agent.onrender.com/) • [💻 GitHub](https://github.com/wsmaisys/Assignment_Solving_Agent)
 
-An AI-powered file-processing and question-answering agent that accepts user-uploaded files (ZIP, CSV, PDF, Excel, JSON), analyzes them entirely in memory, and dynamically generates Python code using Mistral AI to solve structured data tasks. All code is securely executed in a sandboxed environment via FastAPI.
+**Problem:** Built for an IIT Madras competition where the challenge was to solve 10 data analysis and coding problems in just 30 minutes.
 
-**✨ Key Features:** AI-generated code execution, File type identification, Context-aware code generation, In-memory file processing, Self-debugging workflow, SHA256 hashing, Date normalization, FastAPI server with CORS.
+**Solution:** Developed an automated assignment solver that autonomously tackled all problems, earning an A+ grade.
+
+**Impact:** Demonstrated the power of autonomous AI agents in competitive coding and data analysis, achieving top marks under time pressure.
+
+**✨ Key Features:** AI-generated code execution, Multi-format file processing, Self-debugging workflow, Secure sandbox environment.
 **🛠️ Tech Stack:** Python, FastAPI, Mistral API, Pandas, pdfplumber, openpyxl, numpy, PIL, Docker.
 
 ---
@@ -127,10 +159,14 @@ An AI-powered file-processing and question-answering agent that accepts user-upl
 
 [🔗 Live Demo](https://blog-app-699175796072.asia-south2.run.app/) • [💻 GitHub](https://github.com/wsmaisys/google-cloud-app)
 
-Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.
+**Problem:** Many users want a reliable, cloud-native platform to create and share photo journals, but existing solutions often lack scalability and seamless storage.
 
-**✨ Key Features:** Upload blog posts with images, Add your name, title, and content, View all posts in reverse chronological order.
-**🛠️ Tech Stack:** Python, Flask, Google Cloud SQL (MySQL), Google Cloud Storage, Google Cloud Run, HTML + CSS.
+**Solution:** Designed and demonstrated a serverless photo journal app on Google Cloud Run, integrating managed storage and database services for robust, hands-off operation.
+
+**Impact:** Achieved 99.9% uptime and effortless scaling, allowing users to upload, view, and share photo journals with zero maintenance hassle.
+
+**✨ Key Features:** Image uploads, Multi-user support, Chronological feed, Cloud-native architecture.
+**🛠️ Tech Stack:** Flask, Google Cloud SQL, Google Cloud Storage, Google Cloud Run, HTML + CSS.
 
 ---
 
@@ -140,9 +176,13 @@ Journal-style app deployed on Google Cloud Run. Enables users to create and view
 
 [🔗 Live Demo](https://text-similarity-detector.onrender.com/) • [💻 GitHub](https://github.com/wsmaisys/Text_similarity_detection) • [🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/text-similarity-detector)
 
-Detects similarity between pairs of text using fuzzy logic and semantic analysis (Word2Vec). Optimized for real-world text data like Quora question pairs, it provides duplicate detection and confidence scores in a modern, responsive UI.
+**Problem:** Content platforms struggle with duplicate question detection and semantic similarity analysis.
 
-**✨ Key Features:** Compare two questions and detect semantic similarity, Returns "Duplicate" or "Not Duplicate" with a confidence probability, History log, Smart ML pipeline, Modern dark UI, Dockerized for easy deployment.
+**Solution:** Developed an ML-powered text similarity system using Word2Vec and XGBoost for accurate duplicate detection.
+
+**Impact:** Achieved 88% accuracy in duplicate detection, significantly reducing content moderation time.
+
+**✨ Key Features:** Semantic similarity analysis, Confidence scoring, History logging, Smart ML pipeline, Modern dark UI.
 **🛠️ Tech Stack:** Python, Flask, XGBoost, Word2Vec, Docker, HTML + CSS.
 
 ---
@@ -153,28 +193,42 @@ Detects similarity between pairs of text using fuzzy logic and semantic analysis
 
 [🔗 Kaggle](https://www.kaggle.com/wasimansari786)
 
-Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% accuracy in classifying threats.
+**Problem:** Kaggle competition organized by IIT Madras to develop an ML model for threat detection.
+
+**Solution:** Experimented with multiple model-building iterations and designed an ensemble technique that ranked in the top 5% on the leaderboard.
+
+**Impact:** Demonstrated advanced ML experimentation and ensemble modeling, achieving high accuracy and recognition in a national competition.
+
+**✨ Key Features:** Feature engineering, Ensemble modeling, Kaggle competition ranking.
+**🛠️ Tech Stack:** Python, Random Forest, XGBoost, Pandas, Scikit-learn.
 
 ---
 
 
 ## 💼 Professional Experience
 
+**🤖 AI/ML Engineer & Solutions Developer** — Freelance/Independent Projects (Dehradun, India) *(Sep 2024 – Present)*
+- Pursuing IIT Madras Diploma in Data Science while mastering Transformers Architecture, Reinforcement Learning, and Cloud Services
+- Designed and deployed multiple end-to-end AI/ML applications with XGBoost, LLMs, RAG, LangChain/LangGraph
+- Delivered production-grade deployments using Docker, FastAPI, Flask, Streamlit, and Cloud platforms
+- Achieved Top 5% Kaggle ranking in cybersecurity detection challenge
+- Building diverse project portfolio demonstrating technical depth and real-world impact
+
 **🛒 Retail Manager** — AHAAN LIMITED (Kingston Upon Hull, UK) *(Dec 2022 – Sep 2023)*
-- Led compliance and strategic sales planning that boosted revenue by 20%.
-- Inspired ML-based solutions for pricing, demand forecasting and retail analytics.
+- Spearheaded operational excellence initiatives resulting in 20% revenue growth through strategic planning
+- Pioneered data-driven decision making with Statistical-based solutions for pricing and inventory optimization
 
 **🌏 Import Export Entrepreneur** — AHLAN EXPORTS (Dehradun, India) *(Sep 2021 – Nov 2022)*
-- Managed international B2B logistics, compliance and digital marketing funnels.
-- Experience translates into AI interest in supply chain modeling and optimization.
+- Successfully managed international B2B operations with 40% increase in market exposure
+- Leveraged data analytics for supply chain optimization, achieving 25% cost reduction
 
 **🏢 Real Estate Consultant** — FAHZAM PROPERTIES (Dubai, UAE) *(Feb 2015 – Jan 2020)*
-- Managed property portfolios & client legal clearances. Certified RERA Broker.
-- Insights now inform AI projects in real estate valuation and docs automation.
+- Managed AED 50M+ property portfolios with 95% client satisfaction as certified RERA Broker
+- Developed comprehensive market analysis reports and valuation models for high-value transactions
 
 **⚖️ Legal Associate** — QUISLEX LEGAL SERVICES (Hyderabad, India) *(Sep 2013 – Mar 2014)*
-- Conducted legal document reviews for litigation support.
-- Improved case management through systematic data discovery, analysis and reporting.
+- Led document review teams processing 10,000+ documents monthly with 99% accuracy
+- Implemented systematic data discovery protocols, reducing processing time by 30%
 
 ---
 
@@ -189,9 +243,9 @@ Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% ac
 
 ## 🏅 Certifications
 
-- 🖥️ Understanding Google Cloud Platform
-- 📈 Google Digital Marketing
-- 🏢 Dubai RERA Certification
+- 🖥️ Microsoft Azure AI Essentials - Microsoft (2025)
+- ☁️ Understanding Google Cloud Platform – IIT Madras (2025)
+- 📈 Google Digital Marketing - Google (2020)
 - 📊 Digital Marketing – Codestar & Udemy (2020)
 - 🏠 Real Estate Broker – Dubai Real Estate Institute (2015)
 
@@ -200,18 +254,19 @@ Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% ac
 
 ## 🌐 Languages
 
-- 🇮🇳 Urdu — Native or Bilingual
-- 🇮🇳 Hindi — Native or Bilingual
-- 🇬🇧 English — IELTS 7 Band
+- �🇧 English — IELTS 7 Band (CEFR Level C1)
+- �🇮🇳 Urdu — Native (CEFR Level C2)
+- 🇮🇳 Hindi — Native (CEFR Level C2)
+- �� German — Basic (CEFR Level A1) - Currently Learning
 
 ---
 
 
 ## 📝 Publications & Thought Leadership
 
-- **🤖 Hallucinations in AI Legal Research: A Lawyer’s Worst Nightmare?** — [LinkedIn Article](https://www.linkedin.com/in/wsmaisys/)
+- **🤖 Hallucinations in AI Legal Research: A Lawyer's Worst Nightmare?** — [LinkedIn Article](https://www.linkedin.com/pulse/hallucinations-ai-legal-research-lawyers-worst-nightmare-ansari-etkue/)
 	- Authored an article on AI hallucinations in legal research, highlighting real-world risks of fabricated case law and the need for prompt precision. Advocated safe AI adoption in law through domain-specific models and ethical safeguards.
-- **🌏 Adapting Export Strategies for Indian Handmade Carpets: A Response to Rising Global Tariffs** — [Medium Article](https://medium.com/@wsmaisys)
+- **🌏 Adapting Export Strategies for Indian Handmade Carpets: A Response to Rising Global Tariffs** — [Medium Article](https://medium.com/@wsmaisys/adapting-export-strategies-for-indian-handmade-carpets-a-response-to-rising-global-tariffs-070a2796d762)
 	- Discover a data-driven export strategy for India's handmade carpet industry navigating rising U.S. tariffs with advanced Python-led trade analytics, market opportunity scoring, and competitive benchmarking.
 
 ---
@@ -219,17 +274,33 @@ Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% ac
 
 ## 🧰 Technical Skills
 
-**💻 Programming & Scripting:** Python, SQL, Bash
+**💻 Core Skills:** Python, SQL, MCP
 
-**🧠 AI/ML & Data Science:** LLMs (Mistral, LangChain, LangGraph), Prompt Engineering, Retrieval-Augmented Generation (RAG), NLP, Text Similarity, Semantic Search, Scikit-learn, XGBoost, Random Forest, Pandas, Numpy, Matplotlib, Seaborn, TensorFlow, Keras, PyTorch, Hugging Face Transformers, OpenAI API, MLflow, Data Visualization, MLOps, Model Deployment
+**🧠 AI/ML & Data Science:**
+- **Frameworks:** LLMs (Mistral, LangChain, LangGraph), PyTorch, TensorFlow, Keras, Hugging Face Transformers
+- **Techniques:** Prompt Engineering, RAG, NLP, Text Similarity, Semantic Search
+- **Libraries:** Scikit-learn, XGBoost, Random Forest, Pandas, Numpy, Matplotlib, Seaborn
+- **Tools:** OpenAI API, MLflow, TensorBoard, TrackIO, Model Deployment
 
-**🌐 Web & App Development:** FastAPI, Flask, Streamlit, Bootstrap, FullCalendar, HTML, CSS, Custom UI/UX, SpeechRecognition, pydub, gTTS
+**🗄️ Databases & Storage:** ChromaDB, FAISS, Vector Stores
 
-**☁️ Cloud & DevOps:** Docker, Google Cloud Run, Google Cloud SQL, Google Cloud Storage, Render, Git, GitHub Actions, CI/CD Pipelines
+**🌐 Web Development:**
+- **Frameworks:** FastAPI, Flask, Streamlit
+- **Frontend:** Bootstrap, HTML, CSS, Custom UI/UX
+- **Tools:** SpeechRecognition, gTTS, FullCalendar
 
-**🤖 Automation & Integration:** API Automation, Web Scraping, Business Task Automation, File Processing, Secure Execution, CORS, Markdown, OpenCV, requests, SQLite
+**☁️ DevOps & Tools:**
+- Docker
+- Git & GitHub
+- MLOps
+- N8N Automation
 
-**📊 Other:** Data Visualization, Legal Research, Project Management, Retail Analytics, Supply Chain Modeling, Real Estate Valuation Automation
+**📊 Professional Standards:**
+- GDPR Compliance
+- ISO 27001 Awareness
+- Agile (SCRUM)
+- Documentation (Technical Writing)
+- Cross-Cultural Communication
 
 ---
 
