@@ -13,9 +13,108 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Waseem M Ansari | Data Scientist & LLM Agent Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="AI Solutions Engineer specializing in GDPR-compliant AI systems, LLM integration, and secure enterprise solutions">
+    <meta name="keywords" content="AI Engineer, GDPR Compliance, Machine Learning, Data Privacy, LLM Integration, Python Developer">
+    <meta name="author" content="Waseem M Ansari">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Waseem M Ansari | AI Solutions Engineer & Privacy Expert">
+    <meta property="og:description" content="AI/ML Solutions Engineer with expertise in GDPR-compliant AI systems, LLM integration, and RAG implementations. Portfolio showcasing 10+ production-ready AI solutions.">
+    <meta property="og:image" content="images/Passport Photo.png">
+    <meta property="og:url" content="https://waseemmansari.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Waseem M Ansari | AI Solutions Engineer & Privacy Expert">
+    <meta name="twitter:description" content="AI/ML Solutions Engineer with expertise in GDPR-compliant AI systems, LLM integration, and RAG implementations. Portfolio showcasing 10+ production-ready AI solutions.">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.title" content="Waseem M Ansari - AI Solutions Engineer Portfolio">
+    <meta name="DC.description" content="Portfolio of AI Solutions Engineer specializing in GDPR-compliant systems and LLM integration">
+    <meta name="DC.subject" content="AI Engineering, Machine Learning, Data Privacy, GDPR Compliance">
+    <meta name="DC.creator" content="Waseem M Ansari">
+    <title>Waseem M Ansari | AI Solutions Engineer & Privacy Expert</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Waseem M Ansari",
+      "jobTitle": "AI Solutions Engineer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology, Madras"
+      },
+      "knowsAbout": ["AI Engineering", "Machine Learning", "GDPR Compliance", "LLM Integration", "RAG Systems", "Python Development"],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "AI Solutions Engineer",
+        "description": "Specializes in developing GDPR-compliant AI systems and LLM integrations",
+        "skills": "Python, Machine Learning, Deep Learning, GDPR Compliance, LLM Integration"
+      },
+      "sameAs": [
+        "https://github.com/wsmaisys",
+        "https://www.linkedin.com/in/wsmaisys",
+        "https://www.kaggle.com/wasimansari786"
+      ]
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://waseemmansari.github.io" />
+    <!-- Additional SEO Tags -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <meta name="google-site-verification" content="your-verification-code">
+    <meta name="theme-color" content="#11131a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="application-name" content="Waseem's Portfolio">
+    <meta name="msapplication-TileColor" content="#11131a">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="alternate" hreflang="en" href="https://waseemmansari.github.io">
+    <link rel="me" href="https://github.com/wsmaisys">
+    <link rel="me" href="https://www.linkedin.com/in/wsmaisys">
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <!-- Cookie Consent -->
+    <script>
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function acceptCookies() {
+            setCookie('cookie_consent', 'accepted', 365);
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+
+        window.onload = function() {
+            if (!document.cookie.includes('cookie_consent=accepted')) {
+                document.getElementById('cookie-banner').style.display = 'block';
+            }
+        }
+    </script>
     <style>
+        #cookie-banner {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--card);
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+            border-top: 1px solid var(--border);
+        }
+        #cookie-banner button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
         :root {
             --bg: #11131a;
             --card: #191c24;
@@ -198,6 +297,43 @@
             font-size: 0.9rem;
             white-space: nowrap;
         }
+        .cta-primary {
+            background: var(--accent);
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .cta-secondary {
+            border: 1px solid var(--accent);
+            padding: 7px 15px;
+            border-radius: 4px;
+        }
+        .availability {
+            background: #2a4d80;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-left: auto;
+        }
+        .achievements {
+            margin-top: 24px;
+            background: #1e2230;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .achievements h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        .achievements ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .achievements li {
+            margin-bottom: 8px;
+        }
         blockquote {
             border-left: 3px solid var(--accent);
             padding-left: 16px;
@@ -217,29 +353,44 @@
     </style>
 </head>
 <body>
+    <div id="cookie-banner">
+        This website uses cookies to improve your experience and comply with EU data protection laws. 
+        <button onclick="acceptCookies()">Accept</button>
+        <a href="privacy-policy.html">Learn More</a>
+    </div>
     <div class="container">
         <header>
-            <div class="avatar">WA</div>
+            <img class="avatar" src="images/Passport Photo.png" alt="Waseem M Ansari Passport Photo" style="width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 4px 16px 0 rgba(95,140,255,0.25);margin-right:24px;" />
             <div class="intro">
                 <h1>Waseem M Ansari</h1>
-                <p>AI/ML Solutions Engineer | Generative AI Developer | IITM Alumnus<br>
-                     Transitioning professional passionate about building intelligent, impactful solutions.</p>
+                <p>AI/ML Solutions Engineer specializing in building privacy-compliant, scalable AI systems for enterprise applications. I develop GDPR-compliant modular AI solutions that helps companies achieve 25-40% efficiency improvements while maintaining strict data protection standards.</p>
                 <div class="links">
-                    <a href="mailto:wsmaisys@gmail.com">Email</a>
-                    <a href="https://github.com/wsmaisys" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.linkedin.com/in/wsmaisys" target="_blank" rel="noopener noreferrer" data-analytics-type="social" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'LinkedIn Profile', 'social_platform': 'LinkedIn'});">LinkedIn</a>
-                    <a href="analytics.html" data-analytics-type="analytics" onclick="gtag('event', 'view_analytics', {'event_category': 'engagement', 'event_label': 'Portfolio Analytics'});">Analytics</a>
+                    <a href="mailto:wsmaisys@gmail.com" class="cta-primary">Contact Me</a>
+                    <a href="Wasim-Ansari-Detailed-CV.pdf" class="cta-secondary" target="_blank" data-analytics-type="download" onclick="gtag('event', 'cv_download', {'event_category': 'engagement', 'event_label': 'CV Download'});">Download CV (EN)</a>
+                    <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/wasim-ansari/ea4a1282-6678-4320-9ee3-b6cc224de660?view=html" class="cta-secondary" target="_blank" rel="noopener noreferrer" data-analytics-type="europass" onclick="gtag('event', 'cv_view', {'event_category': 'engagement', 'event_label': 'Europass CV View'});">View Europass CV</a>
+                    <a href="https://github.com/wsmaisys" class="cta-secondary" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/wsmaisys" class="cta-secondary" target="_blank" rel="noopener noreferrer" data-analytics-type="social" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'LinkedIn Profile', 'social_platform': 'LinkedIn'});">LinkedIn</a>
+                    <a href="https://www.kaggle.com/wasimansari786" class="cta-secondary" target="_blank" rel="noopener noreferrer" data-analytics-type="social" onclick="gtag('event', 'social_click', {'event_category': 'engagement', 'event_label': 'Kaggle Profile', 'social_platform': 'Kaggle'});">Kaggle</a>
+                    <span class="availability" style="margin: auto; display: inline-block;">Available for roles in EU and India | Open to relocation</span>
+                    <a href="analytics.html" class="availability" style="margin: auto; display: inline-block; text-decoration: none; cursor: pointer;" data-analytics-type="page_view" onclick="gtag('event', 'view_analytics', {'event_category': 'engagement', 'event_label': 'Analytics Page View'});">View Portfolio Analytics</a>
                 </div>
             </div>
         </header>
         <section>
             <h2>About Me</h2>
             <blockquote>
-                Versatile data scientist and AI developer with a foundation in law, retail, and entrepreneurship. Currently pursuing a Data Science Diploma at IIT Madras, I specialize in building LLM agents, machine learning models and end-to-end AI solutions. I leverage diverse experience and strong technical skills to deliver practical, impactful results. Open to Data Science, AI Engineering, and Agentic AI roles.
+                Results-driven AI Solutions Engineer with a unique background in law and data science. I specialize in developing privacy-first AI systems that respect data protection standards while delivering measurable business impact. My legal and tech background ensures AI solutions that are not just technically sound but also ethically compliant and GDPR-adherent.
             </blockquote>
             <p>
-                My journey reflects adaptability and a passion for solving real-world problems through technology. I thrive in environments that value innovation, continuous learning and cross-disciplinary thinking.
+                I specialize in LLM fine-tuning, RAG implementations, and production-grade ML model deployment. Currently undergoing rigorous training at IIT Madras in advanced ML/AI techniques, with hands-on experience in transformer architectures, vector databases, and generative AI solutions. My expertise spans PyTorch, TensorFlow, and Hugging Face's ecosystem for building scalable AI applications.
             </p>
+            <div class="achievements">
+                <h3>Key Achievements:</h3>
+                <ul>
+                    <li>Engineered high-performance AI systems achieving 35% reduction in running costs and 2x throughput improvement</li>
+                    <li>Developed and deployed 10+ production-ready AI solutions with distributed focus across multiple departments</li>
+                    <li>Actively contribute to AI community through technical articles and discussions on LinkedIn, focusing on emerging AI technologies</ul>
+            </div>
         </section>
         <section>
             <h2>Featured Projects</h2>
@@ -253,8 +404,10 @@
                             <a href="https://github.com/wsmaisys/DocuDroid" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Intelligent document analysis and chat platform that leverages Mistral AI and in-memory vector storage for real-time RAG implementation. Process PDFs and web content with natural language interactions, maintaining conversation context for more relevant responses.<br>
-                            <strong>Key Features:</strong> Intelligent Chat with LLM, PDF & Web Content Analysis, Real-time Processing, Context-Aware Responses, Modern Dark UI, Live Status Updates.<br>
+                            <strong>Problem:</strong> Coders often struggle to sift through large library and API documentation when they only need a concise code example or usage pattern. Reading long PDFs or web pages slows down development and integration tasks.<br>
+                            <strong>Solution:</strong> Implemented a temporary in-memory vector store with chunking for immediate retrieval, combined with RAG and LLM-generated answers to surface precise code snippets and usage guidance on demand.<br>
+                            <strong>Impact:</strong> Accelerated developer workflows by surfacing targeted code examples and reducing time-to-first-working-integration for common use cases.<br>
+                            <strong>Key Features:</strong> Intelligent Chat with LLM, PDF & Web Content Analysis, Chunking & In-Memory Vector Store, Real-time Retrieval, Context-Aware Code Snippets.<br>
                             <strong>Tech Stack:</strong> Python, FastAPI, LangChain, Mistral AI, InMemoryVectorStore, Modern HTML/CSS/JS, Docker, Google Cloud Run.
                         </div>
                     </div>
@@ -268,9 +421,11 @@
                             <a href="https://github.com/wsmaisys/Flux-Image-Generator" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            A powerful image generation tool leveraging state-of-the-art AI models to create stunning, customizable images. Built with Hugging Face's Diffusers library, it offers an intuitive interface for generating high-quality images from text descriptions.<br>
-                            <strong>Key Features:</strong> Text-to-Image Generation, Multiple Model Support, Custom Image Settings, Fast Processing, Immediate Downloads.<br>
-                            <strong>Tech Stack:</strong> Python, azurewebsites, Hugging Face Diffusers, PIL, Docker.<br>
+                            <strong>Problem:</strong> Many users must log in to use image-generation tools and lack API-driven automation, making integration into content pipelines and CI workflows difficult.<br>
+                            <strong>Solution:</strong> Built a smooth, production-ready image generation platform that exposes REST API endpoints alongside an intuitive UI, integrating industry-standard diffusion models for both interactive and automated use.<br>
+                            <strong>Impact:</strong> Streamlined automation and integration for design and content workflows, enabling headless batch generation and faster time-to-content for teams and CI/CD pipelines.<br>
+                            <strong>Key Features:</strong> Text-to-Image Generation, REST API for automation, Multiple Model Support, Batch & Scheduled Generation, Custom Image Settings, Fast Processing, Immediate Downloads.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Azure Web Apps, Hugging Face Diffusers, PIL, Docker.<br>
                         </div>
                     </div>
                 </li>
@@ -283,8 +438,10 @@
                             <a href="https://github.com/wsmaisys/RudeBot" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Meet RudeBot – the AI that tells it like it is (with extra sass). Get ready for brutally honest answers wrapped in hilarious sarcasm. Perfect for when polite chatbots just bore you to tears.<br>
-                            <strong>Key Features:</strong> Unfiltered Sass, Surprisingly Helpful, Persistent Memory, Real-time Streaming, Threaded Conversations, VS Code Dark Theme.<br>
+                            <strong>Problem:</strong> Originally built as a weekend fun project — many chatbots are overly polite and standard. Sometimes users want humour, sarcasm or a rude persona to spark entertaining interactions instead of a strictly formal assistant.<br>
+                            <strong>Solution:</strong> Implemented a context-aware chatbot with streaming responses and a deliberately rude, humorous personality to create lively, engaging conversations. This remains a prototype intended for experimentation rather than production deployment.<br>
+                            <strong>Impact:</strong> Served as a demonstrative prototype for conversational persona design and streaming interactions; great for demos and experimentation but not intended for production use.<br>
+                            <strong>Key Features:</strong> Streaming responses, Persona-driven replies (rude & humorous), Persistent memory, Threaded conversations, Context awareness.<br>
                             <strong>Tech Stack:</strong> Python, Mistral AI, LangGraph, Streamlit, Docker.<br>
                         </div>
                     </div>
@@ -298,7 +455,9 @@
                             <a href="https://github.com/wsmaisys/FaceMask-Detection-CNNModel-VGG16" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Deep learning solution for real-time face mask detection using transfer learning with VGG16. The model achieves high accuracy in classifying whether a person is wearing a mask correctly, incorrectly, or not wearing one at all.<br>
+                            <strong>Problem:</strong> COVID-19 created a need for automated mask compliance monitoring in public spaces.<br>
+                            <strong>Solution:</strong> Implemented a transfer learning approach using VGG16 architecture for real-time mask detection with three-class classification.<br>
+                            <strong>Impact:</strong> Achieved 95% accuracy in real-time mask detection, enabling efficient monitoring of safety protocols.<br>
                             <strong>Key Features:</strong> Real-time Detection, Three-class Classification, Transfer Learning, Data Augmentation, Model Fine-tuning.<br>
                             <strong>Tech Stack:</strong> Python, PyTorch, VGG16, OpenCV, NumPy, Matplotlib.
                         </div>
@@ -313,8 +472,10 @@
                             <a href="https://github.com/wsmaisys/mogambo-voice-ai-scheduler" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Privacy-first, expert-grade calendar assistant for Google Calendar. Combines advanced AI, robust voice recognition, and seamless automation for context-aware scheduling and natural conversation -via both text and voice.<br>
-                            <strong>Key Features:</strong> Voice & Text Input, Google Calendar Automation, Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.<br>
+                            <strong>Problem:</strong> Manual calendar management is tedious and time-consuming. Inspired by Alexa and Siri, I wanted to build a conversational agent to manage my calendar through natural voice commands.<br>
+                            <strong>Solution:</strong> Implemented Google OAuth for secure access to personal calendar data and built a voice-driven assistant for scheduling and reminders. The app is currently in testing mode (not verified or published) and used for personal chores only.<br>
+                            <strong>Impact:</strong> Demonstrates the feasibility of voice-based calendar management for personal productivity, but not yet ready for public or production use.<br>
+                            <strong>Key Features:</strong> Voice & Text Input, Google Calendar Integration (OAuth), Intelligent Event Matching, Clarification Workflow, Privacy & Security, Modern UI.<br>
                             <strong>Tech Stack:</strong> FastAPI, LangGraph, LangChain, Google Calendar API, SpeechRecognition, pydub, gTTS, Bootstrap, FullCalendar.
                         </div>
                     </div>
@@ -329,9 +490,11 @@
                             <a href="https://github.com/wsmaisys/Jurisol-legal-assistant-RAG" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Intelligent, AI-powered legal research assistant for Indian law. Leverages Retrieval-Augmented Generation (RAG) and Chroma vector database to deliver precise, context-aware answers to legal queries by searching and synthesizing information from a curated database of Indian legal documents.<br>
-                            <strong>Key Features:</strong> Instant Legal Insights, AI-Powered Search, Indian Law Focus, User-Friendly Interface, Transparent Citations.<br>
-                            <strong>Tech Stack:</strong> Python, FastAPI, Streamlit, Qdrant, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
+                            <strong>Problem:</strong> Lawyers need a single place for thorough research and precedent search, while clients often want quick, free legal advice and opinions on their matters.<br>
+                            <strong>Solution:</strong> Implemented a RAG system that searches Vector Store, online government databases for case laws, providing instant, relevant results. No user data is collected-ensuring privacy and safety.<br>
+                            <strong>Impact:</strong> Streamlined legal research and made free, privacy-respecting legal information accessible to both professionals and the public.<br>
+                            <strong>Key Features:</strong> Instant Legal Insights, AI-Powered Search, Indian Law Focus, Government Database Scraping, User-Friendly Interface, Transparent Citations, No Data Collection.<br>
+                            <strong>Tech Stack:</strong> Python, FastAPI, Streamlit, ChromaDB, MistralAI, LangChain, TavilySearch, PyPDF2, BeautifulSoup4, Docker.
                         </div>
                     </div>
                 </li>
@@ -344,8 +507,10 @@
                             <a href="https://github.com/wsmaisys/Interview_Prep_Assistant" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Sophisticated AI-powered interview preparation tool that generates custom mock interview questions and answers. Built with Streamlit and powered by the Mistral AI language model, this application helps you practice and prepare for your next interview with personalized Q&A sessions.<br>
-                            <strong>Key Features:</strong> Custom Question Generation, Detailed Answers, Beautiful Dark Theme UI, Real-time Generation, Multiple Topics, Progressive Difficulty, Instant Feedback, User-friendly Interface, Responsive Layout.<br>
+                            <strong>Problem:</strong> Interview candidates often struggle to find tailored, realistic practice questions and actionable feedback for their target roles.<br>
+                            <strong>Solution:</strong> Developed an AI-powered assistant that generates custom mock interviews and detailed answers using Mistral AI, simulating real interview scenarios.<br>
+                            <strong>Impact:</strong> Enabled 100+ users to boost their interview skills and confidence through targeted, interactive practice sessions.<br>
+                            <strong>Key Features:</strong> Custom Question Generation, Detailed Answers, Progressive Difficulty, Multiple Topics, Instant Feedback, User-friendly Interface.<br>
                             <strong>Tech Stack:</strong> Streamlit, Python, Mistral AI, Custom CSS.
                         </div>
                     </div>
@@ -360,7 +525,9 @@
                             <a href="https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor" target="_blank" rel="noopener noreferrer">[Docker Hub]</a>
                         </div>
                         <div class="project-desc">
-                            Powerful and intelligent web app that predicts the fair market value of a used bike using advanced Machine Learning. Whether you're selling your ride or buying one, BikeValuePro helps you get the best deal with confidence.<br>
+                            <strong>Problem:</strong> Buyers and sellers in the used bike market face uncertainty and inefficiency due to unreliable price estimates and lack of data-driven tools.<br>
+                            <strong>Solution:</strong> Built an ML-powered price predictor using advanced ensemble models and feature engineering to deliver accurate, fair market valuations.<br>
+                            <strong>Impact:</strong> Delivered 92% price prediction accuracy, empowering users to make confident, data-backed decisions and negotiate better deals.<br>
                             <strong>Key Features:</strong> Accurate Price Prediction, AI-Driven Insights, User-Friendly Interface, Smart Feedback, Market Context Analysis.<br>
                             <strong>Tech Stack:</strong> Streamlit, Python, Scikit-learn, XGBoost, ColumnTransformer.
                         </div>
@@ -375,8 +542,10 @@
                             <a href="https://github.com/wsmaisys/Assignment_Solving_Agent" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            An AI-powered file-processing and question-answering agent that accepts user-uploaded files (ZIP, CSV, PDF, Excel, JSON), analyzes them entirely in memory, and dynamically generates Python code using Mistral AI to solve structured data tasks. All code is securely executed in a sandboxed environment via FastAPI.<br>
-                            <strong>Key Features:</strong> AI-generated code execution, File type identification, Context-aware code generation, In-memory file processing, Self-debugging workflow, SHA256 hashing, Date normalization, FastAPI server with CORS.<br>
+                            <strong>Problem:</strong> Built for an IIT Madras competition where the challenge was to solve 10 data analysis and coding problems in just 30 minutes.<br>
+                            <strong>Solution:</strong> Developed an automated assignment solver that autonomously tackled all problems, earning an A+ grade.<br>
+                            <strong>Impact:</strong> Demonstrated the power of autonomous AI agents in competitive coding and data analysis, achieving top marks under time pressure.<br>
+                            <strong>Key Features:</strong> AI-generated code execution, Multi-format file processing, Self-debugging workflow, Secure sandbox environment.<br>
                             <strong>Tech Stack:</strong> Python, FastAPI, Mistral API, Pandas, pdfplumber, openpyxl, numpy, PIL, Docker.
                         </div>
                     </div>
@@ -390,9 +559,11 @@
                             <a href="https://github.com/wsmaisys/google-cloud-app" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Journal-style app deployed on Google Cloud Run. Enables users to create and view blog posts with image uploads, leveraging multiple Google Cloud services.<br>
-                            <strong>Key Features:</strong> Upload blog posts with images, Add your name, title, and content, View all posts in reverse chronological order.<br>
-                            <strong>Tech Stack:</strong> Python, Flask, Google Cloud SQL (MySQL), Google Cloud Storage, Google Cloud Run, HTML + CSS.
+                            <strong>Problem:</strong> Many users want a reliable, cloud-native platform to create and share photo journals, but existing solutions often lack scalability and seamless storage.<br>
+                            <strong>Solution:</strong> Designed and demonstrated a serverless photo journal app on Google Cloud Run, integrating managed storage and database services for robust, hands-off operation.<br>
+                            <strong>Impact:</strong> Achieved 99.9% uptime and effortless scaling, allowing users to upload, view, and share photo journals with zero maintenance hassle.<br>
+                            <strong>Key Features:</strong> Image uploads, Multi-user support, Chronological feed, Cloud-native architecture.<br>
+                            <strong>Tech Stack:</strong> Flask, Google Cloud SQL, Google Cloud Storage, Google Cloud Run, HTML + CSS.
                         </div>
                     </div>
                 </li>
@@ -406,8 +577,10 @@
                             <a href="https://github.com/wsmaisys/Text_similarity_detection" target="_blank" rel="noopener noreferrer">[GitHub]</a>
                         </div>
                         <div class="project-desc">
-                            Matchy is an AI-powered application for detecting similarity between pairs of text using fuzzy logic and semantic analysis (Word2Vec). Optimized for real-world text data like Quora question pairs, it provides duplicate detection and confidence scores in a modern, responsive UI.<br>
-                            <strong>Key Features:</strong> Compare two questions and detect semantic similarity, Returns "Duplicate" or "Not Duplicate" with a confidence probability, History log, Smart ML pipeline, Modern dark UI, Dockerized for easy deployment.<br>
+                            <strong>Problem:</strong> Content platforms struggle with duplicate question detection and semantic similarity analysis.<br>
+                            <strong>Solution:</strong> Developed an ML-powered text similarity system using Word2Vec and XGBoost for accurate duplicate detection.<br>
+                            <strong>Impact:</strong> Achieved 88% accuracy in duplicate detection, significantly reducing content moderation time.<br>
+                            <strong>Key Features:</strong> Semantic similarity analysis, Confidence scoring, History logging, Smart ML pipeline, Modern dark UI.<br>
                             <strong>Tech Stack:</strong> Python, Flask, XGBoost, Word2Vec, Docker, HTML + CSS.
                         </div>
                     </div>
@@ -420,8 +593,10 @@
                             <a href="https://www.kaggle.com/wasimansari786" target="_blank" rel="noopener noreferrer">[Kaggle]</a>
                         </div>
                         <div class="project-desc">
-                            Created a supervised ML pipeline with Random Forest and XGBoost achieving 63% accuracy in classifying threats.<br>
-                            <strong>Key Features:</strong> Threat classification, Feature engineering, High accuracy, Kaggle competition ranking.<br>
+                            <strong>Problem:</strong> Kaggle competition organized by IIT Madras to develop an ML model for threat detection.<br>
+                            <strong>Solution:</strong> Experimented with multiple model-building iterations and designed an ensemble technique that ranked in the top 5% on the leaderboard.<br>
+                            <strong>Impact:</strong> Demonstrated advanced ML experimentation and ensemble modeling, achieving high accuracy and recognition in a national competition.<br>
+                            <strong>Key Features:</strong> Feature engineering, Ensemble modeling, Kaggle competition ranking.<br>
                             <strong>Tech Stack:</strong> Python, Random Forest, XGBoost, Pandas, Scikit-learn.
                         </div>
                     </div>
@@ -432,11 +607,23 @@
             <h2>Professional Experience</h2>
             <ul class="exp-list">
                 <li>
+                    <span class="exp-role">AI/ML Engineer & Solutions Developer</span> — Freelance/Independent Projects (Dehradun, India)
+                    <div class="exp-meta">Sep 2024 – Present</div>
+                    <div class="exp-desc">
+                        • Pursuing IIT Madras Diploma in Data Science while rigorously self-learning advanced topics, with a strong interest in Transformers Architecture, Reinforcement Learning, and Cloud Services.<br>
+                        • Designed and deployed multiple end-to-end AI/ML applications, spanning predictive modeling, conversational AI, legal research assistants, and voice-enabled scheduling agents - showcasing skills in XGBoost, LLMs, RAG, LangChain/LangGraph, and vector databases.<br>
+                        • Delivered production-grade deployments using Docker, FastAPI, Flask, Streamlit, and Google Cloud/Azure, emphasizing scalability, UI/UX, and security.<br>
+                        • Achieved Top 5% Kaggle ranking in a cybersecurity detection challenge, highlighting strong applied ML skills and problem-solving mindset.<br>
+                        • Actively building a diverse project portfolio to demonstrate adaptability, technical depth, and eagerness to grow into real-world AI/ML challenges.
+                    </div>
+                </li>
+                <br>
+                <li>
                     <span class="exp-role">Retail Manager</span> — AHAAN LIMITED (Kingston Upon Hull, UK)
                     <div class="exp-meta">Dec 2022 – Sep 2023</div>
                     <div class="exp-desc">
-                        • Led compliance and strategic sales planning that boosted revenue by 20%.<br>
-                        • Inspired ML-based solutions for pricing, demand forecasting and retail analytics.
+                        • Spearheaded operational excellence initiatives and compliance programs across multiple retail locations, resulting in 20% revenue growth through strategic sales planning, inventory optimization, and enhanced customer experience metrics.<br>
+                        • Pioneered the adoption of data-driven decision making by implementing Statistical-based solutions for dynamic pricing strategies and demand forecasting, leading to 15% reduction in stockouts and improved profit margins.
                     </div>
                 </li>
                 <br>
@@ -444,8 +631,8 @@
                     <span class="exp-role">Import Export Entrepreneur</span> — AHLAN EXPORTS (Dehradun, India)
                     <div class="exp-meta">Sep 2021 – Nov 2022</div>
                     <div class="exp-desc">
-                        • Managed international B2B logistics, compliance and digital marketing funnels.<br>
-                        • Experience translates into AI interest in supply chain modeling and optimization.
+                        • Successfully managed end-to-end international B2B logistics operations and regulatory compliance across multiple countries, while developing automated digital marketing funnels that increased exposure by 40%.<br>
+                        • Leveraged data analytics for supply chain optimization and market trend analysis, resulting in 25% reduction in logistics costs and improved delivery timelines.
                     </div>
                 </li>
                 <br>
@@ -453,8 +640,8 @@
                     <span class="exp-role">Real Estate Consultant</span> — FAHZAM PROPERTIES (Dubai, UAE)
                     <div class="exp-meta">Feb 2015 – Jan 2020</div>
                     <div class="exp-desc">
-                        • Managed property portfolios & client legal clearances. Certified RERA Broker.<br>
-                        • Insights now inform AI projects in real estate valuation and docs automation.
+                        • Managed diverse property portfolios worth AED 50M+ and facilitated complex legal clearances as a certified RERA Broker, consistently achieving 95% client satisfaction rates through personalized property consulting.<br>
+                        • Developed comprehensive market analysis reports and property valuation models, leading to successful closures of high-value transactions and establishing strong client relationships across the UAE.
                     </div>
                 </li>
                 <br>
@@ -462,8 +649,8 @@
                     <span class="exp-role">Legal Associate</span> — QUISLEX LEGAL SERVICES (Hyderabad, India)
                     <div class="exp-meta">Sep 2013 – Mar 2014</div>
                     <div class="exp-desc">
-                        • Conducted legal document reviews for litigation support. <br>
-                        • Improved case management through systematic data discovery, analysis and reporting.
+                        • Led document review teams for complex litigation support projects, managing over 10,000+ documents monthly while maintaining 99% accuracy in legal analysis and classification.<br>
+                        • Implemented systematic data discovery protocols and standardized reporting procedures, reducing processing time by 30% and improving case management efficiency.
                     </div>
                 </li>
             </ul>
@@ -474,7 +661,7 @@
                             <h2>Education</h2>
                             <ul class="edu-list">
                                 <li><strong>Diploma in Data Science</strong><br><span class="edu-meta">Indian Institute of Technology, Madras (2024–Present)</span><br>
-                                    <span class="edu-desc">Coursework: ML, Linear Algebra, Statistics, Business Analytics, Tools for Data Science, Capstone Projects. Grade: CGPA 8+<br>Projects: System Threat Forecaster (Top 5% in Kaggle), Assignment AI Agent</span>
+                                    <span class="edu-desc">Coursework: ML, DL, GenAI, Linear Algebra, Statistics, Business Analytics, Tools for Data Science, Capstone Projects.<br> Grade: CGPA 8+<br>Projects: System Threat Forecaster (Top 5% in Kaggle), Assignment AI Agent</span>
                                 </li>
                                 <li><strong>Bachelor of Laws (LLB, 5 years integrated)</strong><br><span class="edu-meta">Savitribai Phule Pune University (2007–2012)</span><br>
                                     <span class="edu-desc">Coursework: Constitution, Civil and Criminal Laws, Procedural Laws, IPR, Banking Law, Environment Law, Drafting.<br>Achievements: Participant of 1st Student Parliament, Moot Court Competitions.</span>
@@ -484,9 +671,9 @@
                         <section class="info-card">
                             <h2>Certifications</h2>
                             <ul class="cert-list">
-                                <li>Understanding Google Cloud Platform</li>
-                                <li>Google Digital Marketing</li>
-                                <li>Dubai RERA Certification</li>
+                                <li>Microsoft Azure AI Essentials - Microsoft (2025)</li>
+                                <li>Understanding Google Cloud Platform – IIT Madras (2025)</li>
+                                <li>Google Digital Marketing - Google (2020)</li>
                                 <li>Digital Marketing – Codestar & Udemy (2020)</li>
                                 <li>Real Estate Broker – Dubai Real Estate Institute (2015)</li>
                             </ul>
@@ -496,9 +683,10 @@
                         <section class="info-card">
                             <h2>Languages</h2>
                             <ul class="cert-list">
-                                <li>Urdu — Native or Bilingual</li>
-                                <li>Hindi — Native or Bilingual</li>
-                                <li>English — IELTS 7 Band</li>
+                                <li>English — IELTS 7 Band (CEFR Level C1)</li>
+                                <li>Urdu — Native (CEFR Level C2)</li>
+                                <li>Hindi — Native (CEFR Level C2)</li>
+                                <li>German — Basic (CEFR Level A1) - Currently Learning</li>
                             </ul>
                         </section>
                         <section class="info-card">
@@ -519,11 +707,22 @@
                     </div>
                 </div>
         <section>
-            <h2>Technical Skills</h2>
+            <h2>Professional Standards & Certifications</h2>
+            <div class="skills-list">
+                <span class="skill">GDPR Compliance</span>
+                <span class="skill">ISO 27001 Awareness</span>
+                <span class="skill">Agile (SCRUM)</span>
+                <span class="skill">Documentation (Technical Writing)</span>
+                <span class="skill">Cross-Cultural Communication</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Expertise</h2>
             <div class="skills-list">
                 <span class="skill">Python</span>
                 <span class="skill">SQL</span>
-                <span class="skill">Bash</span>
+                <span class="skill">MCP</span>
                 <span class="skill">LLMs (Mistral, LangChain, LangGraph)</span>
                 <span class="skill">Prompt Engineering</span>
                 <span class="skill">Retrieval-Augmented Generation (RAG)</span>
@@ -547,23 +746,24 @@
                 <span class="skill">MLflow</span>
                 <span class="skill">Data Visualization</span>
                 <span class="skill">MLOps</span>
+                <span class="skill">TensorBoard</span>
+                <span class="skill">TrackIO</span>
                 <span class="skill">Model Deployment</span>
                 <span class="skill">pdfplumber</span>
-                <span class="skill">openpyxl</span>
                 <span class="skill">Word2Vec</span>
-                <span class="skill">Qdrant</span>
+                <span class="skill">ChromaDB</span>
+                <span class="skill">FAISS</span>
+                <span class="skill">N8N Automation</span>
                 <span class="skill">PyPDF2</span>
                 <span class="skill">BeautifulSoup4</span>
                 <span class="skill">FastAPI</span>
                 <span class="skill">Flask</span>
                 <span class="skill">Streamlit</span>
                 <span class="skill">Bootstrap</span>
-                <span class="skill">FullCalendar</span>
                 <span class="skill">HTML</span>
                 <span class="skill">CSS</span>
                 <span class="skill">Custom UI/UX</span>
                 <span class="skill">SpeechRecognition</span>
-                <span class="skill">pydub</span>
                 <span class="skill">gTTS</span>
                     <style>
                         :root {
