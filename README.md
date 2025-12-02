@@ -1,5 +1,3 @@
-
-
 # 👨‍💻 Waseem M Ansari
 
 **🧑‍🔬 AI/ML Solutions Engineer | 🤖 GDPR-Compliant AI Systems Developer | 🎓 IIT Madras Data Science**  
@@ -17,8 +15,59 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ## 🚀 Featured Projects
 
+### MediFlow: Post-Discharge Medical AI Assistant 🏥🤖
+
+<img src="images/MediFlow-Multi Agent.png" alt="MediFlow" width="180"/>
+
+[🔗 Live Demo](https://mediflow-ai-medical-assistant-785629432566.us-central1.run.app/) • [💻 GitHub](https://github.com/wsmaisys/MediFlow-Post-Discharge-Medical-AI-Assistant)
+
+**Problem:** Patients discharged from hospitals often struggle to manage their medical care at home, lacking personalized guidance and easy access to accurate medical information.
+
+**Solution:** Implemented a production-ready multi-agent AI chatbot using LangGraph that combines intelligent routing, RAG-powered knowledge retrieval, and real-time web search to provide personalized medical guidance tailored to each patient's history.
+
+**Impact:** Delivers 24/7 intelligent medical support with 95%+ test coverage, enabling post-discharge patients to receive instant answers to their health concerns while maintaining complete privacy through PHI/PII-aware architecture.
+
+**✨ Key Features:** Multi-Agent System (Receptionist + Clinical agents), RAG Pipeline with FAISS, Real-time Web Search, Full LangSmith Tracing, Token Streaming, Security-First Design, Modern Web UI, Comprehensive Testing.
+**🛠️ Tech Stack:** Python, FastAPI, LangChain, LangGraph, Mistral AI, FAISS, DuckDuckGo API, Docker, Google Cloud Run.
+
+---
+
+### Nephrology RAG MCP Tool 🧬🔗
+
+<img src="images/Nephrology MCP server tool.png" alt="Nephrology RAG MCP" width="180"/>
+
+[🔗 Live Demo](https://nephrology-rag-mcp-tool-785629432566.us-central1.run.app/mcp) • [💻 GitHub](https://github.com/wsmaisys/Nephrology-RAG-MCP-tool)
+
+**Problem:** Medical knowledge bases need seamless integration with AI tools like Claude Desktop while supporting multi-user access with enterprise-grade security and scalability.
+
+**Solution:** Built a production-ready MCP (Model Context Protocol) server with HTTP/SSE transport that exposes medical knowledge through authenticated endpoints, supporting concurrent users with session management and comprehensive monitoring.
+
+**Impact:** Enables Claude Desktop users and custom clients to access specialized nephrology knowledge with API-key authentication, horizontal scaling to handle multiple concurrent users, and full observability through Prometheus metrics.
+
+**✨ Key Features:** MCP Server with HTTP/SSE Transport, Multi-user Session Management, API Key Authentication, CORS Support, Horizontal Scaling, Health Checks, Prometheus Metrics, Production-Ready Deployment (Docker, Kubernetes, Cloud Run, ECS/Fargate, Azure Container Apps).
+**🛠️ Tech Stack:** Python, FastAPI, MCP Protocol, FAISS Vector Store, Mistral AI, Docker, Kubernetes, Google Cloud Run, AWS ECS/Fargate, Azure Container Apps.
+
+---
+
+### PDF Excel Extractor: AI Document Structuring 📊📄
+
+<img src="images/pdf-excel-generator.png" alt="PDF Excel Extractor" width="180"/>
+
+[🔗 Live Demo](https://pdf-excel-extractor-319169836562.us-central1.run.app/) • [💻 GitHub](https://github.com/wsmaisys/pdf-excel-extractor)
+
+**Problem:** Businesses struggle to extract and structure unstructured data from diverse PDF documents (invoices, contracts, reports, forms), leading to manual data entry, errors, and inefficiency.
+
+**Solution:** Developed an AI-powered document processing system that dynamically detects relevant fields using LLM analysis, performs batch data extraction in a single API call, and generates structured Excel files with quality assurance metrics.
+
+**Impact:** Reduced document processing time by 80% with zero hardcoded schemas, enabling flexible handling of diverse document types and automatically adapting to new data structures without code changes.
+
+**✨ Key Features:** Dynamic Schema Detection, LLM-Powered Semantic Understanding, Batch Processing, PDF Type Detection, REST API with Job Polling, Quality Assurance (BLEU scores & coverage metrics), Interactive Web UI, Excel Export.
+**🛠️ Tech Stack:** Python, FastAPI, Mistral AI, LangChain, Pandas, openpyxl, PyPDF2, Docker, Google Cloud Run.
+
+---
 
 ### DocuDroid: AI Document Analysis Bot 📄🤖
+
 <img src="images/DocuDroid.png" alt="DocuDroid" width="180"/>
 
 [🔗 Live Demo](https://docudroid-114168985695.us-central1.run.app/) • [💻 GitHub](https://github.com/wsmaisys/DocuDroid)
@@ -34,8 +83,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### Flux Image Generator 🎨✨
+
 <img src="images/flux-image-generation.png" alt="Flux Image Generator" width="180"/>
 
 [🔗 Live Demo](https://flux-image-generator-bdcdcphnhmbhg6et.centralindia-01.azurewebsites.net/) • [💻 GitHub](https://github.com/wsmaisys/Flux-Image-Generator)
@@ -51,8 +100,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### RudeBot - Your Sassy AI Companion 😈
+
 <img src="images/RudeBot.png" alt="RudeBot" width="180"/>
 
 [🔗 Live Demo](https://rudebot-mistral.streamlit.app/) • [💻 GitHub](https://github.com/wsmaisys/RudeBot)
@@ -68,8 +117,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### Mogambo Voice AI Scheduler 🗣️📅
+
 <img src="images/mogambo.png" alt="Mogambo" width="180"/>
 
 [🔗 Live Demo](https://mogambo-calendar-assistant.onrender.com) • [💻 GitHub](https://github.com/wsmaisys/mogambo-voice-ai-scheduler)
@@ -85,8 +134,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### Jurisol: AI-Powered Indian Legal Assistant ⚖️
+
 <img src="images/Jurisol.png" alt="Jurisol" width="180"/>
 
 [🔗 Live Demo](https://jurisol-legal-assistant-rag.onrender.com) • [🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/jurisol-legal-assistant) • [💻 GitHub](https://github.com/wsmaisys/Jurisol-legal-assistant-RAG)
@@ -102,8 +151,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### AI Interview Prep Assistant 🎤
+
 <img src="images/interview-prep.png" alt="Interview Prep" width="180"/>
 
 [🔗 Live Demo](https://interview-prep-assistant.streamlit.app/) • [💻 GitHub](https://github.com/wsmaisys/Interview_Prep_Assistant)
@@ -119,8 +168,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### BikeValuePro: ML Price Predictor 🏍️💸
+
 <img src="images/bikevaluepro.png" alt="Bike Value Pro" width="180"/>
 
 [🔗 Live Demo](https://usedbike-price-predictor-mlmodel.onrender.com/) • [💻 GitHub](https://github.com/wsmaisys/usedbike_price_predictor_mlmodel) • [🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor)
@@ -136,8 +185,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### AI-Powered Assignment Solver 📂🤖
+
 <img src="images/assignment-solver.png" alt="Assignment Solver" width="180"/>
 
 [🔗 Live Demo](https://assignment-solving-agent.onrender.com/) • [💻 GitHub](https://github.com/wsmaisys/Assignment_Solving_Agent)
@@ -153,8 +202,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### Photo Journal App (Google Cloud) 🖼️☁️
+
 <img src="images/google-cloud.png" alt="Google Cloud Project" width="180"/>
 
 [🔗 Live Demo](https://blog-app-699175796072.asia-south2.run.app/) • [💻 GitHub](https://github.com/wsmaisys/google-cloud-app)
@@ -170,8 +219,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### Matchy: Text Similarity Detector 🔍📝
+
 <img src="images/Matchy.png" alt="Matchy" width="180"/>
 
 [🔗 Live Demo](https://text-similarity-detector.onrender.com/) • [💻 GitHub](https://github.com/wsmaisys/Text_similarity_detection) • [🐳 Docker Hub](https://hub.docker.com/r/wasimansariiitm/text-similarity-detector)
@@ -187,8 +236,8 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ### System Threat Forecaster (Kaggle Top 5%) 🛡️📊
+
 <img src="images/system-threat.png" alt="System Threat" width="180"/>
 
 [🔗 Kaggle](https://www.kaggle.com/wasimansari786)
@@ -204,42 +253,44 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ## 💼 Professional Experience
 
-**🤖 AI/ML Engineer & Solutions Developer** — Freelance/Independent Projects (Dehradun, India) *(Sep 2024 – Present)*
+**🤖 AI/ML Engineer & Solutions Developer** — Freelance/Independent Projects (Dehradun, India) _(Sep 2024 – Present)_
+
 - Pursuing IIT Madras Diploma in Data Science while mastering Transformers Architecture, Reinforcement Learning, and Cloud Services
 - Designed and deployed multiple end-to-end AI/ML applications with XGBoost, LLMs, RAG, LangChain/LangGraph
 - Delivered production-grade deployments using Docker, FastAPI, Flask, Streamlit, and Cloud platforms
 - Achieved Top 5% Kaggle ranking in cybersecurity detection challenge
 - Building diverse project portfolio demonstrating technical depth and real-world impact
 
-**🛒 Retail Manager** — AHAAN LIMITED (Kingston Upon Hull, UK) *(Dec 2022 – Sep 2023)*
+**🛒 Retail Manager** — AHAAN LIMITED (Kingston Upon Hull, UK) _(Dec 2022 – Sep 2023)_
+
 - Spearheaded operational excellence initiatives resulting in 20% revenue growth through strategic planning
 - Pioneered data-driven decision making with Statistical-based solutions for pricing and inventory optimization
 
-**🌏 Import Export Entrepreneur** — AHLAN EXPORTS (Dehradun, India) *(Sep 2021 – Nov 2022)*
+**🌏 Import Export Entrepreneur** — AHLAN EXPORTS (Dehradun, India) _(Sep 2021 – Nov 2022)_
+
 - Successfully managed international B2B operations with 40% increase in market exposure
 - Leveraged data analytics for supply chain optimization, achieving 25% cost reduction
 
-**🏢 Real Estate Consultant** — FAHZAM PROPERTIES (Dubai, UAE) *(Feb 2015 – Jan 2020)*
+**🏢 Real Estate Consultant** — FAHZAM PROPERTIES (Dubai, UAE) _(Feb 2015 – Jan 2020)_
+
 - Managed AED 50M+ property portfolios with 95% client satisfaction as certified RERA Broker
 - Developed comprehensive market analysis reports and valuation models for high-value transactions
 
-**⚖️ Legal Associate** — QUISLEX LEGAL SERVICES (Hyderabad, India) *(Sep 2013 – Mar 2014)*
+**⚖️ Legal Associate** — QUISLEX LEGAL SERVICES (Hyderabad, India) _(Sep 2013 – Mar 2014)_
+
 - Led document review teams processing 10,000+ documents monthly with 99% accuracy
 - Implemented systematic data discovery protocols, reducing processing time by 30%
 
 ---
 
-
 ## 🎓 Education
 
-- **📊 Diploma in Data Science** – Indian Institute of Technology, Madras *(2024–Present)*
-- **📚 Bachelor of Laws (LLB, 5 years integrated)** – Savitribai Phule Pune University *(2007–2012)*
+- **📊 Diploma in Data Science** – Indian Institute of Technology, Madras _(2024–Present)_
+- **📚 Bachelor of Laws (LLB, 5 years integrated)** – Savitribai Phule Pune University _(2007–2012)_
 
 ---
-
 
 ## 🏅 Certifications
 
@@ -251,7 +302,6 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ## 🌐 Languages
 
 - �🇧 English — IELTS 7 Band (CEFR Level C1)
@@ -261,22 +311,21 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-
 ## 📝 Publications & Thought Leadership
 
 - **🤖 Hallucinations in AI Legal Research: A Lawyer's Worst Nightmare?** — [LinkedIn Article](https://www.linkedin.com/pulse/hallucinations-ai-legal-research-lawyers-worst-nightmare-ansari-etkue/)
-	- Authored an article on AI hallucinations in legal research, highlighting real-world risks of fabricated case law and the need for prompt precision. Advocated safe AI adoption in law through domain-specific models and ethical safeguards.
+  - Authored an article on AI hallucinations in legal research, highlighting real-world risks of fabricated case law and the need for prompt precision. Advocated safe AI adoption in law through domain-specific models and ethical safeguards.
 - **🌏 Adapting Export Strategies for Indian Handmade Carpets: A Response to Rising Global Tariffs** — [Medium Article](https://medium.com/@wsmaisys/adapting-export-strategies-for-indian-handmade-carpets-a-response-to-rising-global-tariffs-070a2796d762)
-	- Discover a data-driven export strategy for India's handmade carpet industry navigating rising U.S. tariffs with advanced Python-led trade analytics, market opportunity scoring, and competitive benchmarking.
+  - Discover a data-driven export strategy for India's handmade carpet industry navigating rising U.S. tariffs with advanced Python-led trade analytics, market opportunity scoring, and competitive benchmarking.
 
 ---
-
 
 ## 🧰 Technical Skills
 
 **💻 Core Skills:** Python, SQL, MCP
 
 **🧠 AI/ML & Data Science:**
+
 - **Frameworks:** LLMs (Mistral, LangChain, LangGraph), PyTorch, TensorFlow, Keras, Hugging Face Transformers
 - **Techniques:** Prompt Engineering, RAG, NLP, Text Similarity, Semantic Search
 - **Libraries:** Scikit-learn, XGBoost, Random Forest, Pandas, Numpy, Matplotlib, Seaborn
@@ -285,17 +334,20 @@ My journey reflects adaptability and a passion for solving real-world problems t
 **🗄️ Databases & Storage:** ChromaDB, FAISS, Vector Stores
 
 **🌐 Web Development:**
+
 - **Frameworks:** FastAPI, Flask, Streamlit
 - **Frontend:** Bootstrap, HTML, CSS, Custom UI/UX
 - **Tools:** SpeechRecognition, gTTS, FullCalendar
 
 **☁️ DevOps & Tools:**
+
 - Docker
 - Git & GitHub
 - MLOps
 - N8N Automation
 
 **📊 Professional Standards:**
+
 - GDPR Compliance
 - ISO 27001 Awareness
 - Agile (SCRUM)
