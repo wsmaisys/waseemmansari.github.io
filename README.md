@@ -1,4 +1,4 @@
-# 👨‍💻 Waseem M Ansari
+# 👨‍💻 Wasim M Ansari
 
 **🧑‍🔬 AI/ML Solutions Engineer | 🤖 GDPR-Compliant AI Systems Developer | 🎓 IIT Madras Data Science**  
 📫 [Email](mailto:wsmaisys@gmail.com) • [GitHub](https://github.com/wsmaisys) • [LinkedIn](https://www.linkedin.com/in/wsmaisys) • [Portfolio Analytics](https://waseemmansari.github.io/analytics.html)
@@ -362,4 +362,4 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ---
 
-> &copy; 2025 Waseem M Ansari — Data Scientist & AI Engineer. Connect: [Email](mailto:wsmaisys@gmail.com) | [LinkedIn](https://www.linkedin.com/in/wsmaisys) | [GitHub](https://github.com/wsmaisys)
+> &copy; 2025 Wasim M Ansari — Data Scientist & AI Engineer. Connect: [Email](mailto:wsmaisys@gmail.com) | [LinkedIn](https://www.linkedin.com/in/wsmaisys) | [GitHub](https://github.com/wsmaisys)
