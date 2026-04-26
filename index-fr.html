@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -93,6 +93,39 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="canonical"
+      href="https://waseemmansari.github.io/index-fr.html"
+    />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <meta
+      name="google-site-verification"
+      content="prMKO9h6g3oFMoqvMuOXAuISiJAe0l8THnWTV7X8bio"
+    />
+    <meta name="theme-color" content="#11131a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="application-name" content="Wasim's Portfolio" />
+    <meta name="msapplication-TileColor" content="#11131a" />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://waseemmansari.github.io"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://waseemmansari.github.io/index-de.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="fr"
+      href="https://waseemmansari.github.io/index-fr.html"
+    />
+    <link rel="me" href="https://github.com/wsmaisys" />
+    <link rel="me" href="https://www.linkedin.com/in/wsmaisys" />
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public" />
     <style>
       :root {
         --bg: #11131a;
@@ -111,6 +144,7 @@
         font-family: "Inter", sans-serif;
         margin: 0;
         padding: 0;
+        padding-top: 56px;
         min-height: 100vh;
         letter-spacing: 0.01em;
         line-height: 1.5;
@@ -171,6 +205,100 @@
       a:hover {
         color: #fff;
         text-decoration: underline;
+      }
+      section[id],
+      .grid-row {
+        scroll-margin-top: 72px;
+      }
+      /* ── Sticky Navigation ── */
+      nav.site-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(17, 19, 26, 0.96);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+        z-index: 998;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 0 24px;
+        height: 56px;
+      }
+      nav.site-nav a {
+        color: var(--muted);
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        padding: 6px 14px;
+        border-radius: 8px;
+        transition:
+          color var(--transition),
+          background var(--transition);
+        white-space: nowrap;
+      }
+      nav.site-nav a:hover {
+        color: var(--text);
+        background: rgba(95, 140, 255, 0.1);
+        text-decoration: none;
+      }
+      nav.site-nav a.nav-contact {
+        background: var(--accent);
+        color: #fff;
+        margin-left: 8px;
+      }
+      nav.site-nav a.nav-contact:hover {
+        background: #4a74e8;
+        color: #fff;
+      }
+      .lang-selector {
+        position: fixed;
+        top: 64px;
+        right: 20px;
+        background: var(--card);
+        padding: 6px 14px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        z-index: 997;
+      }
+      .lang-selector a {
+        color: var(--muted);
+        text-decoration: none;
+        margin: 0 4px;
+        font-size: 0.85rem;
+        transition: color var(--transition);
+      }
+      .lang-selector a.active {
+        color: var(--accent);
+        font-weight: 600;
+      }
+      .lang-selector a:hover {
+        color: var(--text);
+      }
+      #cookie-banner {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--card);
+        padding: 1rem;
+        text-align: center;
+        z-index: 1000;
+        border-top: 1px solid var(--border);
+      }
+      #cookie-banner button {
+        background: var(--accent);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        margin-left: 1rem;
+        cursor: pointer;
       }
       section {
         margin-bottom: 36px;
@@ -263,6 +391,14 @@
         }
         .grid-col {
           gap: 16px;
+        }
+        nav.site-nav {
+          gap: 0;
+          padding: 0 8px;
+        }
+        nav.site-nav a {
+          font-size: 0.78rem;
+          padding: 5px 8px;
         }
       }
       .project-list {
@@ -361,51 +497,6 @@
         padding-top: 16px;
         border-top: 1px solid var(--border);
       }
-      .lang-selector {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: var(--card);
-        padding: 8px 16px;
-        border-radius: 20px;
-        border: 1px solid var(--border);
-        z-index: 1000;
-      }
-      .lang-selector a {
-        color: var(--muted);
-        text-decoration: none;
-        margin: 0 4px;
-        font-size: 0.9rem;
-        transition: color var(--transition);
-      }
-      .lang-selector a.active {
-        color: var(--accent);
-        font-weight: 600;
-      }
-      .lang-selector a:hover {
-        color: var(--text);
-      }
-      #cookie-banner {
-        display: none;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: var(--card);
-        padding: 1rem;
-        text-align: center;
-        z-index: 1000;
-        border-top: 1px solid var(--border);
-      }
-      #cookie-banner button {
-        background: var(--accent);
-        color: white;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        margin-left: 1rem;
-        cursor: pointer;
-      }
       .availability {
         background: #2a4d80;
         color: white;
@@ -435,10 +526,22 @@
       <button onclick="acceptCookies()">Accepter</button>
       <a href="privacy-policy.html">En savoir plus</a>
     </div>
+    <!-- Sticky Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#experience">Expérience</a>
+      <a href="#education">Formation</a>
+      <a href="#skills">Compétences</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="mailto:wsmaisys@gmail.com" class="nav-contact">Contact</a>
+    </nav>
+
     <div class="lang-selector">
       <a href="index.html">EN</a> | <a href="index-de.html">DE</a> |
       <a href="index-fr.html" class="active">FR</a>
     </div>
+
     <div class="container">
       <header>
         <img
@@ -507,7 +610,7 @@
           </div>
         </div>
       </header>
-      <section>
+      <section id="about">
         <h2>À propos de moi</h2>
         <blockquote>
           Ingénieur en solutions IA axé sur les résultats avec une formation
@@ -528,7 +631,7 @@
           Hugging Face pour la construction d'applications IA évolutives.
         </p>
         <div class="achievements">
-          <h3>Réalisations clés:</h3>
+          <h3>Réalisations clés</h3>
           <ul>
             <li>
               Conception de systèmes IA haute performance réalisant une
@@ -542,11 +645,15 @@
               Contribution active à la communauté IA via des articles techniques
               et des discussions sur LinkedIn
             </li>
+            <li>
+              Classement Kaggle Top 5% dans un défi national de détection en
+              cybersécurité organisé par IIT Madras
+            </li>
           </ul>
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <h2>Projets sélectionnés</h2>
         <ul class="project-list">
           <li class="project">
@@ -619,24 +726,26 @@
               </div>
               <div class="project-desc">
                 <strong>Problème:</strong> Les bases de connaissances médicales
-                nécessitent une intégration transparente avec des outils IA
-                comme Claude Desktop tout en supportant l'accès
-                multi-utilisateurs avec sécurité au niveau entreprise.<br />
+                ont besoin d'une intégration fluide avec des outils IA comme
+                Claude Desktop ou des clients MCP personnalisés, tout en prenant
+                en charge un accès multi-utilisateurs avec une sécurité de
+                niveau entreprise.<br />
                 <strong>Solution:</strong> Construction d'un serveur MCP (Model
                 Context Protocol) prêt pour la production avec transport
-                HTTP/SSE exposant les connaissances médicales via des points de
-                terminaison authentifiés.<br />
-                <strong>Impact:</strong> Les utilisateurs de Claude Desktop et
-                les clients personnalisés peuvent accéder à des connaissances
-                spécialisées en néphrologie avec authentification par clé API,
-                mise à l'échelle horizontale.<br />
+                HTTP/SSE, exposant les connaissances médicales et gérant les
+                utilisateurs concurrents via des sessions et un monitoring
+                complet.<br />
+                <strong>Impact:</strong> Permet aux utilisateurs de Claude
+                Desktop et aux clients personnalisés d'accéder à des
+                connaissances néphrologiques spécialisées, avec montée en charge
+                horizontale pour traiter plusieurs utilisateurs simultanés et
+                observabilité complète.<br />
                 <strong>Fonctionnalités principales:</strong> Serveur MCP avec
-                transport HTTP/SSE, Gestion des sessions multi-utilisateurs,
-                Authentification par clé API, Support CORS, Mise à l'échelle
-                horizontale.<br />
+                transport HTTP/SSE, gestion des sessions multi-utilisateurs,
+                support CORS, montée en charge horizontale et déploiement prêt
+                pour la production (Docker, Cloud Run).<br />
                 <strong>Stack technologique:</strong> Python, FastAPI, Protocole
-                MCP, FAISS, Mistral AI, Docker, Kubernetes, Google Cloud Run,
-                AWS ECS/Fargate.
+                MCP, FAISS Vector Store, Mistral AI, Docker, Google Cloud Run.
               </div>
             </div>
           </li>
@@ -667,21 +776,27 @@
               </div>
               <div class="project-desc">
                 <strong>Problème:</strong> Les entreprises ont du mal à extraire
-                et structurer les données non structurées de diverses documents
-                PDF, ce qui entraîne une saisie manuelle et des erreurs.<br />
-                <strong>Solution:</strong> Système de traitement de documents
-                alimenté par l'IA qui détecte dynamiquement les champs
-                pertinents, effectue l'extraction de données par lot et génère
-                des fichiers Excel structurés.<br />
-                <strong>Impact:</strong> Réduit le temps de traitement des
-                documents de 80% sans schémas codés en dur, gestion flexible de
-                différents types de documents.<br />
+                et structurer les données non structurées provenant de divers
+                documents PDF (factures, contrats, rapports, formulaires), ce
+                qui entraîne une saisie manuelle, des erreurs et de
+                l'inefficacité.<br />
+                <strong>Solution:</strong> Développement d'un système de
+                traitement de documents alimenté par l'IA qui détecte
+                dynamiquement les champs pertinents via l'analyse LLM, effectue
+                l'extraction par lot dans un seul appel API et génère des
+                fichiers Excel structurés avec des métriques d'assurance
+                qualité.<br />
+                <strong>Impact:</strong> Réduction de 80% du temps de traitement
+                documentaire avec zéro schéma codé en dur, gestion flexible et
+                adaptation automatique aux nouvelles structures de données sans
+                modification du code.<br />
                 <strong>Fonctionnalités principales:</strong> Détection
-                dynamique de schéma, Compréhension sémantique alimentée par LLM,
-                Traitement par lot, API REST, Assurance qualité, Export
-                Excel.<br />
+                dynamique de schéma, traitement par lot, détection du type de
+                PDF, API REST avec interrogation de tâches, assurance qualité
+                (scores BLEU et métriques de couverture), interface Web
+                interactive, export Excel.<br />
                 <strong>Stack technologique:</strong> Python, FastAPI, Mistral
-                AI, LangChain, Pandas, Docker, Google Cloud Run.
+                AI, LangChain, openpyxl, PyPDF2, Docker, Google Cloud Run.
               </div>
             </div>
           </li>
@@ -710,15 +825,22 @@
               </div>
               <div class="project-desc">
                 <strong>Problème:</strong> Les développeurs ont souvent du mal à
-                parcourir la documentation des bibliothèques et des API
-                lorsqu'ils n'ont besoin que d'un exemple de code concis.<br />
+                parcourir la documentation volumineuse des bibliothèques et des
+                API lorsqu'ils n'ont besoin que d'un exemple de code concis ou
+                d'un modèle d'utilisation.<br />
                 <strong>Solution:</strong> Implémentation d'un stockage
-                vectoriel temporaire en mémoire avec chunking pour une
-                récupération immédiate.<br />
+                vectoriel temporaire en mémoire avec découpage en segments pour
+                une récupération immédiate, combinée à RAG et à des réponses
+                générées par LLM pour afficher des extraits de code précis et
+                des conseils d'utilisation à la demande.<br />
                 <strong>Impact:</strong> Accélération des flux de travail des
-                développeurs grâce à des exemples de code ciblés.<br />
+                développeurs en fournissant des exemples de code ciblés et en
+                réduisant le temps jusqu'à la première intégration
+                fonctionnelle.<br />
                 <strong>Fonctionnalités clés:</strong> Chat intelligent avec
-                LLM, Analyse de PDF & Web, Stockage vectoriel en mémoire.<br />
+                LLM, analyse de contenu PDF et Web, découpage en segments et
+                stockage vectoriel en mémoire, récupération en temps réel,
+                extraits de code contextuels.<br />
                 <strong>Tech Stack:</strong> Python, FastAPI, LangChain, Mistral
                 AI, InMemoryVectorStore, Modern HTML/CSS/JS, Docker, Google
                 Cloud Run.
@@ -748,15 +870,25 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Nombreux utilisateurs doivent se
+                <strong>Problème:</strong> Nombreux utilisateurs doivent se se
                 connecter pour utiliser les outils de génération d'images et
-                manquent d'automatisation API.<br />
+                manquent d'automatisation pilotée par API, ce qui complique
+                l'intégration dans les pipelines de contenu et les workflows
+                CI.<br />
                 <strong>Solution:</strong> Construction d'une plateforme de
-                génération d'images avec points d'API REST.<br />
-                <strong>Impact:</strong> Optimisation de l'automatisation et de
-                l'intégration pour les flux de travail de design.<br />
+                génération d'images prête pour la production qui expose des
+                points d'API REST en parallèle d'une interface intuitive, en
+                intégrant des modèles de diffusion standard pour un usage à la
+                fois interactif et automatisé.<br />
+                <strong>Impact:</strong> Rationalisation de l'automatisation et
+                de l'intégration pour les flux de travail design et contenu,
+                avec génération par lots sans interface et délai de mise en
+                contenu réduit pour les équipes et pipelines CI/CD.<br />
                 <strong>Fonctionnalités clés:</strong> Génération
-                texte-vers-image, API REST, Support multi-modèles.<br />
+                texte-vers-image, API REST pour l'automatisation, prise en
+                charge de plusieurs modèles, génération par lots et planifiée,
+                paramètres d'image personnalisés, traitement rapide,
+                téléchargements immédiats.<br />
                 <strong>Tech Stack:</strong> Python, FastAPI, Azure Web Apps,
                 Hugging Face Diffusers, PIL, Docker.
               </div>
@@ -781,15 +913,21 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Projet de week-end — beaucoup de
-                chatbots sont trop polis et standardisés.<br />
+                <strong>Problème:</strong> Beaucoup de chatbots sont trop polis
+                et standardisés, alors que certains utilisateurs veulent de
+                l'humour, du sarcasme ou une personnalité plus acerbe pour des
+                interactions plus divertissantes.<br />
                 <strong>Solution:</strong> Implémentation d'un chatbot
-                contextuel avec réponses en streaming et personnalité
-                délibérément impertinente.<br />
+                contextuel avec réponses en streaming et une personnalité
+                volontairement impertinente et humoristique pour créer des
+                conversations vivantes et engageantes.<br />
                 <strong>Impact:</strong> Prototype démonstratif pour la
-                conception de persona conversationnel.<br />
+                conception de persona conversationnelle et les interactions en
+                streaming, utile pour les démos et l'expérimentation.<br />
                 <strong>Fonctionnalités:</strong> Réponses en streaming,
-                Réponses basées sur la personnalité, Mémoire persistante.<br />
+                réponses pilotées par la personnalité (impertinentes et
+                humoristiques), mémoire persistante, conversations filées,
+                conscience du contexte.<br />
                 <strong>Tech Stack:</strong> Python, Mistral AI, LangGraph,
                 Streamlit, Docker.
               </div>
@@ -820,13 +958,17 @@
               </div>
               <div class="project-desc">
                 <strong>Problème:</strong> COVID-19 a créé un besoin de
-                surveillance automatisée du port du masque.<br />
-                <strong>Solution:</strong> Approche par transfer learning avec
-                architecture VGG16.<br />
-                <strong>Impact:</strong> 95% de précision dans la détection en
-                temps réel.<br />
+                surveillance automatisée du respect du port du masque dans les
+                espaces publics.<br />
+                <strong>Solution:</strong> Approche de transfer learning avec
+                architecture VGG16 pour une détection en temps réel avec
+                classification en trois classes.<br />
+                <strong>Impact:</strong> Précision de 95% dans la détection en
+                temps réel, permettant une surveillance efficace des protocoles
+                de sécurité.<br />
                 <strong>Fonctionnalités:</strong> Détection en temps réel,
-                Classification trois classes, Transfer learning.<br />
+                classification trois classes, transfer learning, augmentation de
+                données, ajustement fin du modèle.<br />
                 <strong>Tech Stack:</strong> Python, PyTorch, VGG16, OpenCV,
                 NumPy, Matplotlib.
               </div>
@@ -853,15 +995,21 @@
               </div>
               <div class="project-desc">
                 <strong>Problème:</strong> La gestion manuelle du calendrier est
-                fastidieuse et chronophage.<br />
-                <strong>Solution:</strong> Google OAuth pour accès sécurisé aux
-                données calendrier et assistant vocal.<br />
-                <strong>Impact:</strong> Démonstration de la faisabilité de la
-                gestion vocale du calendrier.<br />
-                <strong>Fonctionnalités:</strong> Entrée vocale & texte,
-                Intégration Google Calendar, Correspondance intelligente.<br />
+                fastidieuse et chronophage. Inspiré par Alexa et Siri, je
+                voulais construire un agent conversationnel pour gérer mon
+                calendrier par commandes vocales naturelles.<br />
+                <strong>Solution:</strong> Mise en place de Google OAuth pour un
+                accès sécurisé aux données du calendrier personnel et d'un
+                assistant vocal pour la planification et les rappels.<br />
+                <strong>Impact:</strong> Démontre la faisabilité de la gestion
+                vocale du calendrier pour la productivité personnelle.<br />
+                <strong>Fonctionnalités:</strong> Entrée vocale et texte,
+                intégration Google Calendar (OAuth), correspondance intelligente
+                des événements, workflow de clarification, confidentialité et
+                sécurité, interface moderne.<br />
                 <strong>Tech Stack:</strong> FastAPI, LangGraph, LangChain,
-                Google Calendar API, SpeechRecognition.
+                Google Calendar API, SpeechRecognition, pydub, gTTS, Bootstrap,
+                FullCalendar.
               </div>
             </div>
           </li>
@@ -891,16 +1039,26 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Les avocats ont besoin d'un lieu
-                unique pour la recherche juridique.<br />
-                <strong>Solution:</strong> Système RAG recherchant dans le
-                stockage vectoriel et les bases gouvernementales.<br />
-                <strong>Impact:</strong> Optimisation de la recherche juridique
-                et accès gratuit aux informations légales.<br />
+                <strong>Problème:</strong> Les avocats ont besoin d'un endroit
+                unique pour la recherche approfondie et la recherche de
+                précédents, tandis que les clients veulent souvent des conseils
+                juridiques gratuits et rapides sur leurs affaires.<br />
+                <strong>Solution:</strong> Implémentation d'un système RAG qui
+                interroge le Vector Store et les bases gouvernementales en ligne
+                pour les jurisprudences, fournissant des résultats instantanés
+                et pertinents. Aucune donnée utilisateur n'est collectée,
+                garantissant la vie privée et la sécurité.<br />
+                <strong>Impact:</strong> Rationalisation de la recherche
+                juridique et mise à disposition d'informations juridiques
+                gratuites et respectueuses de la vie privée pour les
+                professionnels comme pour le public.<br />
                 <strong>Fonctionnalités:</strong> Aperçus juridiques
-                instantanés, Recherche IA, Focus droit indien.<br />
+                instantanés, recherche alimentée par l'IA, focus sur le droit
+                indien, scraping de bases de données gouvernementales, citations
+                transparentes, aucune collecte de données.<br />
                 <strong>Tech Stack:</strong> Python, FastAPI, Streamlit,
-                ChromaDB, MistralAI, LangChain, Docker.
+                ChromaDB, MistralAI, LangChain, TavilySearch, PyPDF2,
+                BeautifulSoup4, Docker.
               </div>
             </div>
           </li>
@@ -928,14 +1086,19 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Difficulté à trouver des questions
-                d'entraînement personnalisées et réalistes.<br />
-                <strong>Solution:</strong> Assistant IA pour simulations
-                d'entretiens personnalisées avec Mistral AI.<br />
-                <strong>Impact:</strong> Plus de 100 utilisateurs ont amélioré
-                leurs compétences.<br />
+                <strong>Problème:</strong> Les candidats ont souvent du mal à
+                trouver des questions d'entraînement réalistes et adaptées à
+                leur rôle cible, ainsi qu'un retour exploitable.<br />
+                <strong>Solution:</strong> Assistant alimenté par l'IA qui
+                génère des simulations d'entretiens personnalisées et des
+                réponses détaillées à l'aide de Mistral AI, simulant de vraies
+                situations d'entretien.<br />
+                <strong>Impact:</strong> A aidé plus de 100 utilisateurs à
+                renforcer leurs compétences et leur confiance grâce à des
+                sessions d'entraînement ciblées et interactives.<br />
                 <strong>Fonctionnalités:</strong> Génération de questions
-                personnalisées, Réponses détaillées.<br />
+                personnalisées, réponses détaillées, difficulté progressive,
+                plusieurs sujets, retour immédiat, interface conviviale.<br />
                 <strong>Tech Stack:</strong> Streamlit, Python, Mistral AI,
                 Custom CSS.
               </div>
@@ -971,14 +1134,20 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Incertitude dans l'estimation des
-                prix des motos d'occasion.<br />
-                <strong>Solution:</strong> Prédicteur de prix ML utilisant des
-                modèles ensemble avancés.<br />
-                <strong>Impact:</strong> 92% de précision dans la prédiction des
-                prix.<br />
+                <strong>Problème:</strong> Les acheteurs et vendeurs du marché
+                des motos d'occasion font face à l'incertitude et à
+                l'inefficacité à cause d'estimations de prix peu fiables et du
+                manque d'outils guidés par les données.<br />
+                <strong>Solution:</strong> Création d'un prédicteur de prix
+                alimenté par le ML utilisant des modèles d'ensemble avancés et
+                de l'ingénierie de caractéristiques pour fournir une valeur de
+                marché précise et équitable.<br />
+                <strong>Impact:</strong> Précision de 92% dans la prédiction des
+                prix, permettant aux utilisateurs de prendre des décisions sûres
+                et fondées sur les données et de mieux négocier.<br />
                 <strong>Fonctionnalités:</strong> Prédiction précise des prix,
-                Insights IA, Interface conviviale.<br />
+                insights pilotés par l'IA, interface conviviale, retours
+                intelligents, analyse du contexte du marché.<br />
                 <strong>Tech Stack:</strong> Streamlit, Python, Scikit-learn,
                 XGBoost, ColumnTransformer.
               </div>
@@ -1008,14 +1177,18 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Compétition IIT Madras: 10 problèmes
-                d'analyse en 30 minutes.<br />
-                <strong>Solution:</strong> Développement d'un solveur automatisé
-                obtenant un A+.<br />
-                <strong>Impact:</strong> Démonstration de la puissance des
-                agents IA autonomes.<br />
+                <strong>Problème:</strong> Conçu pour une compétition IIT Madras
+                où le défi consistait à résoudre 10 problèmes d'analyse de
+                données et de code en seulement 30 minutes.<br />
+                <strong>Solution:</strong> Développement d'un solveur de devoir
+                automatisé qui a traité de manière autonome tous les problèmes,
+                obtenant une note A+.<br />
+                <strong>Impact:</strong> A démontré la puissance des agents IA
+                autonomes dans le codage compétitif et l'analyse de données, en
+                obtenant les meilleures notes sous pression temporelle.<br />
                 <strong>Fonctionnalités:</strong> Exécution de code généré par
-                IA, Traitement multi-format.<br />
+                IA, traitement multi-format, workflow d'auto-débogage,
+                environnement sandbox sécurisé.<br />
                 <strong>Tech Stack:</strong> Python, FastAPI, Mistral API,
                 Pandas, pdfplumber, Docker.
               </div>
@@ -1045,16 +1218,23 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Besoin d'une plateforme cloud native
-                fiable pour les journaux photos.<br />
-                <strong>Solution:</strong> Application sans serveur sur Google
-                Cloud Run.<br />
-                <strong>Impact:</strong> 99,9% de disponibilité et mise à
-                l'échelle sans effort.<br />
-                <strong>Fonctionnalités:</strong> Téléchargements d'images,
-                Support multi-utilisateurs, Flux chronologique.<br />
+                <strong>Problème:</strong> Beaucoup d'utilisateurs veulent une
+                plateforme fiable et cloud-native pour créer et partager des
+                journaux photo, mais les solutions existantes manquent souvent
+                de scalabilité et de stockage fluide.<br />
+                <strong>Solution:</strong> Conception et démonstration d'une
+                application de journal photo sans serveur sur Google Cloud Run,
+                intégrant des services de stockage et de base de données gérés
+                pour un fonctionnement robuste et sans maintenance.<br />
+                <strong>Impact:</strong> Atteint 99,9% de disponibilité et une
+                mise à l'échelle sans effort, permettant aux utilisateurs de
+                téléverser, consulter et partager des journaux photo sans
+                contrainte de maintenance.<br />
+                <strong>Fonctionnalités:</strong> Téléversement d'images,
+                support multi-utilisateurs, flux chronologique, architecture
+                cloud-native.<br />
                 <strong>Tech Stack:</strong> Flask, Google Cloud SQL, Google
-                Cloud Storage, Google Cloud Run.
+                Cloud Storage, Google Cloud Run, HTML + CSS.
               </div>
             </div>
           </li>
@@ -1084,14 +1264,19 @@
                 >
               </div>
               <div class="project-desc">
-                <strong>Problème:</strong> Difficulté à détecter les contenus
-                dupliqués sur les plateformes.<br />
-                <strong>Solution:</strong> Système de similarité textuelle ML
-                avec Word2Vec et XGBoost.<br />
+                <strong>Problème:</strong> Les plateformes de contenu ont du mal
+                à détecter les questions dupliquées et à analyser la similarité
+                sémantique.<br />
+                <strong>Solution:</strong> Développement d'un système de
+                similarité textuelle alimenté par le ML utilisant Word2Vec et
+                XGBoost pour une détection précise des doublons.<br />
                 <strong>Impact:</strong> 88% de précision dans la détection des
-                doublons.<br />
+                doublons, réduisant considérablement le temps de modération de
+                contenu.<br />
                 <strong>Fonctionnalités:</strong> Analyse de similarité
-                sémantique, Scoring de confiance.<br />
+                sémantique, scoring de confiance, journalisation de
+                l'historique, pipeline ML intelligent, interface sombre
+                moderne.<br />
                 <strong>Tech Stack:</strong> Python, Flask, XGBoost, Word2Vec,
                 Docker, HTML + CSS.
               </div>
@@ -1131,14 +1316,32 @@
         </ul>
       </section>
 
-      <section>
+      <section id="experience">
         <h2>Expérience professionnelle</h2>
         <ul class="exp-list">
+          <li>
+            <span class="exp-role">Stagiaire en Ingénierie IA/ML</span> —
+            TechPranee (SpearHub) · À distance
+            <div class="exp-meta">Déc. 2025 – Présent</div>
+            <div class="exp-desc">
+              • Travailler sur des projets IA/ML appliqués dans un environnement
+              de startup, en contribuant à la conception et au développement de
+              solutions d'automatisation intelligente et pilotées par les
+              données.<br />
+              • Appliquer une expérience pratique des LLM, de LangChain/
+              LangGraph et des pipelines RAG pour créer des fonctionnalités et
+              prototypes de niveau production.<br />
+              • Collaborer entre fonctions pour traduire les besoins métier en
+              solutions IA évolutives, tout en maintenant de bonnes pratiques de
+              qualité de code et de documentation.
+            </div>
+          </li>
+          <br />
           <li>
             <span class="exp-role"
               >Ingénieur IA/ML & Développeur de Solutions</span
             >
-            — Freelance/Projets Indépendants (Dehradun, Inde)
+            — Freelance / Projets Indépendants (Dehradun, Inde)
             <div class="exp-meta">Sept. 2024 – Présent</div>
             <div class="exp-desc">
               • Poursuite du diplôme IIT Madras en science des données tout en
@@ -1151,11 +1354,81 @@
               • Construction active d'un portfolio de projets diversifié.
             </div>
           </li>
-          <!-- Previous roles translated similarly -->
+          <br />
+          <li>
+            <span class="exp-role">Responsable de commerce de détail</span> —
+            AHAAN LIMITED (Kingston Upon Hull, Royaume-Uni)
+            <div class="exp-meta">Déc. 2022 – Sept. 2023</div>
+            <div class="exp-desc">
+              • Direction d'initiatives d'excellence opérationnelle et de
+              conformité sur plusieurs sites, générant une croissance des
+              revenus de 20% grâce à la planification des ventes, à
+              l'optimisation des stocks et à l'amélioration de l'expérience
+              client.<br />
+              • Adoption de la décision fondée sur les données via des solutions
+              statistiques pour la tarification dynamique et la prévision de la
+              demande, réduisant les ruptures de stock de 15%.
+            </div>
+          </li>
+          <br />
+          <li>
+            <span class="exp-role">Entrepreneur import-export</span> — AHLAN
+            EXPORTS (Dehradun, Inde)
+            <div class="exp-meta">Sept. 2021 – Nov. 2022</div>
+            <div class="exp-desc">
+              • Gestion d'opérations logistiques B2B internationales de bout en
+              bout et de la conformité réglementaire dans plusieurs pays, avec
+              des tunnels marketing numériques automatisés augmentant la
+              visibilité de 40%.<br />
+              • Exploitation de l'analyse de données pour l'optimisation de la
+              chaîne d'approvisionnement et l'analyse des tendances du marché,
+              réduisant les coûts logistiques de 25%.
+            </div>
+          </li>
+          <br />
+          <li>
+            <span class="exp-role">Consultant immobilier</span> — FAHZAM
+            PROPERTIES (Dubai, Émirats arabes unis)
+            <div class="exp-meta">Févr. 2015 – Jan. 2020</div>
+            <div class="exp-desc">
+              • Gestion de portefeuilles immobiliers d'une valeur supérieure à
+              AED 50M et facilitation des autorisations juridiques complexes en
+              tant que courtier RERA certifié.<br />
+              • Développement de rapports d'analyse de marché et de modèles de
+              valorisation immobilière, menant à des transactions à forte
+              valeur.
+            </div>
+          </li>
+          <br />
+          <li>
+            <span class="exp-role">Juriste</span> — QUISLEX LEGAL SERVICES
+            (Hyderabad, Inde)
+            <div class="exp-meta">Sept. 2013 – Mars 2014</div>
+            <div class="exp-desc">
+              • Direction d'équipes de revue documentaire pour des projets de
+              soutien contentieux, gérant plus de 10 000 documents par mois avec
+              99% de précision.<br />
+              • Mise en place de protocoles systématiques de découverte des
+              données et de procédures de reporting standardisées, réduisant le
+              temps de traitement de 30%.
+            </div>
+          </li>
+          <br />
+          <li>
+            <span class="exp-role">Avocat associé</span> — MINDCREST INDIA PVT
+            LTD (Hyderabad, Inde)
+            <div class="exp-meta">Déc. 2012 – Sept. 2013</div>
+            <div class="exp-desc">
+              • Assistance en recherche juridique, rédaction de contrats et
+              revue de documents pour des dossiers d'entreprise et de litige.<br />
+              • Acquisition d'une expérience fondatrice en analyse juridique
+              structurée et en conformité transfrontalière.
+            </div>
+          </li>
         </ul>
       </section>
 
-      <div class="grid-row">
+      <div class="grid-row" id="education">
         <div class="grid-col">
           <section class="info-card">
             <h2>Formation</h2>
@@ -1167,8 +1440,10 @@
                 ><br />
                 <span class="edu-desc"
                   >Cours: ML, DL, GenAI, Algèbre linéaire, Statistiques,
-                  Business Analytics, Outils pour la Science des Données.<br />
-                  Note: CGPA 8+</span
+                  Business Analytics, Outils pour la Science des Données,
+                  Projets Capstone.<br />
+                  Note: CGPA 8+<br />Projets: System Threat Forecaster (Top 5%
+                  sur Kaggle), Assignment AI Agent</span
                 >
               </li>
               <li>
@@ -1178,7 +1453,9 @@
                 ><br />
                 <span class="edu-desc"
                   >Cours: Constitution, Droit civil et pénal, Droit procédural,
-                  PI, Droit bancaire, Droit environnemental.</span
+                  PI, Droit bancaire, Droit environnemental, Rédaction.<br />
+                  Réalisations: Participant au 1er Parlement étudiant, concours
+                  de plaidoirie.</span
                 >
               </li>
             </ul>
@@ -1217,9 +1494,17 @@
                   >Les hallucinations dans la recherche juridique IA: Le
                   cauchemar d'un avocat?</strong
                 ><br />
+                —
+                <a
+                  href="https://www.linkedin.com/pulse/hallucinations-ai-legal-research-lawyers-worst-nightmare-ansari-etkue/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Article LinkedIn</a
+                ><br />
                 <span class="pub-desc"
                   >Article sur les hallucinations IA dans la recherche
-                  juridique.</span
+                  juridique, mettant en évidence les risques de cas fabriqués et
+                  la nécessité d'une précision des prompts.</span
                 >
               </li>
               <li>
@@ -1227,17 +1512,35 @@
                   >Adaptation des stratégies d'exportation pour les tapis
                   artisanaux indiens</strong
                 ><br />
+                —
+                <a
+                  href="https://medium.com/@wsmaisys/adapting-export-strategies-for-indian-handmade-carpets-a-response-to-rising-global-tariffs-070a2796d762"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Article Medium</a
+                ><br />
                 <span class="pub-desc"
                   >Stratégie d'exportation basée sur les données pour
-                  l'industrie du tapis indien.</span
+                  l'industrie du tapis indien avec analyses de marché et
+                  comparatifs concurrentiels.</span
                 >
               </li>
             </ul>
           </section>
+
+          <section class="info-card">
+            <h2>Télécharger mon CV</h2>
+            <a
+              href="Wasim-Ansari-Detailed-CV.pdf"
+              target="_blank"
+              class="cv-link"
+              >Télécharger le CV détaillé (PDF)</a
+            >
+          </section>
         </div>
       </div>
 
-      <section>
+      <section id="skills">
         <h2>Standards Professionnels & Certifications</h2>
         <div class="skills-list">
           <span class="skill">Conformité RGPD</span>
@@ -1300,9 +1603,15 @@
       </section>
 
       <footer>
-        <p>© 2025 Wasim M Ansari. Tous droits réservés.</p>
+        <p>
+          © <span id="footer-year"></span> Wasim M Ansari. Tous droits réservés.
+        </p>
         <p>Créé avec passion et une touche de magie IA.</p>
       </footer>
     </div>
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
