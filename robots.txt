@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap for crawlers
+Sitemap: https://waseemmansari.github.io/sitemap.xml
+
+# Optional: block sensitive folders if any in future
+# Disallow: /private/

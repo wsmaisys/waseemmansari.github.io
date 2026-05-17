@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark">
   <head>
     <!-- Google tag (gtag.js) -->
     <script
@@ -12,7 +12,6 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-VM4LR2E38N");
     </script>
     <meta charset="UTF-8" />
@@ -23,92 +22,93 @@
     />
     <title>Portfolio Analytics</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --bg: #11131a;
-        --card: #191c24;
-        --accent: #5f8cff;
-        --text: #e6eaf3;
-        --muted: #a0aec0;
-        --border: #23263a;
-        --shadow: 0 4px 32px 0 rgba(40, 60, 100, 0.15);
-        --radius: 18px;
-        --transition: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      body {
-        background: var(--bg);
-        color: var(--text);
-        font-family: "Inter", sans-serif;
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-        letter-spacing: 0.01em;
-        line-height: 1.5;
-      }
-      .analytics-container {
-        max-width: 1200px;
-        margin: 48px auto;
-        padding: 32px;
-        background: var(--card);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
-        border: 1px solid var(--border);
-      }
-      .header {
-        margin-bottom: 32px;
-      }
-      .back-link {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 500;
-        transition: color var(--transition);
-        display: inline-block;
-        margin-bottom: 16px;
-      }
-      .back-link:hover {
-        color: #fff;
-        text-decoration: underline;
-      }
-      h1 {
-        font-size: 2.2rem;
-        margin: 0;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        line-height: 1.2;
-        color: var(--text);
-      }
-      .analytics-frame {
-        background: #1e2230;
-        border-radius: 12px;
-        padding: 20px;
-        border: 1px solid var(--border);
-      }
-      iframe {
-        border-radius: 8px;
-        background: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
-    <div class="analytics-container">
-      <div class="header">
-        <a href="index.html" class="back-link">← Back to Portfolio</a>
-        <h1>Portfolio Analytics</h1>
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Wasim M Ansari home">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">
+            <span class="brand-name">Wasim M Ansari</span>
+            <span class="brand-tagline">AI/ML Engineer</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#education">Education</a>
+          <a href="analytics.html" class="nav-cta">Analytics</a>
+        </div>
+        <div class="language-switch" aria-label="Language selector">
+          <a href="index.html" class="active">EN</a>
+          <a href="index-de.html">DE</a>
+          <a href="index-fr.html">FR</a>
+          <a href="index-ar.html">AR</a>
+        </div>
       </div>
-      <div class="analytics-frame">
-        <iframe
-          width="100%"
-          height="900"
-          src="https://lookerstudio.google.com/embed/reporting/5ac25c38-1fd8-4cb4-ad86-b0d1c17b81e6/page/SVOXF"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen
-          sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-        ></iframe>
+    </nav>
+
+    <main class="page-shell page-shell--narrow">
+      <div class="breadcrumb-wrap animate-rise">
+        <seo-breadcrumb id="page-breadcrumb"></seo-breadcrumb>
       </div>
-    </div>
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Analytics</p>
+            <h1 class="section-title">Portfolio performance dashboard</h1>
+          </div>
+          <p class="section-subtitle">
+            A private Looker Studio dashboard for monitoring traffic trends and
+            engagement signals.
+          </p>
+        </div>
+
+        <div class="content-card clay-card animate-rise delay-1">
+          <iframe
+            title="Portfolio analytics"
+            width="100%"
+            height="900"
+            src="https://lookerstudio.google.com/embed/reporting/5ac25c38-1fd8-4cb4-ad86-b0d1c17b81e6/page/SVOXF"
+            frameborder="0"
+            style="border: 0; border-radius: 16px; background: #ffffff"
+            allowfullscreen
+            sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        &copy; <span id="footer-year"></span> Wasim M Ansari. All rights
+        reserved.
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Back to portfolio</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </div>
+    </footer>
+
+    <script type="module">
+      import "./seo-breadcrumb.mjs";
+
+      const breadcrumb = document.getElementById("page-breadcrumb");
+      if (breadcrumb) {
+        breadcrumb.items = [
+          { label: "Home", href: "https://waseemmansari.github.io/" },
+          {
+            label: "Analytics",
+            href: "https://waseemmansari.github.io/analytics.html",
+          },
+        ];
+      }
+    </script>
+    <script src="theme.js"></script>
   </body>
 </html>

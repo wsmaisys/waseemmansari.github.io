@@ -1,13 +1,13 @@
 # 👨‍💻 Wasim M Ansari
 
-**🧑‍🔬 AI/ML Solutions Engineer | 🤖 GDPR-Compliant AI Systems Developer | 🎓 IIT Madras Data Science**  
+**🧑‍🔬 AI/ML Engineer | 🤖 GDPR-Compliant AI Systems Developer | 🎓 IIT Madras Data Science**  
 📫 [Email](mailto:wsmaisys@gmail.com) • [GitHub](https://github.com/wsmaisys) • [LinkedIn](https://www.linkedin.com/in/wsmaisys) • [Portfolio Analytics](https://waseemmansari.github.io/analytics.html)
 
 ---
 
 ## 👋 About Me
 
-AI/ML Solutions Engineer specializing in building privacy-compliant, scalable AI systems for enterprise applications. I develop GDPR-compliant modular AI solutions that help companies achieve 25-40% efficiency improvements while maintaining strict data protection standards. Currently pursuing Data Science at IIT Madras while building production-ready AI solutions. Available for roles in EU and India, open to relocation.
+AI/ML Engineer specializing in building privacy-compliant, scalable AI systems for enterprise applications. I develop GDPR-compliant modular AI solutions that help companies achieve 25-40% efficiency improvements while maintaining strict data protection standards. Currently pursuing Data Science at IIT Madras while building production-ready AI solutions. Available for roles in EU and India, open to relocation.
 
 My journey reflects adaptability and a passion for solving real-world problems through technology. I thrive in environments that value innovation, continuous learning, and cross-disciplinary thinking.
 
