@@ -4,5 +4,8 @@ Allow: /
 # Sitemap for crawlers
 Sitemap: https://waseemmansari.github.io/sitemap.xml
 
+# LLM / answer-engine summary
+LLMs: https://waseemmansari.github.io/llms.txt
+
 # Optional: block sensitive folders if any in future
 # Disallow: /private/

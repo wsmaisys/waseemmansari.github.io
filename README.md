@@ -15,6 +15,40 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ## 🚀 Featured Projects
 
+### HyreFast Intelligence Layer (Confidential POC)
+
+<img src="images/hyrefast-confidential-recruiting-graph.png" alt="HyreFast Intelligence Layer Knowledge Graph" width="180"/>
+
+**[HyreFast Platform](https://www.hyrefast.ai/)** - **Private Client Project** - **Confidential: no GitHub or deployment link**
+
+**Problem:** HyreFast is an interview-first hiring platform that helps teams move from large application pools to ranked, evidence-backed shortlists. The next intelligence layer needs deeper skill understanding across messy resume/candidate data while keeping ambiguous matches out of production search until reviewed.
+
+**Solution:** Built a Neo4j-backed intelligence-layer POC for HyreFast with centralized skill taxonomy ingestion, candidate skill normalization, workspace-scoped candidate search, and human-in-the-loop review workflows for ambiguous matches.
+
+**Impact:** Implemented a scalable skill graph and review-safe candidate ingestion flow, including 12k+ enriched skills, approved taxonomy-only skill nodes, shared review resolutions, and privacy-aware workspace boundaries.
+
+**Key Features:** Knowledge Graph, Skill Taxonomy, Candidate Skill Normalization, Human Review Queue, Workspace-Scoped Search, FastAPI Review APIs, LangGraph Agent Tools.
+**Tech Stack:** Python, FastAPI, Neo4j, Cypher, LangGraph, MCP-style Tools, Pydantic, Docker.
+
+---
+
+### Zovia Inventory Forecasting Module
+
+<img src="images/zovia-inventory-forecasting-system.png" alt="Zovia Inventory Forecasting Module" width="180"/>
+
+**[Zovia Platform](https://www.zovia.ai/)** - **Private Client Project** - **Confidential: no GitHub or deployment link**
+
+**Problem:** Zovia is a manufacturing decision orchestration platform for ERP/MRP/MES environments. Its inventory workflows need forward-looking product-level stock movement predictions so teams can anticipate shortages, overstock risk, and warehouse consumption patterns.
+
+**Solution:** Built an ERP-integrated forecasting API that predicts weekly/monthly warehouse stock IN/OUT movement using TSB intermittent-demand forecasting, Monte Carlo simulation, async job processing, MongoDB persistence, and ERP callback integration.
+
+**Impact:** Delivered a production-style forecasting service with request validation, single/batch product forecasts, job-status polling, Redis/Celery background execution, forecast plots, metrics, and ERP update callbacks.
+
+**Key Features:** Inventory Forecasting, ERP Data Fetching, TSB Forecasting, Monte Carlo Simulation, Batch Forecast Jobs, Redis Job Store, MongoDB Persistence, Forecast Visualization.
+**Tech Stack:** Python, FastAPI, Pandas, NumPy, Scikit-learn, Celery, Redis, MongoDB, Matplotlib, Docker.
+
+---
+
 ### MediFlow: Post-Discharge Medical AI Assistant 🏥🤖
 
 <img src="images/MediFlow-Multi Agent.png" alt="MediFlow" width="180"/>
@@ -322,16 +356,16 @@ My journey reflects adaptability and a passion for solving real-world problems t
 
 ## 🧰 Technical Skills
 
-**💻 Core Skills:** Python, SQL, MCP
+**💻 Core Skills:** Python, SQL, MCP, Neo4j / Cypher, Knowledge Graphs, Time Series Forecasting
 
 **🧠 AI/ML & Data Science:**
 
 - **Frameworks:** LLMs (Mistral, LangChain, LangGraph), PyTorch, TensorFlow, Keras, Hugging Face Transformers
-- **Techniques:** Prompt Engineering, RAG, NLP, Text Similarity, Semantic Search
+- **Techniques:** Prompt Engineering, RAG, NLP, Text Similarity, Semantic Search, Human-in-the-Loop AI, Entity Normalization, Inventory Forecasting, Monte Carlo Simulation
 - **Libraries:** Scikit-learn, XGBoost, Random Forest, Pandas, Numpy, Matplotlib, Seaborn
 - **Tools:** OpenAI API, MLflow, TensorBoard, TrackIO, Model Deployment
 
-**🗄️ Databases & Storage:** ChromaDB, FAISS, Vector Stores
+**🗄️ Databases & Storage:** ChromaDB, FAISS, Vector Stores, Neo4j, Graph-Based Search, MongoDB, Redis
 
 **🌐 Web Development:**
 
@@ -345,6 +379,7 @@ My journey reflects adaptability and a passion for solving real-world problems t
 - Git & GitHub
 - MLOps
 - N8N Automation
+- Celery
 
 **📊 Professional Standards:**
 

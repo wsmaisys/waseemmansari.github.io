@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://waseemmansari.github.io/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://waseemmansari.github.io/" />
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://waseemmansari.github.io/index-de.html</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://waseemmansari.github.io/index-de.html" />
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://waseemmansari.github.io/index-fr.html</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://waseemmansari.github.io/index-fr.html" />
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://waseemmansari.github.io/index-ar.html</loc>
-    <lastmod>2026-05-18</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="https://waseemmansari.github.io/index-ar.html" />
@@ -43,6 +43,12 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://waseemmansari.github.io/index-de.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://waseemmansari.github.io/index-fr.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://waseemmansari.github.io/" />
+  </url>
+  <url>
+    <loc>https://waseemmansari.github.io/llms.txt</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://waseemmansari.github.io/Wasim-Ansari-Detailed-CV.pdf</loc>
