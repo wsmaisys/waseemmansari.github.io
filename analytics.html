@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
     <script
@@ -8,9 +8,7 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
       gtag("config", "G-VM4LR2E38N");
     </script>
@@ -20,63 +18,69 @@
       name="google-site-verification"
       content="prMKO9h6g3oFMoqvMuOXAuISiJAe0l8THnWTV7X8bio"
     />
-    <title>Portfolio Analytics</title>
+    <title>Portfolio Analytics | Wasim M Ansari</title>
+    <link rel="canonical" href="https://waseemmansari.github.io/analytics.html" />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2300E0FF'/><text y='55%' x='50%' text-anchor='middle' dominant-baseline='central' fill='%23060813' font-family='system-ui,sans-serif' font-weight='900' font-size='60'>W</text></svg>"
     />
     <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
-    <nav class="site-nav">
-      <div class="nav-inner">
-        <a class="brand" href="index.html" aria-label="Wasim M Ansari home">
-          <span class="brand-mark">W</span>
-          <span class="brand-text">
-            <span class="brand-name">Wasim M Ansari</span>
-            <span class="brand-tagline">AI/ML Engineer</span>
-          </span>
-        </a>
-        <div class="nav-links">
-          <a href="index.html#about">About</a>
-          <a href="index.html#experience">Experience</a>
-          <a href="index.html#projects">Projects</a>
-          <a href="index.html#education">Education</a>
-          <a href="analytics.html" class="nav-cta">Analytics</a>
-        </div>
-        <div class="language-switch" aria-label="Language selector">
-          <a href="index.html" class="active">EN</a>
-          <a href="index-de.html">DE</a>
-          <a href="index-fr.html">FR</a>
-          <a href="index-ar.html">AR</a>
-        </div>
-      </div>
-    </nav>
+    <!-- 3D Interactive Wavy Cubes WebGL Background -->
+    <canvas id="bg-canvas" class="webgl" aria-hidden="true"></canvas>
+    <div class="bg-overlay" aria-hidden="true"></div>
 
-    <main class="page-shell page-shell--narrow">
-      <div class="breadcrumb-wrap animate-rise">
-        <seo-breadcrumb id="page-breadcrumb"></seo-breadcrumb>
-      </div>
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">Analytics</p>
-            <h1 class="section-title">Portfolio performance dashboard</h1>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-brand" aria-label="Wasim M Ansari Home">
+          <div class="brand-symbol">W</div>
+          <div class="brand-meta">
+            <span class="brand-name">Wasim Ansari</span>
+            <span class="brand-title">AI / ML Engineer</span>
           </div>
+        </a>
+
+        <ul class="nav-menu" role="navigation">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#flagship" class="nav-link">Flagship Systems</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="index.html#education" class="nav-link">Education</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="lang-selector" aria-label="Language Selector">
+            <a href="index.html" class="lang-btn active">EN</a>
+            <a href="index-de.html" class="lang-btn">DE</a>
+            <a href="index-fr.html" class="lang-btn">FR</a>
+            <a href="index-ar.html" class="lang-btn">AR</a>
+          </div>
+          <a href="index.html" class="btn btn-primary btn-sm">← Back to Portfolio</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-wrap" style="padding-top: calc(var(--nav-height) + 40px); padding-bottom: 80px;">
+      <section class="section container">
+        <div class="section-head">
+          <p class="section-kicker">Observability &amp; Analytics</p>
+          <h1 class="section-title">Portfolio <span>Performance Dashboard</span></h1>
           <p class="section-subtitle">
-            A private Looker Studio dashboard for monitoring traffic trends and
-            engagement signals.
+            Private Looker Studio dashboard for real-time monitoring of engagement signals and visitor trends.
           </p>
         </div>
 
-        <div class="content-card clay-card animate-rise delay-1">
+        <div class="flagship-card" style="padding: 20px; display: block;">
           <iframe
-            title="Portfolio analytics"
+            title="Portfolio analytics dashboard"
             width="100%"
             height="900"
             src="https://lookerstudio.google.com/embed/reporting/5ac25c38-1fd8-4cb4-ad86-b0d1c17b81e6/page/SVOXF"
             frameborder="0"
-            style="border: 0; border-radius: 16px; background: #ffffff"
+            style="border: 0; border-radius: var(--radius-lg); background: #ffffff; width: 100%;"
             allowfullscreen
             sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
           ></iframe>
@@ -85,30 +89,17 @@
     </main>
 
     <footer class="footer">
-      <div>
-        &copy; <span id="footer-year"></span> Wasim M Ansari. All rights
-        reserved.
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Back to portfolio</a>
-        <a href="privacy-policy.html">Privacy</a>
+      <div class="container footer-inner">
+        <div>
+          &copy; <span id="footer-year">2026</span> Wasim M Ansari. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Back to portfolio</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
       </div>
     </footer>
 
-    <script type="module">
-      import "./seo-breadcrumb.mjs";
-
-      const breadcrumb = document.getElementById("page-breadcrumb");
-      if (breadcrumb) {
-        breadcrumb.items = [
-          { label: "Home", href: "https://waseemmansari.github.io/" },
-          {
-            label: "Analytics",
-            href: "https://waseemmansari.github.io/analytics.html",
-          },
-        ];
-      }
-    </script>
     <script src="theme.js"></script>
   </body>
 </html>
