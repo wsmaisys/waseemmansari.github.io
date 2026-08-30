@@ -1,51 +1,65 @@
 {
-  "lastUpdated": "2026-08-30T11:56:51.783996Z",
-  "status": "ready",
+  "lastUpdated": "2026-08-30T12:06:58.144472Z",
+  "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "21",
     "avgSessionDuration": "2m 09s",
-    "avgSessionDurationSec": 164,
-    "interactiveDemos": "1,280+",
-    "countriesCount": "42+"
+    "avgSessionDurationSec": 129,
+    "totalViews": "40",
+    "totalSessions": "29",
+    "countriesCount": "3"
   },
   "trajectory": [
     {
-      "label": "Week 1",
-      "visitors": 940,
-      "avgDuration": "2m 20s"
+      "label": "Aug 17",
+      "visitors": 1,
+      "avgDuration": "0m 10s"
     },
     {
-      "label": "Week 2",
-      "visitors": 1180,
-      "avgDuration": "2m 45s"
+      "label": "Aug 22",
+      "visitors": 5,
+      "avgDuration": "0m 04s"
     },
     {
-      "label": "Week 3",
-      "visitors": 1320,
-      "avgDuration": "3m 10s"
+      "label": "Aug 24",
+      "visitors": 3,
+      "avgDuration": "0m 23s"
     },
     {
-      "label": "Week 4",
-      "visitors": 1480,
-      "avgDuration": "3m 24s"
+      "label": "Aug 25",
+      "visitors": 1,
+      "avgDuration": "1m 10s"
+    },
+    {
+      "label": "Aug 29",
+      "visitors": 2,
+      "avgDuration": "2m 06s"
+    },
+    {
+      "label": "Aug 30",
+      "visitors": 1,
+      "avgDuration": "5m 53s"
     }
   ],
   "countries": [
     {
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "visitors": 13,
       "percentage": 62,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
+      "visitors": 7,
       "percentage": 33,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "Philippines",
-      "flag": "\ud83c\udf10",
+      "flag": "\ud83c\uddf5\ud83c\udded",
+      "visitors": 1,
       "percentage": 5,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
@@ -53,49 +67,41 @@
   "topArchitectures": [
     {
       "name": "HyreFast Candidate Skill Graph",
-      "views": "840 views (94%)",
+      "views": "Active Telemetry",
       "percentage": 94,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "MediFlow Post-Discharge Medical AI",
-      "views": "720 views (89%)",
+      "views": "Active Telemetry",
       "percentage": 89,
       "gradient": "linear-gradient(90deg, #10b981, #059669)"
     },
     {
       "name": "Zovia ERP Inventory Forecasting",
-      "views": "610 views (84%)",
+      "views": "Active Telemetry",
       "percentage": 84,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     },
     {
       "name": "Nephrology RAG MCP Server",
-      "views": "540 views (80%)",
+      "views": "Active Telemetry",
       "percentage": 80,
       "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
     }
   ],
   "sources": [
     {
-      "label": "\ud83d\udcbb GitHub Tech Repos",
-      "percentage": "44%",
-      "color": "#0891b2"
+      "label": "\ud83e\udd16 Direct",
+      "percentage": "81%",
+      "color": "#0891b2",
+      "users": 17
     },
     {
-      "label": "\ud83d\udc54 LinkedIn Professional",
-      "percentage": "32%",
-      "color": "#059669"
-    },
-    {
-      "label": "\ud83e\udd16 Direct & AI Search",
-      "percentage": "16%",
-      "color": "#f43f5e"
-    },
-    {
-      "label": "\ud83d\udcca Kaggle & HuggingFace",
-      "percentage": "8%",
-      "color": "#8b5cf6"
+      "label": "\ud83d\udd0d Organic Search",
+      "percentage": "19%",
+      "color": "#8b5cf6",
+      "users": 4
     }
   ]
 }
