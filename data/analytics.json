@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T12:36:32.224541+00:00",
+  "lastUpdated": "2026-08-30T12:43:32.811121+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "21",
@@ -10,7 +10,275 @@
     "totalSessions": "29",
     "countriesCount": "3"
   },
+  "periods": {
+    "7": {
+      "kpis": {
+        "totalVisitors": "6",
+        "avgSessionDuration": "1m 49s",
+        "avgSessionDurationSec": 109,
+        "interactiveDemos": "5",
+        "totalViews": "14",
+        "totalSessions": "8"
+      },
+      "trajectory": [
+        {
+          "label": "Aug 24",
+          "visitors": 3,
+          "avgDuration": "0m 23s"
+        },
+        {
+          "label": "Aug 25",
+          "visitors": 1,
+          "avgDuration": "1m 10s"
+        },
+        {
+          "label": "Aug 29",
+          "visitors": 2,
+          "avgDuration": "2m 06s"
+        },
+        {
+          "label": "Aug 30",
+          "visitors": 1,
+          "avgDuration": "5m 53s"
+        }
+      ]
+    },
+    "30": {
+      "kpis": {
+        "totalVisitors": "21",
+        "avgSessionDuration": "2m 09s",
+        "avgSessionDurationSec": 129,
+        "interactiveDemos": "38",
+        "totalViews": "40",
+        "totalSessions": "29"
+      },
+      "trajectory": [
+        {
+          "label": "Jul 31",
+          "visitors": 2,
+          "avgDuration": "0m 43s"
+        },
+        {
+          "label": "Aug 02",
+          "visitors": 1,
+          "avgDuration": "2m 41s"
+        },
+        {
+          "label": "Aug 03",
+          "visitors": 7,
+          "avgDuration": "4m 49s"
+        },
+        {
+          "label": "Aug 05",
+          "visitors": 2,
+          "avgDuration": "0m 17s"
+        },
+        {
+          "label": "Aug 10",
+          "visitors": 1,
+          "avgDuration": "3m 27s"
+        },
+        {
+          "label": "Aug 17",
+          "visitors": 1,
+          "avgDuration": "0m 10s"
+        },
+        {
+          "label": "Aug 22",
+          "visitors": 5,
+          "avgDuration": "0m 04s"
+        },
+        {
+          "label": "Aug 24",
+          "visitors": 3,
+          "avgDuration": "0m 23s"
+        },
+        {
+          "label": "Aug 25",
+          "visitors": 1,
+          "avgDuration": "1m 10s"
+        },
+        {
+          "label": "Aug 29",
+          "visitors": 2,
+          "avgDuration": "2m 06s"
+        },
+        {
+          "label": "Aug 30",
+          "visitors": 1,
+          "avgDuration": "5m 53s"
+        }
+      ]
+    },
+    "90": {
+      "kpis": {
+        "totalVisitors": "72",
+        "avgSessionDuration": "1m 40s",
+        "avgSessionDurationSec": 100,
+        "interactiveDemos": "49",
+        "totalViews": "117",
+        "totalSessions": "98"
+      },
+      "trajectory": [
+        {
+          "label": "Jun 07",
+          "visitors": 1,
+          "avgDuration": "0m 12s"
+        },
+        {
+          "label": "Jun 09",
+          "visitors": 1,
+          "avgDuration": "0m 24s"
+        },
+        {
+          "label": "Jun 11",
+          "visitors": 4,
+          "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Jun 19",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Jun 27",
+          "visitors": 1,
+          "avgDuration": "6m 23s"
+        },
+        {
+          "label": "Jul 03",
+          "visitors": 2,
+          "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Jul 06",
+          "visitors": 3,
+          "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Jul 07",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Jul 08",
+          "visitors": 2,
+          "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Jul 11",
+          "visitors": 1,
+          "avgDuration": "0m 22s"
+        },
+        {
+          "label": "Jul 12",
+          "visitors": 5,
+          "avgDuration": "0m 23s"
+        },
+        {
+          "label": "Jul 13",
+          "visitors": 1,
+          "avgDuration": "5m 31s"
+        },
+        {
+          "label": "Jul 15",
+          "visitors": 29,
+          "avgDuration": "0m 35s"
+        },
+        {
+          "label": "Jul 26",
+          "visitors": 5,
+          "avgDuration": "7m 46s"
+        },
+        {
+          "label": "Jul 30",
+          "visitors": 1,
+          "avgDuration": "22m 34s"
+        },
+        {
+          "label": "Jul 31",
+          "visitors": 2,
+          "avgDuration": "0m 43s"
+        },
+        {
+          "label": "Aug 02",
+          "visitors": 1,
+          "avgDuration": "2m 41s"
+        },
+        {
+          "label": "Aug 03",
+          "visitors": 7,
+          "avgDuration": "4m 49s"
+        },
+        {
+          "label": "Aug 05",
+          "visitors": 2,
+          "avgDuration": "0m 17s"
+        },
+        {
+          "label": "Aug 10",
+          "visitors": 1,
+          "avgDuration": "3m 27s"
+        },
+        {
+          "label": "Aug 17",
+          "visitors": 1,
+          "avgDuration": "0m 10s"
+        },
+        {
+          "label": "Aug 22",
+          "visitors": 5,
+          "avgDuration": "0m 04s"
+        },
+        {
+          "label": "Aug 24",
+          "visitors": 3,
+          "avgDuration": "0m 23s"
+        },
+        {
+          "label": "Aug 25",
+          "visitors": 1,
+          "avgDuration": "1m 10s"
+        },
+        {
+          "label": "Aug 29",
+          "visitors": 2,
+          "avgDuration": "2m 06s"
+        },
+        {
+          "label": "Aug 30",
+          "visitors": 1,
+          "avgDuration": "5m 53s"
+        }
+      ]
+    }
+  },
   "trajectory": [
+    {
+      "label": "Jul 31",
+      "visitors": 2,
+      "avgDuration": "0m 43s"
+    },
+    {
+      "label": "Aug 02",
+      "visitors": 1,
+      "avgDuration": "2m 41s"
+    },
+    {
+      "label": "Aug 03",
+      "visitors": 7,
+      "avgDuration": "4m 49s"
+    },
+    {
+      "label": "Aug 05",
+      "visitors": 2,
+      "avgDuration": "0m 17s"
+    },
+    {
+      "label": "Aug 10",
+      "visitors": 1,
+      "avgDuration": "3m 27s"
+    },
     {
       "label": "Aug 17",
       "visitors": 1,
