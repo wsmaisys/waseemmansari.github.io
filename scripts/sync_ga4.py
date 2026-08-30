@@ -70,61 +70,86 @@ def sync_ga4():
 
         client = BetaAnalyticsDataClient(credentials=credentials)
 
-        # 1. 30-Day Totals
-        req_totals = RunReportRequest(
-            property=f"properties/{property_id}",
-            dimensions=[],
-            metrics=[
-                Metric(name="activeUsers"),
-                Metric(name="sessions"),
-                Metric(name="screenPageViews"),
-                Metric(name="averageSessionDuration")
-            ],
-            date_ranges=[DateRange(start_date="30daysAgo", end_date="today")]
-        )
-        resp_totals = client.run_report(req_totals)
+        def fetch_period_data(days):
+            req_tot = RunReportRequest(
+                property=f"properties/{property_id}",
+                dimensions=[],
+                metrics=[
+                    Metric(name="activeUsers"),
+                    Metric(name="sessions"),
+                    Metric(name="screenPageViews"),
+                    Metric(name="averageSessionDuration")
+                ],
+                date_ranges=[DateRange(start_date=f"{days}daysAgo", end_date="today")]
+            )
+            res_tot = client.run_report(req_tot)
+            u_cnt = 0
+            s_cnt = 0
+            v_cnt = 0
+            d_sec = 0
+            if res_tot.rows:
+                r = res_tot.rows[0]
+                u_cnt = int(r.metric_values[0].value)
+                s_cnt = int(r.metric_values[1].value)
+                v_cnt = int(r.metric_values[2].value)
+                d_sec = int(float(r.metric_values[3].value))
 
-        active_users = "0"
-        total_sessions = "0"
-        total_views = "0"
-        avg_duration = "0m 00s"
-        avg_sec = 0
+            req_ev = RunReportRequest(
+                property=f"properties/{property_id}",
+                dimensions=[Dimension(name="eventName")],
+                metrics=[Metric(name="eventCount")],
+                date_ranges=[DateRange(start_date=f"{days}daysAgo", end_date="today")]
+            )
+            res_ev = client.run_report(req_ev)
+            ev_cnt = 0
+            for r in res_ev.rows:
+                if r.dimension_values[0].value in ("click", "project_interaction", "explore_architecture", "contact_lead", "file_download", "cv_download"):
+                    ev_cnt += int(r.metric_values[0].value)
 
-        if resp_totals.rows:
-            r = resp_totals.rows[0]
-            users_count = int(r.metric_values[0].value)
-            active_users = f"{users_count:,}"
-            total_sessions = f"{int(r.metric_values[1].value):,}"
-            total_views = f"{int(r.metric_values[2].value):,}"
-            avg_sec = int(float(r.metric_values[3].value))
-            avg_duration = format_duration(avg_sec)
+            req_time = RunReportRequest(
+                property=f"properties/{property_id}",
+                dimensions=[Dimension(name="date")],
+                metrics=[Metric(name="activeUsers"), Metric(name="averageSessionDuration")],
+                date_ranges=[DateRange(start_date=f"{days}daysAgo", end_date="today")],
+                order_bys=[OrderBy(dimension=OrderBy.DimensionOrderBy(dimension_name="date"), desc=False)]
+            )
+            res_time = client.run_report(req_time)
+            traj = []
+            for r in res_time.rows:
+                raw_d = r.dimension_values[0].value
+                try:
+                    dt = datetime.datetime.strptime(raw_d, "%Y%m%d")
+                    formatted_label = dt.strftime("%b %d")
+                except Exception:
+                    formatted_label = raw_d
+                traj.append({
+                    "label": formatted_label,
+                    "visitors": int(r.metric_values[0].value),
+                    "avgDuration": format_duration(r.metric_values[1].value)
+                })
 
-        # 2. Daily Timeline (Last 14-30 Days for Trajectory Chart)
-        req_timeline = RunReportRequest(
-            property=f"properties/{property_id}",
-            dimensions=[Dimension(name="date")],
-            metrics=[Metric(name="activeUsers"), Metric(name="averageSessionDuration")],
-            date_ranges=[DateRange(start_date="14daysAgo", end_date="today")],
-            order_bys=[OrderBy(dimension=OrderBy.DimensionOrderBy(dimension_name="date"), desc=False)]
-        )
-        resp_timeline = client.run_report(req_timeline)
+            return {
+                "kpis": {
+                    "totalVisitors": f"{u_cnt:,}",
+                    "avgSessionDuration": format_duration(d_sec),
+                    "avgSessionDurationSec": d_sec,
+                    "interactiveDemos": f"{ev_cnt if ev_cnt > 0 else u_cnt}",
+                    "totalViews": f"{v_cnt:,}",
+                    "totalSessions": f"{s_cnt:,}"
+                },
+                "trajectory": traj
+            }
 
-        trajectory_data = []
-        for r in resp_timeline.rows:
-            raw_date = r.dimension_values[0].value # YYYYMMDD
-            try:
-                dt = datetime.datetime.strptime(raw_date, "%Y%m%d")
-                formatted_label = dt.strftime("%b %d")
-            except Exception:
-                formatted_label = raw_date
-            
-            u_count = int(r.metric_values[0].value)
-            dur_str = format_duration(r.metric_values[1].value)
-            trajectory_data.append({
-                "label": formatted_label,
-                "visitors": u_count,
-                "avgDuration": dur_str
-            })
+        data_7d = fetch_period_data(7)
+        data_30d = fetch_period_data(30)
+        data_90d = fetch_period_data(90)
+
+        active_users = data_30d["kpis"]["totalVisitors"]
+        total_sessions = data_30d["kpis"]["totalSessions"]
+        total_views = data_30d["kpis"]["totalViews"]
+        avg_duration = data_30d["kpis"]["avgSessionDuration"]
+        avg_sec = data_30d["kpis"]["avgSessionDurationSec"]
+        trajectory_data = data_30d["trajectory"]
 
         # 3. Country Breakdown (All unique countries)
         req_countries = RunReportRequest(
@@ -231,6 +256,11 @@ def sync_ga4():
                 "totalViews": total_views,
                 "totalSessions": total_sessions,
                 "countriesCount": countries_count
+            },
+            "periods": {
+                "7": data_7d,
+                "30": data_30d,
+                "90": data_90d
             },
             "trajectory": trajectory_data if trajectory_data else [
                 { "label": "Recent", "visitors": int(active_users.replace(',', '')) if active_users.isdigit() else 1, "avgDuration": avg_duration }

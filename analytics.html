@@ -662,7 +662,7 @@
     <!-- Core Interactive & 3D Script -->
     <script src="theme.js"></script>
 
-    <!-- Client-Side Dashboard Controller (Interactive Tooltips, Live JSON Hydration & Looker Lazy-Toggle) -->
+    <!-- Client-Side Dashboard Controller (Interactive Tooltips, Multi-Period 7D/30D/90D Live Trajectory Redraw & Looker Lazy-Toggle) -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const visitorsKpi = document.getElementById("kpi-visitors");
@@ -670,11 +670,92 @@
         const demosKpi = document.getElementById("kpi-demos");
         const countriesKpi = document.getElementById("kpi-countries");
         const syncBadge = document.getElementById("sync-badge");
+        const chartTooltip = document.getElementById("chart-tooltip");
+        const chartLine = document.getElementById("chart-line");
+        const chartArea = document.getElementById("chart-area");
+        const svgElem = document.querySelector(".svg-chart");
+
+        let telemetryData = null;
+
+        function renderTrajectory(traj) {
+          if (!traj || traj.length === 0 || !svgElem) return;
+
+          const maxVal = Math.max(...traj.map((t) => t.visitors), 1);
+          const width = 700;
+          const height = 200;
+          const paddingBottom = 40;
+          const paddingTop = 30;
+          const usableHeight = height - paddingBottom - paddingTop;
+
+          const pts = traj.map((t, idx) => {
+            const x = traj.length === 1 
+              ? width / 2 
+              : Math.round((idx / (traj.length - 1)) * (width - 60) + 30);
+            const y = Math.round(height - paddingBottom - (t.visitors / maxVal) * usableHeight);
+            return { x, y, label: t.label, visitors: t.visitors, duration: t.avgDuration };
+          });
+
+          const pathD = pts.length === 1
+            ? `M 30,${pts[0].y} L 670,${pts[0].y}`
+            : "M " + pts.map((p) => `${p.x},${p.y}`).join(" L ");
+
+          const areaD = pts.length === 1
+            ? `M 30,${height} L 30,${pts[0].y} L 670,${pts[0].y} L 670,${height} Z`
+            : `M ${pts[0].x},${height} L ` + pts.map((p) => `${p.x},${p.y}`).join(" L ") + ` L ${pts[pts.length - 1].x},${height} Z`;
+
+          if (chartLine) chartLine.setAttribute("d", pathD);
+          if (chartArea) chartArea.setAttribute("d", areaD);
+
+          // Rebuild points with interactive hover tooltips
+          svgElem.querySelectorAll(".chart-point").forEach((c) => c.remove());
+          pts.forEach((p) => {
+            const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("cx", p.x);
+            circle.setAttribute("cy", p.y);
+            circle.setAttribute("r", "5");
+            circle.setAttribute("fill", "#0891b2");
+            circle.setAttribute("stroke", "#ffffff");
+            circle.setAttribute("stroke-width", "2");
+            circle.setAttribute("class", "chart-point");
+            circle.setAttribute("data-info", `${p.label}: ${p.visitors} Visitor${p.visitors === 1 ? '' : 's'} (${p.duration} avg)`);
+
+            circle.addEventListener("mouseenter", () => {
+              if (chartTooltip) {
+                chartTooltip.textContent = circle.getAttribute("data-info");
+                chartTooltip.style.opacity = "1";
+              }
+              circle.setAttribute("r", "8");
+            });
+            circle.addEventListener("mouseleave", () => {
+              if (chartTooltip) chartTooltip.style.opacity = "0";
+              circle.setAttribute("r", "5");
+            });
+            svgElem.appendChild(circle);
+          });
+        }
+
+        function setPeriodView(rangeKey) {
+          if (!telemetryData) return;
+          const period = telemetryData.periods && telemetryData.periods[rangeKey] 
+            ? telemetryData.periods[rangeKey] 
+            : null;
+
+          if (period && period.kpis) {
+            if (visitorsKpi) visitorsKpi.textContent = period.kpis.totalVisitors;
+            if (timeKpi) timeKpi.textContent = period.kpis.avgSessionDuration;
+            if (demosKpi) demosKpi.textContent = period.kpis.interactiveDemos;
+          }
+
+          const traj = period && period.trajectory ? period.trajectory : telemetryData.trajectory;
+          renderTrajectory(traj);
+        }
 
         // Fetch real-time telemetry from data/analytics.json
         fetch("data/analytics.json?t=" + Date.now())
           .then((res) => res.json())
           .then((data) => {
+            telemetryData = data;
+
             if (data && data.kpis) {
               if (visitorsKpi && data.kpis.totalVisitors30D) visitorsKpi.textContent = data.kpis.totalVisitors30D;
               if (timeKpi && data.kpis.avgSessionDuration) timeKpi.textContent = data.kpis.avgSessionDuration;
@@ -685,6 +766,12 @@
               const d = new Date(data.lastUpdated);
               syncBadge.textContent = "Live Synced (" + d.toLocaleDateString("en-US", { month: "short", day: "numeric" }) + ")";
             }
+
+            // Render 30D as default trajectory
+            const defaultTraj = data.periods && data.periods["30"] && data.periods["30"].trajectory
+              ? data.periods["30"].trajectory
+              : data.trajectory;
+            renderTrajectory(defaultTraj);
 
             // Dynamically Render Country Breakdown
             if (data && data.countries && data.countries.length) {
@@ -734,108 +821,19 @@
                 `).join('');
               }
             }
-
-            // Dynamically Render SVG Trajectory Curve
-            if (data && data.trajectory && data.trajectory.length > 1) {
-              const traj = data.trajectory;
-              const maxVal = Math.max(...traj.map((t) => t.visitors), 1);
-              const width = 700;
-              const height = 200;
-              const paddingBottom = 40;
-              const paddingTop = 30;
-              const usableHeight = height - paddingBottom - paddingTop;
-
-              const pts = traj.map((t, idx) => {
-                const x = Math.round((idx / (traj.length - 1)) * (width - 60) + 30);
-                const y = Math.round(height - paddingBottom - (t.visitors / maxVal) * usableHeight);
-                return { x, y, label: t.label, visitors: t.visitors, duration: t.avgDuration };
-              });
-
-              const pathD = "M " + pts.map((p) => `${p.x},${p.y}`).join(" L ");
-              const areaD = `M ${pts[0].x},${height} L ` + pts.map((p) => `${p.x},${p.y}`).join(" L ") + ` L ${pts[pts.length - 1].x},${height} Z`;
-
-              const chartLine = document.getElementById("chart-line");
-              const chartArea = document.getElementById("chart-area");
-              if (chartLine) chartLine.setAttribute("d", pathD);
-              if (chartArea) chartArea.setAttribute("d", areaD);
-
-              const svgElem = document.querySelector(".svg-chart");
-              if (svgElem) {
-                svgElem.querySelectorAll(".chart-point").forEach((c) => c.remove());
-                pts.forEach((p) => {
-                  const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                  circle.setAttribute("cx", p.x);
-                  circle.setAttribute("cy", p.y);
-                  circle.setAttribute("r", "5");
-                  circle.setAttribute("fill", "#0891b2");
-                  circle.setAttribute("stroke", "#ffffff");
-                  circle.setAttribute("stroke-width", "2");
-                  circle.setAttribute("class", "chart-point");
-                  circle.setAttribute("data-info", `${p.label}: ${p.visitors} Visitors (${p.duration} avg)`);
-
-                  circle.addEventListener("mouseenter", () => {
-                    if (tooltip) {
-                      tooltip.textContent = circle.getAttribute("data-info");
-                      tooltip.style.opacity = "1";
-                    }
-                    circle.setAttribute("r", "8");
-                  });
-                  circle.addEventListener("mouseleave", () => {
-                    if (tooltip) tooltip.style.opacity = "0";
-                    circle.setAttribute("r", "5");
-                  });
-                  svgElem.appendChild(circle);
-                });
-              }
-            }
           })
           .catch((err) => {
             console.log("Loaded baseline analytics telemetry.", err);
           });
 
-        // Interactive Chart Points
-        const points = document.querySelectorAll(".chart-point");
-        const tooltip = document.getElementById("chart-tooltip");
-
-        points.forEach((pt) => {
-          pt.addEventListener("mouseenter", (e) => {
-            const info = pt.getAttribute("data-info");
-            if (tooltip && info) {
-              tooltip.textContent = info;
-              tooltip.style.opacity = "1";
-              pt.setAttribute("r", "8");
-            }
-          });
-          pt.addEventListener("mouseleave", () => {
-            if (tooltip) {
-              tooltip.style.opacity = "0";
-              pt.setAttribute("r", "5");
-            }
-          });
-        });
-
-        // Range Selector Simulation
+        // Range Selector Tabs (7D, 30D, 90D)
         const timePills = document.querySelectorAll(".time-pill");
-
         timePills.forEach((btn) => {
           btn.addEventListener("click", () => {
             timePills.forEach((p) => p.classList.remove("active"));
             btn.classList.add("active");
             const range = btn.getAttribute("data-range");
-
-            if (range === "7") {
-              if (visitorsKpi) visitorsKpi.textContent = "1,480+";
-              if (timeKpi) timeKpi.textContent = "3m 12s";
-              if (demosKpi) demosKpi.textContent = "340+";
-            } else if (range === "30") {
-              if (visitorsKpi) visitorsKpi.textContent = "4,820+";
-              if (timeKpi) timeKpi.textContent = "2m 44s";
-              if (demosKpi) demosKpi.textContent = "1,280+";
-            } else if (range === "90") {
-              if (visitorsKpi) visitorsKpi.textContent = "12,400+";
-              if (timeKpi) timeKpi.textContent = "2m 38s";
-              if (demosKpi) demosKpi.textContent = "3,950+";
-            }
+            setPeriodView(range);
           });
         });
 
@@ -846,16 +844,14 @@
 
         if (toggleBtn && lookerBox && lookerIframe) {
           toggleBtn.addEventListener("click", () => {
-            const isShown = lookerBox.classList.contains("active");
-            if (isShown) {
-              lookerBox.classList.remove("active");
-              toggleBtn.innerHTML = "<span>📊 Load Raw Looker Studio Report (Heavy Embed) ↓</span>";
-            } else {
+            const isActive = lookerBox.classList.toggle("active");
+            if (isActive) {
+              toggleBtn.innerHTML = `<span>▲ Collapse Looker Studio Frame</span>`;
               if (!lookerIframe.getAttribute("src")) {
                 lookerIframe.setAttribute("src", lookerIframe.getAttribute("data-src"));
               }
-              lookerBox.classList.add("active");
-              toggleBtn.innerHTML = "<span>▲ Collapse Looker Studio Frame</span>";
+            } else {
+              toggleBtn.innerHTML = `<span>📊 Load Raw Looker Studio Report (Heavy Embed) ↓</span>`;
             }
           });
         }
