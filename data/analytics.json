@@ -1,36 +1,101 @@
 {
-  "lastUpdated": "2026-08-30T11:30:00Z",
+  "lastUpdated": "2026-08-30T11:56:51.783996Z",
   "status": "ready",
   "kpis": {
-    "totalVisitors30D": "4,820+",
-    "avgSessionDuration": "2m 44s",
+    "totalVisitors30D": "21",
+    "avgSessionDuration": "2m 09s",
     "avgSessionDurationSec": 164,
     "interactiveDemos": "1,280+",
     "countriesCount": "42+"
   },
   "trajectory": [
-    { "label": "Week 1", "visitors": 940, "avgDuration": "2m 20s" },
-    { "label": "Week 2", "visitors": 1180, "avgDuration": "2m 45s" },
-    { "label": "Week 3", "visitors": 1320, "avgDuration": "3m 10s" },
-    { "label": "Week 4", "visitors": 1480, "avgDuration": "3m 24s" }
+    {
+      "label": "Week 1",
+      "visitors": 940,
+      "avgDuration": "2m 20s"
+    },
+    {
+      "label": "Week 2",
+      "visitors": 1180,
+      "avgDuration": "2m 45s"
+    },
+    {
+      "label": "Week 3",
+      "visitors": 1320,
+      "avgDuration": "3m 10s"
+    },
+    {
+      "label": "Week 4",
+      "visitors": 1480,
+      "avgDuration": "3m 24s"
+    }
   ],
   "countries": [
-    { "name": "United States (Tech Hubs)", "flag": "🇺🇸", "percentage": 36, "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)" },
-    { "name": "Germany & Western EU", "flag": "🇩🇪", "percentage": 26, "gradient": "linear-gradient(90deg, #06b6d4, #10b981)" },
-    { "name": "India & South Asia", "flag": "🇮🇳", "percentage": 18, "gradient": "linear-gradient(90deg, #f59e0b, #f97316)" },
-    { "name": "UAE & Middle East", "flag": "🇦🇪", "percentage": 12, "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)" },
-    { "name": "United Kingdom", "flag": "🇬🇧", "percentage": 8, "gradient": "linear-gradient(90deg, #8b5cf6, #a855f7)" }
+    {
+      "name": "United States",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "percentage": 62,
+      "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
+    },
+    {
+      "name": "India",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "percentage": 33,
+      "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
+    },
+    {
+      "name": "Philippines",
+      "flag": "\ud83c\udf10",
+      "percentage": 5,
+      "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
+    }
   ],
   "topArchitectures": [
-    { "name": "HyreFast Candidate Skill Graph", "views": "840 views (94%)", "percentage": 94, "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)" },
-    { "name": "MediFlow Post-Discharge Medical AI", "views": "720 views (89%)", "percentage": 89, "gradient": "linear-gradient(90deg, #10b981, #059669)" },
-    { "name": "Zovia ERP Inventory Forecasting", "views": "610 views (84%)", "percentage": 84, "gradient": "linear-gradient(90deg, #f59e0b, #f97316)" },
-    { "name": "Nephrology RAG MCP Server", "views": "540 views (80%)", "percentage": 80, "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)" }
+    {
+      "name": "HyreFast Candidate Skill Graph",
+      "views": "840 views (94%)",
+      "percentage": 94,
+      "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
+    },
+    {
+      "name": "MediFlow Post-Discharge Medical AI",
+      "views": "720 views (89%)",
+      "percentage": 89,
+      "gradient": "linear-gradient(90deg, #10b981, #059669)"
+    },
+    {
+      "name": "Zovia ERP Inventory Forecasting",
+      "views": "610 views (84%)",
+      "percentage": 84,
+      "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
+    },
+    {
+      "name": "Nephrology RAG MCP Server",
+      "views": "540 views (80%)",
+      "percentage": 80,
+      "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
+    }
   ],
   "sources": [
-    { "label": "💻 GitHub Tech Repos", "percentage": "44%", "color": "#0891b2" },
-    { "label": "👔 LinkedIn Professional", "percentage": "32%", "color": "#059669" },
-    { "label": "🤖 Direct & AI Search", "percentage": "16%", "color": "#f43f5e" },
-    { "label": "📊 Kaggle & HuggingFace", "percentage": "8%", "color": "#8b5cf6" }
+    {
+      "label": "\ud83d\udcbb GitHub Tech Repos",
+      "percentage": "44%",
+      "color": "#0891b2"
+    },
+    {
+      "label": "\ud83d\udc54 LinkedIn Professional",
+      "percentage": "32%",
+      "color": "#059669"
+    },
+    {
+      "label": "\ud83e\udd16 Direct & AI Search",
+      "percentage": "16%",
+      "color": "#f43f5e"
+    },
+    {
+      "label": "\ud83d\udcca Kaggle & HuggingFace",
+      "percentage": "8%",
+      "color": "#8b5cf6"
+    }
   ]
 }
