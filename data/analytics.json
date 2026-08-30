@@ -1,10 +1,11 @@
 {
-  "lastUpdated": "2026-08-30T12:23:40.475108Z",
+  "lastUpdated": "2026-08-30T12:36:32.224541+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "21",
     "avgSessionDuration": "2m 09s",
     "avgSessionDurationSec": 129,
+    "interactiveDemos": "38",
     "totalViews": "40",
     "totalSessions": "29",
     "countriesCount": "3"
@@ -67,26 +68,26 @@
   "topArchitectures": [
     {
       "name": "HyreFast Candidate Skill Graph",
-      "views": "Active Telemetry",
+      "views": "15 interactions (GA4 Verified)",
       "percentage": 94,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "MediFlow Post-Discharge Medical AI",
-      "views": "Active Telemetry",
-      "percentage": 89,
+      "views": "11 interactions (GA4 Verified)",
+      "percentage": 78,
       "gradient": "linear-gradient(90deg, #10b981, #059669)"
     },
     {
       "name": "Zovia ERP Inventory Forecasting",
-      "views": "Active Telemetry",
-      "percentage": 84,
+      "views": "5 interactions (GA4 Verified)",
+      "percentage": 52,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     },
     {
       "name": "Nephrology RAG MCP Server",
-      "views": "Active Telemetry",
-      "percentage": 80,
+      "views": "3 interactions (GA4 Verified)",
+      "percentage": 38,
       "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
     }
   ],
