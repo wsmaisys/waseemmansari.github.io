@@ -1,0 +1,21 @@
+# Service Account Keys & Secrets
+portfolio-analytics-*.json
+service_account*.json
+*.pem
+*.key
+.env
+.env.*
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# System / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

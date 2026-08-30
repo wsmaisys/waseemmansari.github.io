@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "google-analytics": {
+      "command": "python",
+      "args": [
+        "c:/Yegawasim/GitHub/Portfolio/scripts/ga4_mcp_server.py"
+      ],
+      "env": {
+        "GA4_PROPERTY_ID": "503150594",
+        "GA4_CREDENTIALS_PATH": "c:/Yegawasim/GitHub/Portfolio/portfolio-analytics-507111-1262ef554c0c.json"
+      }
+    }
+  }
+}

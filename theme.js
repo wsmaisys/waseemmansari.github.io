@@ -704,7 +704,105 @@
   }
 
   /* ==========================================================================
-     8. INITIALIZATION
+     8. INTELLIGENT TELEMETRY & CONVERSION TRACKING (GA4)
+     ========================================================================== */
+  function initEventTelemetry() {
+    function trackGA4(eventName, params = {}) {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", eventName, params);
+      }
+    }
+
+    // 1. WhatsApp & Contact Intent
+    document.querySelectorAll("a[href*='wa.me']").forEach((link) => {
+      link.addEventListener("click", () => {
+        trackGA4("contact_lead", {
+          method: "whatsapp",
+          label: link.innerText.trim() || "WhatsApp Click",
+          destination: link.href
+        });
+      });
+    });
+
+    // 2. Email Copy Conversion
+    document.querySelectorAll("[data-copy-email]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        trackGA4("contact_lead", {
+          method: "copy_email",
+          email: btn.getAttribute("data-copy-email") || "wsmaisys@gmail.com"
+        });
+      });
+    });
+
+    // 3. CV / Resume PDF Download
+    document.querySelectorAll("a[href*='.pdf']").forEach((link) => {
+      link.addEventListener("click", () => {
+        trackGA4("file_download", {
+          file_name: link.getAttribute("href"),
+          file_type: "pdf"
+        });
+      });
+    });
+
+    // 4. Architecture Modal Openings & Flagship System Clicks
+    document.querySelectorAll("[data-arch-modal]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        trackGA4("explore_architecture", {
+          system_name: btn.getAttribute("data-arch-modal"),
+          action: "modal_inspect"
+        });
+      });
+    });
+
+    // 5. Outbound Platform & External Demo Links (HyreFast, GitHub, Kaggle, HuggingFace)
+    document.querySelectorAll("a[target='_blank']").forEach((link) => {
+      link.addEventListener("click", () => {
+        const href = link.href || "";
+        if (href.includes("github.com")) {
+          trackGA4("outbound_tech", { platform: "github", url: href });
+        } else if (href.includes("linkedin.com")) {
+          trackGA4("outbound_social", { platform: "linkedin", url: href });
+        } else if (href.includes("kaggle.com")) {
+          trackGA4("outbound_tech", { platform: "kaggle", url: href });
+        } else if (href.includes("hyrefast.ai")) {
+          trackGA4("explore_architecture", { system_name: "hyrefast", action: "live_platform_visit" });
+        }
+      });
+    });
+
+    // 6. Project Filter Interactions
+    document.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        trackGA4("project_filter", {
+          filter_category: btn.getAttribute("data-filter") || "all"
+        });
+      });
+    });
+
+    // 7. Language Switch Tracking
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        trackGA4("language_switch", {
+          target_language: btn.innerText.trim()
+        });
+      });
+    });
+
+    // 8. Reading Depth Milestones (25%, 50%, 75%, 90%)
+    const milestones = { 25: false, 50: false, 75: false, 90: false };
+    window.addEventListener("scroll", () => {
+      const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+      for (const m of [25, 50, 75, 90]) {
+        if (scrollPercent >= m && !milestones[m]) {
+          milestones[m] = true;
+          trackGA4("reading_milestone", { depth_percentage: m });
+        }
+      }
+    }, { passive: true });
+  }
+
+  /* ==========================================================================
+     9. INITIALIZATION
      ========================================================================== */
   window.addEventListener("DOMContentLoaded", () => {
     initWavyCubes();
@@ -714,5 +812,6 @@
     init3DTilt();
     initNavigation();
     initCookieAndFooter();
+    initEventTelemetry();
   });
 })();

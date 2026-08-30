@@ -44,27 +44,30 @@ def get_flag(country_name):
     return flags.get(country_name, "🌐")
 
 def sync_ga4():
-    property_id = os.environ.get("GA4_PROPERTY_ID")
+    property_id = os.environ.get("GA4_PROPERTY_ID", "503150594")
     creds_json_str = os.environ.get("GA4_CREDENTIALS_JSON")
+    local_key_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "portfolio-analytics-507111-1262ef554c0c.json")
 
-    if not property_id or not creds_json_str:
-        print("[INFO] GA4_PROPERTY_ID or GA4_CREDENTIALS_JSON environment variable not set.")
-        print("[INFO] Running in fallback/validation mode.")
-        return
+    from google.analytics.data_v1beta import BetaAnalyticsDataClient
+    from google.analytics.data_v1beta.types import (
+        DateRange,
+        Dimension,
+        Metric,
+        RunReportRequest,
+        OrderBy
+    )
+    from google.oauth2 import service_account
 
     try:
-        from google.analytics.data_v1beta import BetaAnalyticsDataClient
-        from google.analytics.data_v1beta.types import (
-            DateRange,
-            Dimension,
-            Metric,
-            RunReportRequest,
-            OrderBy
-        )
-        from google.oauth2 import service_account
+        if creds_json_str:
+            creds_dict = json.loads(creds_json_str)
+            credentials = service_account.Credentials.from_service_account_info(creds_dict)
+        elif os.path.exists(local_key_path):
+            credentials = service_account.Credentials.from_service_account_file(local_key_path)
+        else:
+            print("[INFO] GA4 credentials not found. Preserving baseline telemetry.")
+            return
 
-        creds_dict = json.loads(creds_json_str)
-        credentials = service_account.Credentials.from_service_account_info(creds_dict)
         client = BetaAnalyticsDataClient(credentials=credentials)
 
         # 1. 30-Day Totals
