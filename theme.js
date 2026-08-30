@@ -57,33 +57,34 @@
 
       void main() {
         vGridPos = aOffset;
-        vec2 worldXY = aOffset + hash(aOffset) * 0.1;
+        vec2 worldXY = aOffset + hash(aOffset) * 0.02;
         
         float waveHeight = 0.0;
         float totalWeight = 0.0;
         
-        // Ambient gentle breathing waves across the wall
-        float ambientWave = sin(worldXY.x * 0.2 + uTime * 1.3) * cos(worldXY.y * 0.2 + uTime * 1.1) * 0.3;
-        
-        // Interactive and auto ripples across the vertical wall
+        // Interactive cursor ripples across the vertical wall (only animates on user interaction)
         for (int i = 0; i < 32; i++) {
           if (i >= uRippleCount) break;
           vec4 rip = uRipples[i];
           float dist = length(worldXY - rip.xy);
-          float wavefront = 7.2 * rip.z; // Wave speed * age
+          float wavefront = 8.5 * rip.z; // Wave speed * age
           float relDist = dist - wavefront;
           
-          float window = exp(-(relDist * relDist) / 8.0);
-          float fade = exp(-rip.z / 2.2);
-          float atten = 1.0 / (1.0 + dist * 0.1);
+          float window = exp(-(relDist * relDist) / 5.2);
+          float fade = exp(-rip.z / 2.4);
+          float atten = 1.0 / (1.0 + dist * 0.08);
           float weight = fade * window * atten * rip.w;
           
-          waveHeight += weight * cos(1.45 * relDist);
+          waveHeight += weight * cos(1.85 * relDist);
           totalWeight += weight;
         }
 
-        waveHeight /= max(totalWeight, 1.0);
-        float displacement = clamp(waveHeight * 1.75 + ambientWave, -0.4, 2.4);
+        if (totalWeight > 0.001) {
+          waveHeight /= max(totalWeight, 1.0);
+        } else {
+          waveHeight = 0.0;
+        }
+        float displacement = clamp(waveHeight * 1.85, 0.0, 2.4);
 
         // Displace the front face of the cube forward (+Z towards viewer)
         vec3 pos = aPosition;
@@ -140,12 +141,12 @@
 
         vec3 finalLighting = cubeColor * (diff1 * 0.85 + diff2 + ambient);
 
-        // Subtle distance fog towards the edges of the wall
+        // Soft sunlit atmospheric fog towards the edges of the wall
         float dist = length(vWorldPos.xy);
         float fogFactor = smoothstep(12.0, 32.0, dist);
-        vec3 fogColor = vec3(0.016, 0.086, 0.122);
+        vec3 fogColor = vec3(0.933, 0.969, 0.957);
 
-        gl_FragColor = vec4(mix(finalLighting, fogColor, fogFactor * 0.8), 1.0);
+        gl_FragColor = vec4(mix(finalLighting, fogColor, fogFactor * 0.85), 1.0);
       }
     `;
 
@@ -177,8 +178,8 @@
 
     gl.useProgram(program);
 
-    // Cube Geometry facing forward towards the camera (w=0.42, h=0.42, depth in Z)
-    const w = 0.41, h = 0.41, zFront = 0.5, zBack = -1.2;
+    // High-Resolution Micro-Cube Geometry (w=0.205, h=0.205, depth in Z)
+    const w = 0.205, h = 0.205, zFront = 0.28, zBack = -0.75;
     const cubeVertices = new Float32Array([
       // Front face (facing camera +Z)
       -w, -h,  zFront,   0,  0,  1,
@@ -237,10 +238,10 @@
     gl.enableVertexAttribArray(aNormLoc);
     gl.vertexAttribPointer(aNormLoc, 3, gl.FLOAT, false, 24, 12);
 
-    // Setup Vertical Wall Instances (48 columns x 32 rows = 1536 cubes)
-    const cols = 48;
-    const rows = 32;
-    const gap = 0.92;
+    // Setup Ultra-Dense Vertical Wall Instances (96 columns x 64 rows = 6,144 cubes)
+    const cols = 96;
+    const rows = 64;
+    const gap = 0.46;
     const totalInstances = cols * rows;
     const offsets = new Float32Array(totalInstances * 2);
 
@@ -280,10 +281,10 @@
       rippleLocs.push(gl.getUniformLocation(program, `uRipples[${i}]`));
     }
 
-    // Set Tropical Palette Colors: Deep Ocean Base, Caribbean Mint wave, Sunset Coral peak
-    gl.uniform3f(uColorBaseLoc, 0.016, 0.086, 0.122);    // #04161f (Deep Ocean Teal)
-    gl.uniform3f(uColorWaveLoc, 0.176, 0.831, 0.749);    // #2dd4bf (Caribbean Mint)
-    gl.uniform3f(uColorAccentLoc, 0.984, 0.443, 0.521);  // #fb7185 (Hibiscus Coral)
+    // Set Sunlit Tropical Colors: Seafoam Sand base, Caribbean Lagoon wave, Hibiscus Coral peak
+    gl.uniform3f(uColorBaseLoc, 0.863, 0.957, 0.929);    // #DCF4ED (Sunlit Seafoam Sand)
+    gl.uniform3f(uColorWaveLoc, 0.024, 0.714, 0.831);    // #06B6D4 (Caribbean Lagoon Cyan)
+    gl.uniform3f(uColorAccentLoc, 0.957, 0.247, 0.369);  // #F43F5E (Hibiscus Coral)
 
     // Matrix Math Utilities
     function createPerspectiveMatrix(fov, aspect, near, far) {
@@ -330,7 +331,7 @@
       ripples.push({ x, y, age: 0, strength });
     }
 
-    // Pointer Mapping directly onto Vertical Wall (X, Y)
+    // Pointer Mapping directly onto High-Density Vertical Wall (X, Y)
     window.addEventListener("pointermove", (e) => {
       const rect = canvas.getBoundingClientRect();
       const nx = ((e.clientX - rect.left) / rect.width) * 2 - 1;
@@ -344,8 +345,8 @@
         const dx = wallX - lastPointerPos.x;
         const dy = wallY - lastPointerPos.y;
         const dist = Math.hypot(dx, dy);
-        if (dist > 0.7) {
-          addRipple(wallX, wallY, Math.min(dist * 0.95, 1.8));
+        if (dist > 0.35) {
+          addRipple(wallX, wallY, Math.min(dist * 0.95, 1.7));
           lastPointerPos = { x: wallX, y: wallY };
         }
       } else {
@@ -373,10 +374,7 @@
     gl.depthFunc(gl.LEQUAL);
     gl.enable(gl.CULL_FACE);
     gl.cullFace(gl.BACK);
-    gl.clearColor(0.016, 0.086, 0.122, 1.0);
-
-    // Initial ambient ripple
-    addRipple(0, 0, 1.5);
+    gl.clearColor(0.957, 0.976, 0.969, 1.0);
 
     // Render Loop
     let lastTime = performance.now();
@@ -397,20 +395,10 @@
       lastTime = currentTime;
       const t = currentTime * 0.001;
 
-      // Update ripples
-      timeSinceLastPointer += dt;
-      autoRippleTimer += dt;
-
-      if (timeSinceLastPointer > 2.0 && autoRippleTimer > 1.8) {
-        const angle = t * 0.75;
-        const radius = 5.5 + Math.sin(t * 1.4) * 3.5;
-        addRipple(Math.cos(angle) * radius, Math.sin(angle) * radius, 0.95);
-        autoRippleTimer = 0;
-      }
-
+      // Age active cursor ripples
       for (let i = ripples.length - 1; i >= 0; i--) {
         ripples[i].age += dt;
-        if (ripples[i].age > 3.8) {
+        if (ripples[i].age > 3.6) {
           ripples.splice(i, 1);
         }
       }
@@ -423,10 +411,8 @@
       const aspect = canvas.width / canvas.height;
       const projMat = createPerspectiveMatrix((46 * Math.PI) / 180, aspect, 0.1, 90.0);
       
-      // Slight smooth ambient camera drift
-      const eyeX = Math.sin(t * 0.3) * 0.6;
-      const eyeY = Math.cos(t * 0.25) * 0.4;
-      const eye = [eyeX, eyeY, 19.5];
+      // Clean stationary perspective
+      const eye = [0.0, 0.0, 19.5];
       const target = [0.0, 0.0, 0.0];
       const up = [0.0, 1.0, 0.0];
       const viewMat = createLookAtMatrix(eye, target, up);
