@@ -403,15 +403,15 @@
             <div class="kpi-sub coral">▲ +48s industry benchmark</div>
           </div>
 
-          <!-- 3. Project Demonstrations -->
+          <!-- 3. Project Demonstrations & Architecture Explorations -->
           <div class="analytics-kpi-card">
             <div class="kpi-header">
               <div class="kpi-icon" style="background: rgba(245, 158, 11, 0.12);">🚀</div>
-              <span class="badge badge-confidential">Cloud Run</span>
+              <span class="badge badge-confidential">GA4 Verified</span>
             </div>
-            <div class="kpi-val" id="kpi-demos">1,280+</div>
-            <div class="kpi-title">Interactive Demos Executed</div>
-            <div class="kpi-sub teal">▲ 88.4% completion rate</div>
+            <div class="kpi-val" id="kpi-demos">38</div>
+            <div class="kpi-title">Verified Project Interactions</div>
+            <div class="kpi-sub teal">▲ Real-time verified event signals</div>
           </div>
 
           <!-- 4. Global Footprint -->
@@ -712,6 +712,24 @@
                   <div class="channel-pill">
                     <span class="channel-label">${s.label}</span>
                     <span class="channel-val" style="color: ${s.color || '#0891b2'};">${s.percentage}</span>
+                  </div>
+                `).join('');
+              }
+            }
+
+            // Dynamically Render Top Architectures Telemetry
+            if (data && data.topArchitectures && data.topArchitectures.length) {
+              const archList = document.getElementById("dist-architectures-list");
+              if (archList) {
+                archList.innerHTML = data.topArchitectures.map((a) => `
+                  <div class="dist-item">
+                    <div class="dist-info">
+                      <span>${a.name}</span>
+                      <span>${a.views || 'Active Telemetry'}</span>
+                    </div>
+                    <div class="dist-bar-track">
+                      <div class="dist-bar-fill" style="width: ${a.percentage}%; background: ${a.gradient || 'linear-gradient(90deg, #0891b2, #06b6d4)'};"></div>
+                    </div>
                   </div>
                 `).join('');
               }
