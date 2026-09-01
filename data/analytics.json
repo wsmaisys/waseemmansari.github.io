@@ -1,31 +1,26 @@
 {
-  "lastUpdated": "2026-09-01T15:53:01.416468+00:00",
+  "lastUpdated": "2026-09-01T20:22:31.251055+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "20",
-    "avgSessionDuration": "7m 07s",
-    "avgSessionDurationSec": 427,
+    "totalVisitors30D": "19",
+    "avgSessionDuration": "7m 15s",
+    "avgSessionDurationSec": 435,
     "interactiveDemos": "45",
-    "totalViews": "56",
-    "totalSessions": "32",
+    "totalViews": "55",
+    "totalSessions": "31",
     "countriesCount": "3"
   },
   "periods": {
     "7": {
       "kpis": {
         "totalVisitors": "3",
-        "avgSessionDuration": "16m 26s",
-        "avgSessionDurationSec": 986,
-        "interactiveDemos": "14",
-        "totalViews": "30",
-        "totalSessions": "11"
+        "avgSessionDuration": "17m 57s",
+        "avgSessionDurationSec": 1077,
+        "interactiveDemos": "13",
+        "totalViews": "29",
+        "totalSessions": "10"
       },
       "trajectory": [
-        {
-          "label": "Aug 25",
-          "visitors": 1,
-          "avgDuration": "1m 10s"
-        },
         {
           "label": "Aug 29",
           "visitors": 2,
@@ -45,19 +40,14 @@
     },
     "30": {
       "kpis": {
-        "totalVisitors": "20",
-        "avgSessionDuration": "7m 07s",
-        "avgSessionDurationSec": 427,
+        "totalVisitors": "19",
+        "avgSessionDuration": "7m 15s",
+        "avgSessionDurationSec": 435,
         "interactiveDemos": "45",
-        "totalViews": "56",
-        "totalSessions": "32"
+        "totalViews": "55",
+        "totalSessions": "31"
       },
       "trajectory": [
-        {
-          "label": "Aug 02",
-          "visitors": 1,
-          "avgDuration": "2m 41s"
-        },
         {
           "label": "Aug 03",
           "visitors": 7,
@@ -260,11 +250,6 @@
   },
   "trajectory": [
     {
-      "label": "Aug 02",
-      "visitors": 1,
-      "avgDuration": "2m 41s"
-    },
-    {
       "label": "Aug 03",
       "visitors": 7,
       "avgDuration": "4m 49s"
@@ -320,14 +305,14 @@
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 13,
-      "percentage": 65,
+      "percentage": 68,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 6,
-      "percentage": 30,
+      "visitors": 5,
+      "percentage": 26,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
@@ -367,15 +352,15 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "80%",
+      "percentage": "84%",
       "color": "#0891b2",
       "users": 16
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "20%",
+      "percentage": "16%",
       "color": "#8b5cf6",
-      "users": 4
+      "users": 3
     }
   ]
 }
