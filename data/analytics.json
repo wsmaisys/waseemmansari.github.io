@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-09-02T02:18:42.256072+00:00",
+  "lastUpdated": "2026-09-02T10:20:37.666492+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "19",
-    "avgSessionDuration": "6m 30s",
-    "avgSessionDurationSec": 390,
+    "totalVisitors30D": "20",
+    "avgSessionDuration": "6m 19s",
+    "avgSessionDurationSec": 379,
     "interactiveDemos": "45",
-    "totalViews": "58",
-    "totalSessions": "32",
+    "totalViews": "59",
+    "totalSessions": "33",
     "countriesCount": "3"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "4",
-        "avgSessionDuration": "14m 48s",
-        "avgSessionDurationSec": 888,
+        "totalVisitors": "5",
+        "avgSessionDuration": "13m 36s",
+        "avgSessionDurationSec": 816,
         "interactiveDemos": "13",
-        "totalViews": "32",
-        "totalSessions": "11"
+        "totalViews": "33",
+        "totalSessions": "12"
       },
       "trajectory": [
         {
@@ -35,17 +35,22 @@
           "label": "Aug 31",
           "visitors": 2,
           "avgDuration": "5m 06s"
+        },
+        {
+          "label": "Sep 01",
+          "visitors": 1,
+          "avgDuration": "0m 30s"
         }
       ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "19",
-        "avgSessionDuration": "6m 30s",
-        "avgSessionDurationSec": 390,
+        "totalVisitors": "20",
+        "avgSessionDuration": "6m 19s",
+        "avgSessionDurationSec": 379,
         "interactiveDemos": "45",
-        "totalViews": "58",
-        "totalSessions": "32"
+        "totalViews": "59",
+        "totalSessions": "33"
       },
       "trajectory": [
         {
@@ -97,17 +102,22 @@
           "label": "Aug 31",
           "visitors": 2,
           "avgDuration": "5m 06s"
+        },
+        {
+          "label": "Sep 01",
+          "visitors": 1,
+          "avgDuration": "0m 30s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "72",
-        "avgSessionDuration": "2m 59s",
-        "avgSessionDurationSec": 179,
+        "totalVisitors": "73",
+        "avgSessionDuration": "2m 58s",
+        "avgSessionDurationSec": 178,
         "interactiveDemos": "58",
-        "totalViews": "139",
-        "totalSessions": "105"
+        "totalViews": "140",
+        "totalSessions": "106"
       },
       "trajectory": [
         {
@@ -244,6 +254,11 @@
           "label": "Aug 31",
           "visitors": 2,
           "avgDuration": "5m 06s"
+        },
+        {
+          "label": "Sep 01",
+          "visitors": 1,
+          "avgDuration": "0m 30s"
         }
       ]
     }
@@ -298,6 +313,11 @@
       "label": "Aug 31",
       "visitors": 2,
       "avgDuration": "5m 06s"
+    },
+    {
+      "label": "Sep 01",
+      "visitors": 1,
+      "avgDuration": "0m 30s"
     }
   ],
   "countries": [
@@ -305,14 +325,14 @@
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 13,
-      "percentage": 68,
+      "percentage": 65,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 5,
-      "percentage": 26,
+      "visitors": 6,
+      "percentage": 30,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
@@ -352,15 +372,21 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "84%",
+      "percentage": "80%",
       "color": "#0891b2",
       "users": 16
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "16%",
+      "percentage": "15%",
       "color": "#8b5cf6",
       "users": 3
+    },
+    {
+      "label": "\ud83d\udcbb Referral",
+      "percentage": "5%",
+      "color": "#059669",
+      "users": 1
     }
   ]
 }
