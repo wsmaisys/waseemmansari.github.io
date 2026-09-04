@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-09-04T02:21:04.813912+00:00",
+  "lastUpdated": "2026-09-04T10:19:00.412337+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "15",
-    "avgSessionDuration": "6m 20s",
-    "avgSessionDurationSec": 380,
-    "interactiveDemos": "23",
-    "totalViews": "51",
-    "totalSessions": "27",
+    "totalVisitors30D": "16",
+    "avgSessionDuration": "5m 48s",
+    "avgSessionDurationSec": 348,
+    "interactiveDemos": "26",
+    "totalViews": "55",
+    "totalSessions": "30",
     "countriesCount": "3"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "5",
-        "avgSessionDuration": "11m 43s",
-        "avgSessionDurationSec": 703,
-        "interactiveDemos": "13",
-        "totalViews": "35",
-        "totalSessions": "14"
+        "totalVisitors": "6",
+        "avgSessionDuration": "9m 49s",
+        "avgSessionDurationSec": 589,
+        "interactiveDemos": "16",
+        "totalViews": "39",
+        "totalSessions": "17"
       },
       "trajectory": [
         {
@@ -43,19 +43,19 @@
         },
         {
           "label": "Sep 03",
-          "visitors": 1,
-          "avgDuration": "0m 24s"
+          "visitors": 3,
+          "avgDuration": "0m 45s"
         }
       ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "15",
-        "avgSessionDuration": "6m 20s",
-        "avgSessionDurationSec": 380,
-        "interactiveDemos": "23",
-        "totalViews": "51",
-        "totalSessions": "27"
+        "totalVisitors": "16",
+        "avgSessionDuration": "5m 48s",
+        "avgSessionDurationSec": 348,
+        "interactiveDemos": "26",
+        "totalViews": "55",
+        "totalSessions": "30"
       },
       "trajectory": [
         {
@@ -110,19 +110,19 @@
         },
         {
           "label": "Sep 03",
-          "visitors": 1,
-          "avgDuration": "0m 24s"
+          "visitors": 3,
+          "avgDuration": "0m 45s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "73",
-        "avgSessionDuration": "2m 55s",
-        "avgSessionDurationSec": 175,
-        "interactiveDemos": "58",
-        "totalViews": "142",
-        "totalSessions": "108"
+        "totalVisitors": "74",
+        "avgSessionDuration": "2m 53s",
+        "avgSessionDurationSec": 173,
+        "interactiveDemos": "61",
+        "totalViews": "146",
+        "totalSessions": "110"
       },
       "trajectory": [
         {
@@ -267,8 +267,8 @@
         },
         {
           "label": "Sep 03",
-          "visitors": 1,
-          "avgDuration": "0m 24s"
+          "visitors": 3,
+          "avgDuration": "0m 45s"
         }
       ]
     }
@@ -326,8 +326,8 @@
     },
     {
       "label": "Sep 03",
-      "visitors": 1,
-      "avgDuration": "0m 24s"
+      "visitors": 3,
+      "avgDuration": "0m 45s"
     }
   ],
   "countries": [
@@ -335,21 +335,21 @@
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 8,
-      "percentage": 53,
+      "percentage": 50,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 6,
-      "percentage": 40,
+      "visitors": 7,
+      "percentage": 44,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "Philippines",
       "flag": "\ud83c\uddf5\ud83c\udded",
       "visitors": 1,
-      "percentage": 7,
+      "percentage": 6,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
   ],
@@ -382,19 +382,19 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "73%",
+      "percentage": "75%",
       "color": "#0891b2",
-      "users": 11
+      "users": 12
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "20%",
+      "percentage": "19%",
       "color": "#8b5cf6",
       "users": 3
     },
     {
       "label": "\ud83d\udcbb Referral",
-      "percentage": "7%",
+      "percentage": "6%",
       "color": "#059669",
       "users": 1
     }
