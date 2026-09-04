@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-09-04T15:34:19.904983+00:00",
+  "lastUpdated": "2026-09-04T20:07:50.303259+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "16",
-    "avgSessionDuration": "5m 48s",
-    "avgSessionDurationSec": 348,
+    "totalVisitors30D": "15",
+    "avgSessionDuration": "5m 58s",
+    "avgSessionDurationSec": 358,
     "interactiveDemos": "26",
-    "totalViews": "55",
-    "totalSessions": "30",
+    "totalViews": "51",
+    "totalSessions": "29",
     "countriesCount": "3"
   },
   "periods": {
     "7": {
       "kpis": {
         "totalVisitors": "6",
-        "avgSessionDuration": "9m 49s",
-        "avgSessionDurationSec": 589,
+        "avgSessionDuration": "9m 17s",
+        "avgSessionDurationSec": 557,
         "interactiveDemos": "16",
         "totalViews": "39",
-        "totalSessions": "17"
+        "totalSessions": "18"
       },
       "trajectory": [
         {
@@ -45,24 +45,24 @@
           "label": "Sep 03",
           "visitors": 3,
           "avgDuration": "0m 45s"
+        },
+        {
+          "label": "Sep 04",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "16",
-        "avgSessionDuration": "5m 48s",
-        "avgSessionDurationSec": 348,
+        "totalVisitors": "15",
+        "avgSessionDuration": "5m 58s",
+        "avgSessionDurationSec": 358,
         "interactiveDemos": "26",
-        "totalViews": "55",
-        "totalSessions": "30"
+        "totalViews": "51",
+        "totalSessions": "29"
       },
       "trajectory": [
-        {
-          "label": "Aug 05",
-          "visitors": 2,
-          "avgDuration": "0m 17s"
-        },
         {
           "label": "Aug 10",
           "visitors": 1,
@@ -112,17 +112,22 @@
           "label": "Sep 03",
           "visitors": 3,
           "avgDuration": "0m 45s"
+        },
+        {
+          "label": "Sep 04",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     },
     "90": {
       "kpis": {
         "totalVisitors": "74",
-        "avgSessionDuration": "2m 53s",
-        "avgSessionDurationSec": 173,
+        "avgSessionDuration": "2m 52s",
+        "avgSessionDurationSec": 172,
         "interactiveDemos": "61",
         "totalViews": "146",
-        "totalSessions": "110"
+        "totalSessions": "111"
       },
       "trajectory": [
         {
@@ -269,16 +274,16 @@
           "label": "Sep 03",
           "visitors": 3,
           "avgDuration": "0m 45s"
+        },
+        {
+          "label": "Sep 04",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     }
   },
   "trajectory": [
-    {
-      "label": "Aug 05",
-      "visitors": 2,
-      "avgDuration": "0m 17s"
-    },
     {
       "label": "Aug 10",
       "visitors": 1,
@@ -328,6 +333,11 @@
       "label": "Sep 03",
       "visitors": 3,
       "avgDuration": "0m 45s"
+    },
+    {
+      "label": "Sep 04",
+      "visitors": 1,
+      "avgDuration": "0m 00s"
     }
   ],
   "countries": [
@@ -335,21 +345,21 @@
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 8,
-      "percentage": 50,
+      "percentage": 53,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 7,
-      "percentage": 44,
+      "visitors": 6,
+      "percentage": 40,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "Philippines",
       "flag": "\ud83c\uddf5\ud83c\udded",
       "visitors": 1,
-      "percentage": 6,
+      "percentage": 7,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
   ],
@@ -382,9 +392,9 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "75%",
+      "percentage": "69%",
       "color": "#0891b2",
-      "users": 12
+      "users": 11
     },
     {
       "label": "\ud83d\udd0d Organic Search",
@@ -396,6 +406,12 @@
       "label": "\ud83d\udcbb Referral",
       "percentage": "6%",
       "color": "#059669",
+      "users": 1
+    },
+    {
+      "label": "\ud83d\udcca Unassigned",
+      "percentage": "6%",
+      "color": "#f59e0b",
       "users": 1
     }
   ]
