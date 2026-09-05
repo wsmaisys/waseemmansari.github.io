@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-09-04T20:07:50.303259+00:00",
+  "lastUpdated": "2026-09-05T02:22:06.425796+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "15",
-    "avgSessionDuration": "5m 58s",
-    "avgSessionDurationSec": 358,
+    "avgSessionDuration": "5m 59s",
+    "avgSessionDurationSec": 359,
     "interactiveDemos": "26",
-    "totalViews": "51",
+    "totalViews": "53",
     "totalSessions": "29",
     "countriesCount": "3"
   },
@@ -17,7 +17,7 @@
         "avgSessionDuration": "9m 17s",
         "avgSessionDurationSec": 557,
         "interactiveDemos": "16",
-        "totalViews": "39",
+        "totalViews": "41",
         "totalSessions": "18"
       },
       "trajectory": [
@@ -49,17 +49,17 @@
         {
           "label": "Sep 04",
           "visitors": 1,
-          "avgDuration": "0m 00s"
+          "avgDuration": "0m 13s"
         }
       ]
     },
     "30": {
       "kpis": {
         "totalVisitors": "15",
-        "avgSessionDuration": "5m 58s",
-        "avgSessionDurationSec": 358,
+        "avgSessionDuration": "5m 59s",
+        "avgSessionDurationSec": 359,
         "interactiveDemos": "26",
-        "totalViews": "51",
+        "totalViews": "53",
         "totalSessions": "29"
       },
       "trajectory": [
@@ -116,7 +116,7 @@
         {
           "label": "Sep 04",
           "visitors": 1,
-          "avgDuration": "0m 00s"
+          "avgDuration": "0m 13s"
         }
       ]
     },
@@ -126,7 +126,7 @@
         "avgSessionDuration": "2m 52s",
         "avgSessionDurationSec": 172,
         "interactiveDemos": "61",
-        "totalViews": "146",
+        "totalViews": "148",
         "totalSessions": "111"
       },
       "trajectory": [
@@ -278,7 +278,7 @@
         {
           "label": "Sep 04",
           "visitors": 1,
-          "avgDuration": "0m 00s"
+          "avgDuration": "0m 13s"
         }
       ]
     }
@@ -337,7 +337,7 @@
     {
       "label": "Sep 04",
       "visitors": 1,
-      "avgDuration": "0m 00s"
+      "avgDuration": "0m 13s"
     }
   ],
   "countries": [
