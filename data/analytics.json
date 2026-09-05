@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-09-05T02:22:06.425796+00:00",
+  "lastUpdated": "2026-09-05T09:46:38.823436+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "15",
-    "avgSessionDuration": "5m 59s",
-    "avgSessionDurationSec": 359,
+    "avgSessionDuration": "6m 00s",
+    "avgSessionDurationSec": 360,
     "interactiveDemos": "26",
     "totalViews": "53",
     "totalSessions": "29",
@@ -14,8 +14,8 @@
     "7": {
       "kpis": {
         "totalVisitors": "6",
-        "avgSessionDuration": "9m 17s",
-        "avgSessionDurationSec": 557,
+        "avgSessionDuration": "9m 18s",
+        "avgSessionDurationSec": 558,
         "interactiveDemos": "16",
         "totalViews": "41",
         "totalSessions": "18"
@@ -49,15 +49,15 @@
         {
           "label": "Sep 04",
           "visitors": 1,
-          "avgDuration": "0m 13s"
+          "avgDuration": "0m 33s"
         }
       ]
     },
     "30": {
       "kpis": {
         "totalVisitors": "15",
-        "avgSessionDuration": "5m 59s",
-        "avgSessionDurationSec": 359,
+        "avgSessionDuration": "6m 00s",
+        "avgSessionDurationSec": 360,
         "interactiveDemos": "26",
         "totalViews": "53",
         "totalSessions": "29"
@@ -116,7 +116,7 @@
         {
           "label": "Sep 04",
           "visitors": 1,
-          "avgDuration": "0m 13s"
+          "avgDuration": "0m 33s"
         }
       ]
     },
@@ -278,7 +278,7 @@
         {
           "label": "Sep 04",
           "visitors": 1,
-          "avgDuration": "0m 13s"
+          "avgDuration": "0m 33s"
         }
       ]
     }
@@ -337,7 +337,7 @@
     {
       "label": "Sep 04",
       "visitors": 1,
-      "avgDuration": "0m 13s"
+      "avgDuration": "0m 33s"
     }
   ],
   "countries": [
@@ -392,26 +392,20 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "69%",
+      "percentage": "73%",
       "color": "#0891b2",
       "users": 11
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "19%",
+      "percentage": "20%",
       "color": "#8b5cf6",
       "users": 3
     },
     {
       "label": "\ud83d\udcbb Referral",
-      "percentage": "6%",
+      "percentage": "7%",
       "color": "#059669",
-      "users": 1
-    },
-    {
-      "label": "\ud83d\udcca Unassigned",
-      "percentage": "6%",
-      "color": "#f59e0b",
       "users": 1
     }
   ]
