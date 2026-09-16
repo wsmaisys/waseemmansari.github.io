@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-09-16T15:53:58.172160+00:00",
+  "lastUpdated": "2026-09-16T20:44:16.495228+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "17",
-    "avgSessionDuration": "6m 27s",
-    "avgSessionDurationSec": 387,
-    "interactiveDemos": "20",
-    "totalViews": "57",
-    "totalSessions": "31",
+    "totalVisitors30D": "16",
+    "avgSessionDuration": "6m 40s",
+    "avgSessionDurationSec": 400,
+    "interactiveDemos": "17",
+    "totalViews": "56",
+    "totalSessions": "30",
     "countriesCount": "3"
   },
   "periods": {
@@ -35,19 +35,14 @@
     },
     "30": {
       "kpis": {
-        "totalVisitors": "17",
-        "avgSessionDuration": "6m 27s",
-        "avgSessionDurationSec": 387,
-        "interactiveDemos": "20",
-        "totalViews": "57",
-        "totalSessions": "31"
+        "totalVisitors": "16",
+        "avgSessionDuration": "6m 40s",
+        "avgSessionDurationSec": 400,
+        "interactiveDemos": "17",
+        "totalViews": "56",
+        "totalSessions": "30"
       },
       "trajectory": [
-        {
-          "label": "Aug 17",
-          "visitors": 1,
-          "avgDuration": "0m 10s"
-        },
         {
           "label": "Aug 22",
           "visitors": 5,
@@ -265,11 +260,6 @@
   },
   "trajectory": [
     {
-      "label": "Aug 17",
-      "visitors": 1,
-      "avgDuration": "0m 10s"
-    },
-    {
       "label": "Aug 22",
       "visitors": 5,
       "avgDuration": "0m 04s"
@@ -330,21 +320,21 @@
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 9,
-      "percentage": 53,
+      "percentage": 56,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "visitors": 6,
-      "percentage": 35,
+      "percentage": 38,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "Philippines",
       "flag": "\ud83c\uddf5\ud83c\udded",
-      "visitors": 2,
-      "percentage": 12,
+      "visitors": 1,
+      "percentage": 6,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
   ],
@@ -377,15 +367,15 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "76%",
+      "percentage": "81%",
       "color": "#0891b2",
       "users": 13
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "18%",
+      "percentage": "12%",
       "color": "#8b5cf6",
-      "users": 3
+      "users": 2
     },
     {
       "label": "\ud83d\udcbb Referral",
