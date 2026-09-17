@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-09-17T10:46:24.569695+00:00",
+  "lastUpdated": "2026-09-17T15:59:40.313282+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "16",
-    "avgSessionDuration": "6m 40s",
-    "avgSessionDurationSec": 400,
+    "totalVisitors30D": "17",
+    "avgSessionDuration": "6m 27s",
+    "avgSessionDurationSec": 387,
     "interactiveDemos": "17",
-    "totalViews": "56",
-    "totalSessions": "30",
-    "countriesCount": "3"
+    "totalViews": "57",
+    "totalSessions": "31",
+    "countriesCount": "4"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "3",
-        "avgSessionDuration": "9m 53s",
-        "avgSessionDurationSec": 593,
-        "interactiveDemos": "3",
-        "totalViews": "5",
-        "totalSessions": "3"
+        "totalVisitors": "4",
+        "avgSessionDuration": "7m 24s",
+        "avgSessionDurationSec": 444,
+        "interactiveDemos": "4",
+        "totalViews": "6",
+        "totalSessions": "4"
       },
       "trajectory": [
         {
@@ -30,17 +30,22 @@
           "label": "Sep 15",
           "visitors": 1,
           "avgDuration": "0m 01s"
+        },
+        {
+          "label": "Sep 17",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "16",
-        "avgSessionDuration": "6m 40s",
-        "avgSessionDurationSec": 400,
+        "totalVisitors": "17",
+        "avgSessionDuration": "6m 27s",
+        "avgSessionDurationSec": 387,
         "interactiveDemos": "17",
-        "totalViews": "56",
-        "totalSessions": "30"
+        "totalViews": "57",
+        "totalSessions": "31"
       },
       "trajectory": [
         {
@@ -97,17 +102,22 @@
           "label": "Sep 15",
           "visitors": 1,
           "avgDuration": "0m 01s"
+        },
+        {
+          "label": "Sep 17",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "71",
-        "avgSessionDuration": "3m 22s",
-        "avgSessionDurationSec": 202,
+        "totalVisitors": "72",
+        "avgSessionDuration": "3m 20s",
+        "avgSessionDurationSec": 200,
         "interactiveDemos": "58",
-        "totalViews": "140",
-        "totalSessions": "103"
+        "totalViews": "141",
+        "totalSessions": "104"
       },
       "trajectory": [
         {
@@ -254,6 +264,11 @@
           "label": "Sep 15",
           "visitors": 1,
           "avgDuration": "0m 01s"
+        },
+        {
+          "label": "Sep 17",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     }
@@ -313,6 +328,11 @@
       "label": "Sep 15",
       "visitors": 1,
       "avgDuration": "0m 01s"
+    },
+    {
+      "label": "Sep 17",
+      "visitors": 1,
+      "avgDuration": "0m 00s"
     }
   ],
   "countries": [
@@ -320,14 +340,14 @@
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 9,
-      "percentage": 56,
+      "percentage": 53,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "visitors": 6,
-      "percentage": 38,
+      "percentage": 35,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
@@ -336,6 +356,13 @@
       "visitors": 1,
       "percentage": 6,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
+    },
+    {
+      "name": "Singapore",
+      "flag": "\ud83c\uddf8\ud83c\uddec",
+      "visitors": 1,
+      "percentage": 6,
+      "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
     }
   ],
   "topArchitectures": [
@@ -367,9 +394,9 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "81%",
+      "percentage": "82%",
       "color": "#0891b2",
-      "users": 13
+      "users": 14
     },
     {
       "label": "\ud83d\udd0d Organic Search",
