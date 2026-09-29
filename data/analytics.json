@@ -1,41 +1,46 @@
 {
-  "lastUpdated": "2026-09-29T11:55:22.518403+00:00",
+  "lastUpdated": "2026-09-29T17:26:07.282266+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "10",
-    "avgSessionDuration": "9m 33s",
-    "avgSessionDurationSec": 573,
+    "avgSessionDuration": "10m 16s",
+    "avgSessionDurationSec": 616,
     "interactiveDemos": "12",
-    "totalViews": "39",
-    "totalSessions": "20",
+    "totalViews": "41",
+    "totalSessions": "21",
     "countriesCount": "5"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "1",
-        "avgSessionDuration": "0m 00s",
-        "avgSessionDurationSec": 0,
-        "interactiveDemos": "1",
-        "totalViews": "1",
-        "totalSessions": "1"
+        "totalVisitors": "2",
+        "avgSessionDuration": "12m 18s",
+        "avgSessionDurationSec": 738,
+        "interactiveDemos": "2",
+        "totalViews": "3",
+        "totalSessions": "2"
       },
       "trajectory": [
         {
           "label": "Sep 28",
           "visitors": 1,
           "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Sep 29",
+          "visitors": 1,
+          "avgDuration": "24m 37s"
         }
       ]
     },
     "30": {
       "kpis": {
         "totalVisitors": "10",
-        "avgSessionDuration": "9m 33s",
-        "avgSessionDurationSec": 573,
+        "avgSessionDuration": "10m 16s",
+        "avgSessionDurationSec": 616,
         "interactiveDemos": "12",
-        "totalViews": "39",
-        "totalSessions": "20"
+        "totalViews": "41",
+        "totalSessions": "21"
       },
       "trajectory": [
         {
@@ -82,17 +87,22 @@
           "label": "Sep 28",
           "visitors": 1,
           "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Sep 29",
+          "visitors": 1,
+          "avgDuration": "24m 37s"
         }
       ]
     },
     "90": {
       "kpis": {
         "totalVisitors": "72",
-        "avgSessionDuration": "3m 18s",
-        "avgSessionDurationSec": 198,
+        "avgSessionDuration": "3m 30s",
+        "avgSessionDurationSec": 210,
         "interactiveDemos": "58",
-        "totalViews": "140",
-        "totalSessions": "103"
+        "totalViews": "142",
+        "totalSessions": "104"
       },
       "trajectory": [
         {
@@ -239,6 +249,11 @@
           "label": "Sep 28",
           "visitors": 1,
           "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Sep 29",
+          "visitors": 1,
+          "avgDuration": "24m 37s"
         }
       ]
     }
@@ -288,6 +303,11 @@
       "label": "Sep 28",
       "visitors": 1,
       "avgDuration": "0m 00s"
+    },
+    {
+      "label": "Sep 29",
+      "visitors": 1,
+      "avgDuration": "24m 37s"
     }
   ],
   "countries": [
