@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T17:12:24.644903+00:00",
+  "lastUpdated": "2026-10-02T21:40:34.543681+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "7",
@@ -83,11 +83,11 @@
     "90": {
       "kpis": {
         "totalVisitors": "70",
-        "avgSessionDuration": "3m 35s",
-        "avgSessionDurationSec": 215,
+        "avgSessionDuration": "3m 37s",
+        "avgSessionDurationSec": 217,
         "interactiveDemos": "58",
-        "totalViews": "140",
-        "totalSessions": "102"
+        "totalViews": "139",
+        "totalSessions": "101"
       },
       "trajectory": [
         {
