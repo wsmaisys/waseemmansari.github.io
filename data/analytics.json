@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-10-04T16:15:59.497900+00:00",
+  "lastUpdated": "2026-10-04T20:44:35.262723+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "6",
-    "avgSessionDuration": "7m 49s",
-    "avgSessionDurationSec": 469,
-    "interactiveDemos": "34",
-    "totalViews": "11",
-    "totalSessions": "7",
+    "totalVisitors30D": "7",
+    "avgSessionDuration": "7m 00s",
+    "avgSessionDurationSec": 420,
+    "interactiveDemos": "1",
+    "totalViews": "10",
+    "totalSessions": "8",
     "countriesCount": "5"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "2",
-        "avgSessionDuration": "12m 18s",
-        "avgSessionDurationSec": 738,
-        "interactiveDemos": "2",
-        "totalViews": "3",
-        "totalSessions": "2"
+        "totalVisitors": "3",
+        "avgSessionDuration": "6m 36s",
+        "avgSessionDurationSec": 396,
+        "interactiveDemos": "1",
+        "totalViews": "4",
+        "totalSessions": "4"
       },
       "trajectory": [
         {
@@ -30,24 +30,24 @@
           "label": "Sep 29",
           "visitors": 1,
           "avgDuration": "24m 37s"
+        },
+        {
+          "label": "Oct 04",
+          "visitors": 1,
+          "avgDuration": "0m 55s"
         }
       ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "6",
-        "avgSessionDuration": "7m 49s",
-        "avgSessionDurationSec": 469,
-        "interactiveDemos": "6",
-        "totalViews": "11",
-        "totalSessions": "7"
+        "totalVisitors": "7",
+        "avgSessionDuration": "7m 00s",
+        "avgSessionDurationSec": 420,
+        "interactiveDemos": "1",
+        "totalViews": "10",
+        "totalSessions": "8"
       },
       "trajectory": [
-        {
-          "label": "Sep 04",
-          "visitors": 1,
-          "avgDuration": "0m 33s"
-        },
         {
           "label": "Sep 14",
           "visitors": 2,
@@ -72,24 +72,24 @@
           "label": "Sep 29",
           "visitors": 1,
           "avgDuration": "24m 37s"
+        },
+        {
+          "label": "Oct 04",
+          "visitors": 1,
+          "avgDuration": "0m 55s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "70",
-        "avgSessionDuration": "3m 37s",
-        "avgSessionDurationSec": 217,
-        "interactiveDemos": "58",
-        "totalViews": "139",
-        "totalSessions": "101"
+        "totalVisitors": "68",
+        "avgSessionDuration": "3m 42s",
+        "avgSessionDurationSec": 222,
+        "interactiveDemos": "59",
+        "totalViews": "136",
+        "totalSessions": "99"
       },
       "trajectory": [
-        {
-          "label": "Jul 06",
-          "visitors": 3,
-          "avgDuration": "0m 00s"
-        },
         {
           "label": "Jul 07",
           "visitors": 1,
@@ -229,16 +229,16 @@
           "label": "Sep 29",
           "visitors": 1,
           "avgDuration": "24m 37s"
+        },
+        {
+          "label": "Oct 04",
+          "visitors": 1,
+          "avgDuration": "0m 55s"
         }
       ]
     }
   },
   "trajectory": [
-    {
-      "label": "Sep 04",
-      "visitors": 1,
-      "avgDuration": "0m 33s"
-    },
     {
       "label": "Sep 14",
       "visitors": 2,
@@ -263,42 +263,47 @@
       "label": "Sep 29",
       "visitors": 1,
       "avgDuration": "24m 37s"
+    },
+    {
+      "label": "Oct 04",
+      "visitors": 1,
+      "avgDuration": "0m 55s"
     }
   ],
   "countries": [
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 2,
-      "percentage": 33,
+      "visitors": 3,
+      "percentage": 43,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "Germany",
       "flag": "\ud83c\udde9\ud83c\uddea",
       "visitors": 1,
-      "percentage": 17,
+      "percentage": 14,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "Philippines",
       "flag": "\ud83c\uddf5\ud83c\udded",
       "visitors": 1,
-      "percentage": 17,
+      "percentage": 14,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     },
     {
       "name": "Singapore",
       "flag": "\ud83c\uddf8\ud83c\uddec",
       "visitors": 1,
-      "percentage": 17,
+      "percentage": 14,
       "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
     },
     {
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 1,
-      "percentage": 17,
+      "percentage": 14,
       "gradient": "linear-gradient(90deg, #8b5cf6, #a855f7)"
     }
   ],
@@ -331,15 +336,15 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "83%",
+      "percentage": "71%",
       "color": "#0891b2",
       "users": 5
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "17%",
+      "percentage": "29%",
       "color": "#8b5cf6",
-      "users": 1
+      "users": 2
     }
   ]
 }
