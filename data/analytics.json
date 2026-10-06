@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06T12:33:12.208208+00:00",
+  "lastUpdated": "2026-10-06T22:06:45.168824+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "7",
@@ -13,19 +13,14 @@
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "2",
-        "avgSessionDuration": "8m 49s",
-        "avgSessionDurationSec": 529,
+        "totalVisitors": "1",
+        "avgSessionDuration": "0m 55s",
+        "avgSessionDurationSec": 55,
         "interactiveDemos": "1",
-        "totalViews": "3",
-        "totalSessions": "3"
+        "totalViews": "1",
+        "totalSessions": "2"
       },
       "trajectory": [
-        {
-          "label": "Sep 29",
-          "visitors": 1,
-          "avgDuration": "24m 37s"
-        },
         {
           "label": "Oct 04",
           "visitors": 1,
@@ -77,19 +72,14 @@
     },
     "90": {
       "kpis": {
-        "totalVisitors": "67",
-        "avgSessionDuration": "3m 45s",
-        "avgSessionDurationSec": 225,
+        "totalVisitors": "65",
+        "avgSessionDuration": "3m 49s",
+        "avgSessionDurationSec": 229,
         "interactiveDemos": "59",
-        "totalViews": "135",
-        "totalSessions": "98"
+        "totalViews": "133",
+        "totalSessions": "96"
       },
       "trajectory": [
-        {
-          "label": "Jul 08",
-          "visitors": 2,
-          "avgDuration": "0m 00s"
-        },
         {
           "label": "Jul 11",
           "visitors": 1,
