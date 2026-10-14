@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-14T16:17:37.693285+00:00",
+  "lastUpdated": "2026-10-14T21:10:02.248145+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "8",
-    "avgSessionDuration": "6m 18s",
-    "avgSessionDurationSec": 378,
+    "totalVisitors30D": "6",
+    "avgSessionDuration": "3m 52s",
+    "avgSessionDurationSec": 232,
     "interactiveDemos": "1",
-    "totalViews": "11",
-    "totalSessions": "9",
-    "countriesCount": "5"
+    "totalViews": "7",
+    "totalSessions": "7",
+    "countriesCount": "4"
   },
   "periods": {
     "7": {
@@ -30,19 +30,14 @@
     },
     "30": {
       "kpis": {
-        "totalVisitors": "8",
-        "avgSessionDuration": "6m 18s",
-        "avgSessionDurationSec": 378,
+        "totalVisitors": "6",
+        "avgSessionDuration": "3m 52s",
+        "avgSessionDurationSec": 232,
         "interactiveDemos": "1",
-        "totalViews": "11",
-        "totalSessions": "9"
+        "totalViews": "7",
+        "totalSessions": "7"
       },
       "trajectory": [
-        {
-          "label": "Sep 14",
-          "visitors": 2,
-          "avgDuration": "14m 48s"
-        },
         {
           "label": "Sep 15",
           "visitors": 1,
@@ -210,11 +205,6 @@
   },
   "trajectory": [
     {
-      "label": "Sep 14",
-      "visitors": 2,
-      "avgDuration": "14m 48s"
-    },
-    {
       "label": "Sep 15",
       "visitors": 1,
       "avgDuration": "0m 01s"
@@ -249,7 +239,7 @@
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 4,
+      "visitors": 3,
       "percentage": 50,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
@@ -257,29 +247,22 @@
       "name": "Germany",
       "flag": "\ud83c\udde9\ud83c\uddea",
       "visitors": 1,
-      "percentage": 12,
+      "percentage": 17,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
-    },
-    {
-      "name": "Philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "visitors": 1,
-      "percentage": 12,
-      "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     },
     {
       "name": "Singapore",
       "flag": "\ud83c\uddf8\ud83c\uddec",
       "visitors": 1,
-      "percentage": 12,
-      "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
+      "percentage": 17,
+      "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     },
     {
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 1,
-      "percentage": 12,
-      "gradient": "linear-gradient(90deg, #8b5cf6, #a855f7)"
+      "percentage": 17,
+      "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
     }
   ],
   "topArchitectures": [
@@ -311,13 +294,13 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "62%",
+      "percentage": "50%",
       "color": "#0891b2",
-      "users": 5
+      "users": 3
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "38%",
+      "percentage": "50%",
       "color": "#8b5cf6",
       "users": 3
     }
