@@ -1,35 +1,41 @@
 {
-  "lastUpdated": "2026-10-19T11:45:50.308449+00:00",
+  "lastUpdated": "2026-10-19T18:06:34.738063+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "4",
-    "avgSessionDuration": "5m 25s",
-    "avgSessionDurationSec": 325,
+    "totalVisitors30D": "5",
+    "avgSessionDuration": "4m 31s",
+    "avgSessionDurationSec": 271,
     "interactiveDemos": "1",
-    "totalViews": "5",
-    "totalSessions": "5",
-    "countriesCount": "2"
+    "totalViews": "6",
+    "totalSessions": "6",
+    "countriesCount": "3"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "0",
+        "totalVisitors": "1",
         "avgSessionDuration": "0m 00s",
         "avgSessionDurationSec": 0,
-        "interactiveDemos": "0",
-        "totalViews": "0",
-        "totalSessions": "0"
+        "interactiveDemos": "1",
+        "totalViews": "1",
+        "totalSessions": "1"
       },
-      "trajectory": []
+      "trajectory": [
+        {
+          "label": "Oct 19",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
+        }
+      ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "4",
-        "avgSessionDuration": "5m 25s",
-        "avgSessionDurationSec": 325,
+        "totalVisitors": "5",
+        "avgSessionDuration": "4m 31s",
+        "avgSessionDurationSec": 271,
         "interactiveDemos": "1",
-        "totalViews": "5",
-        "totalSessions": "5"
+        "totalViews": "6",
+        "totalSessions": "6"
       },
       "trajectory": [
         {
@@ -51,17 +57,22 @@
           "label": "Oct 08",
           "visitors": 1,
           "avgDuration": "0m 41s"
+        },
+        {
+          "label": "Oct 19",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "34",
-        "avgSessionDuration": "5m 41s",
-        "avgSessionDurationSec": 341,
+        "totalVisitors": "35",
+        "avgSessionDuration": "5m 36s",
+        "avgSessionDurationSec": 336,
         "interactiveDemos": "56",
-        "totalViews": "91",
-        "totalSessions": "59"
+        "totalViews": "92",
+        "totalSessions": "60"
       },
       "trajectory": [
         {
@@ -183,6 +194,11 @@
           "label": "Oct 08",
           "visitors": 1,
           "avgDuration": "0m 41s"
+        },
+        {
+          "label": "Oct 19",
+          "visitors": 1,
+          "avgDuration": "0m 00s"
         }
       ]
     }
@@ -207,6 +223,11 @@
       "label": "Oct 08",
       "visitors": 1,
       "avgDuration": "0m 41s"
+    },
+    {
+      "label": "Oct 19",
+      "visitors": 1,
+      "avgDuration": "0m 00s"
     }
   ],
   "countries": [
@@ -214,15 +235,22 @@
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "visitors": 3,
-      "percentage": 75,
+      "percentage": 60,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "Germany",
       "flag": "\ud83c\udde9\ud83c\uddea",
       "visitors": 1,
-      "percentage": 25,
+      "percentage": 20,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
+    },
+    {
+      "name": "United States",
+      "flag": "\ud83c\uddfa\ud83c\uddf8",
+      "visitors": 1,
+      "percentage": 20,
+      "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
   ],
   "topArchitectures": [
@@ -254,15 +282,15 @@
   "sources": [
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "75%",
+      "percentage": "60%",
       "color": "#8b5cf6",
       "users": 3
     },
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "25%",
+      "percentage": "40%",
       "color": "#0891b2",
-      "users": 1
+      "users": 2
     }
   ]
 }
