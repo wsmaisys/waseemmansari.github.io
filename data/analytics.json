@@ -1,41 +1,46 @@
 {
-  "lastUpdated": "2026-10-21T02:49:03.629139+00:00",
+  "lastUpdated": "2026-10-21T10:58:13.102004+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "7",
-    "avgSessionDuration": "3m 23s",
-    "avgSessionDurationSec": 203,
+    "totalVisitors30D": "8",
+    "avgSessionDuration": "3m 08s",
+    "avgSessionDurationSec": 188,
     "interactiveDemos": "1",
-    "totalViews": "8",
-    "totalSessions": "8",
+    "totalViews": "9",
+    "totalSessions": "9",
     "countriesCount": "4"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "3",
-        "avgSessionDuration": "0m 00s",
-        "avgSessionDurationSec": 0,
-        "interactiveDemos": "3",
-        "totalViews": "3",
-        "totalSessions": "3"
+        "totalVisitors": "4",
+        "avgSessionDuration": "0m 15s",
+        "avgSessionDurationSec": 15,
+        "interactiveDemos": "4",
+        "totalViews": "4",
+        "totalSessions": "4"
       },
       "trajectory": [
         {
           "label": "Oct 19",
           "visitors": 3,
           "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Oct 21",
+          "visitors": 1,
+          "avgDuration": "1m 03s"
         }
       ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "7",
-        "avgSessionDuration": "3m 23s",
-        "avgSessionDurationSec": 203,
+        "totalVisitors": "8",
+        "avgSessionDuration": "3m 08s",
+        "avgSessionDurationSec": 188,
         "interactiveDemos": "1",
-        "totalViews": "8",
-        "totalSessions": "8"
+        "totalViews": "9",
+        "totalSessions": "9"
       },
       "trajectory": [
         {
@@ -62,17 +67,22 @@
           "label": "Oct 19",
           "visitors": 3,
           "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Oct 21",
+          "visitors": 1,
+          "avgDuration": "1m 03s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "37",
-        "avgSessionDuration": "5m 25s",
-        "avgSessionDurationSec": 325,
+        "totalVisitors": "38",
+        "avgSessionDuration": "5m 21s",
+        "avgSessionDurationSec": 321,
         "interactiveDemos": "56",
-        "totalViews": "94",
-        "totalSessions": "62"
+        "totalViews": "95",
+        "totalSessions": "63"
       },
       "trajectory": [
         {
@@ -199,6 +209,11 @@
           "label": "Oct 19",
           "visitors": 3,
           "avgDuration": "0m 00s"
+        },
+        {
+          "label": "Oct 21",
+          "visitors": 1,
+          "avgDuration": "1m 03s"
         }
       ]
     }
@@ -228,35 +243,40 @@
       "label": "Oct 19",
       "visitors": 3,
       "avgDuration": "0m 00s"
+    },
+    {
+      "label": "Oct 21",
+      "visitors": 1,
+      "avgDuration": "1m 03s"
     }
   ],
   "countries": [
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 3,
-      "percentage": 43,
+      "visitors": 4,
+      "percentage": 50,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 2,
-      "percentage": 29,
+      "percentage": 25,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "China",
       "flag": "\ud83c\udf10",
       "visitors": 1,
-      "percentage": 14,
+      "percentage": 12,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     },
     {
       "name": "Germany",
       "flag": "\ud83c\udde9\ud83c\uddea",
       "visitors": 1,
-      "percentage": 14,
+      "percentage": 12,
       "gradient": "linear-gradient(90deg, #f43f5e, #fb7185)"
     }
   ],
@@ -289,13 +309,13 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "57%",
+      "percentage": "62%",
       "color": "#0891b2",
-      "users": 4
+      "users": 5
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "43%",
+      "percentage": "38%",
       "color": "#8b5cf6",
       "users": 3
     }
