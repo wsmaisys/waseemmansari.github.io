@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-10-29T12:03:58.012842+00:00",
+  "lastUpdated": "2026-10-29T22:16:24.799632+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "7",
-    "avgSessionDuration": "3m 31s",
-    "avgSessionDurationSec": 211,
+    "totalVisitors30D": "6",
+    "avgSessionDuration": "0m 30s",
+    "avgSessionDurationSec": 30,
     "interactiveDemos": "1",
-    "totalViews": "8",
-    "totalSessions": "8",
+    "totalViews": "6",
+    "totalSessions": "7",
     "countriesCount": "3"
   },
   "periods": {
@@ -24,19 +24,14 @@
     },
     "30": {
       "kpis": {
-        "totalVisitors": "7",
-        "avgSessionDuration": "3m 31s",
-        "avgSessionDurationSec": 211,
+        "totalVisitors": "6",
+        "avgSessionDuration": "0m 30s",
+        "avgSessionDurationSec": 30,
         "interactiveDemos": "1",
-        "totalViews": "8",
-        "totalSessions": "8"
+        "totalViews": "6",
+        "totalSessions": "7"
       },
       "trajectory": [
-        {
-          "label": "Sep 29",
-          "visitors": 1,
-          "avgDuration": "24m 37s"
-        },
         {
           "label": "Oct 04",
           "visitors": 1,
@@ -61,19 +56,14 @@
     },
     "90": {
       "kpis": {
-        "totalVisitors": "33",
-        "avgSessionDuration": "4m 55s",
-        "avgSessionDurationSec": 295,
-        "interactiveDemos": "51",
-        "totalViews": "86",
-        "totalSessions": "56"
+        "totalVisitors": "32",
+        "avgSessionDuration": "5m 09s",
+        "avgSessionDurationSec": 309,
+        "interactiveDemos": "49",
+        "totalViews": "83",
+        "totalSessions": "53"
       },
       "trajectory": [
-        {
-          "label": "Jul 31",
-          "visitors": 2,
-          "avgDuration": "0m 43s"
-        },
         {
           "label": "Aug 02",
           "visitors": 1,
@@ -194,11 +184,6 @@
   },
   "trajectory": [
     {
-      "label": "Sep 29",
-      "visitors": 1,
-      "avgDuration": "24m 37s"
-    },
-    {
       "label": "Oct 04",
       "visitors": 1,
       "avgDuration": "0m 55s"
@@ -223,22 +208,22 @@
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 4,
-      "percentage": 57,
+      "visitors": 3,
+      "percentage": 50,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 2,
-      "percentage": 29,
+      "percentage": 33,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "China",
       "flag": "\ud83c\udf10",
       "visitors": 1,
-      "percentage": 14,
+      "percentage": 17,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
   ],
@@ -271,15 +256,15 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "57%",
+      "percentage": "67%",
       "color": "#0891b2",
       "users": 4
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "43%",
+      "percentage": "33%",
       "color": "#8b5cf6",
-      "users": 3
+      "users": 2
     }
   ]
 }
