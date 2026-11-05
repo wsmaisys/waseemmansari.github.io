@@ -1,35 +1,41 @@
 {
-  "lastUpdated": "2026-11-05T13:49:30.235902+00:00",
+  "lastUpdated": "2026-11-05T23:06:32.722297+00:00",
   "status": "live_synced",
   "kpis": {
-    "totalVisitors30D": "5",
-    "avgSessionDuration": "0m 21s",
-    "avgSessionDurationSec": 21,
+    "totalVisitors30D": "6",
+    "avgSessionDuration": "0m 19s",
+    "avgSessionDurationSec": 19,
     "interactiveDemos": "34",
-    "totalViews": "5",
-    "totalSessions": "5",
+    "totalViews": "6",
+    "totalSessions": "6",
     "countriesCount": "3"
   },
   "periods": {
     "7": {
       "kpis": {
-        "totalVisitors": "0",
-        "avgSessionDuration": "0m 00s",
-        "avgSessionDurationSec": 0,
-        "interactiveDemos": "0",
-        "totalViews": "0",
-        "totalSessions": "0"
+        "totalVisitors": "1",
+        "avgSessionDuration": "0m 08s",
+        "avgSessionDurationSec": 8,
+        "interactiveDemos": "1",
+        "totalViews": "1",
+        "totalSessions": "1"
       },
-      "trajectory": []
+      "trajectory": [
+        {
+          "label": "Nov 06",
+          "visitors": 1,
+          "avgDuration": "0m 08s"
+        }
+      ]
     },
     "30": {
       "kpis": {
-        "totalVisitors": "5",
-        "avgSessionDuration": "0m 21s",
-        "avgSessionDurationSec": 21,
-        "interactiveDemos": "5",
-        "totalViews": "5",
-        "totalSessions": "5"
+        "totalVisitors": "6",
+        "avgSessionDuration": "0m 19s",
+        "avgSessionDurationSec": 19,
+        "interactiveDemos": "6",
+        "totalViews": "6",
+        "totalSessions": "6"
       },
       "trajectory": [
         {
@@ -46,17 +52,22 @@
           "label": "Oct 21",
           "visitors": 1,
           "avgDuration": "1m 03s"
+        },
+        {
+          "label": "Nov 06",
+          "visitors": 1,
+          "avgDuration": "0m 08s"
         }
       ]
     },
     "90": {
       "kpis": {
-        "totalVisitors": "25",
-        "avgSessionDuration": "5m 31s",
-        "avgSessionDurationSec": 331,
+        "totalVisitors": "26",
+        "avgSessionDuration": "5m 23s",
+        "avgSessionDurationSec": 323,
         "interactiveDemos": "27",
-        "totalViews": "68",
-        "totalSessions": "42"
+        "totalViews": "69",
+        "totalSessions": "43"
       },
       "trajectory": [
         {
@@ -158,6 +169,11 @@
           "label": "Oct 21",
           "visitors": 1,
           "avgDuration": "1m 03s"
+        },
+        {
+          "label": "Nov 06",
+          "visitors": 1,
+          "avgDuration": "0m 08s"
         }
       ]
     }
@@ -177,28 +193,33 @@
       "label": "Oct 21",
       "visitors": 1,
       "avgDuration": "1m 03s"
+    },
+    {
+      "label": "Nov 06",
+      "visitors": 1,
+      "avgDuration": "0m 08s"
     }
   ],
   "countries": [
     {
       "name": "India",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "visitors": 2,
-      "percentage": 40,
+      "visitors": 3,
+      "percentage": 50,
       "gradient": "linear-gradient(90deg, #0891b2, #06b6d4)"
     },
     {
       "name": "United States",
       "flag": "\ud83c\uddfa\ud83c\uddf8",
       "visitors": 2,
-      "percentage": 40,
+      "percentage": 33,
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
       "name": "China",
       "flag": "\ud83c\udf10",
       "visitors": 1,
-      "percentage": 20,
+      "percentage": 17,
       "gradient": "linear-gradient(90deg, #f59e0b, #f97316)"
     }
   ],
@@ -231,15 +252,15 @@
   "sources": [
     {
       "label": "\ud83e\udd16 Direct",
-      "percentage": "80%",
+      "percentage": "67%",
       "color": "#0891b2",
       "users": 4
     },
     {
       "label": "\ud83d\udd0d Organic Search",
-      "percentage": "20%",
+      "percentage": "33%",
       "color": "#8b5cf6",
-      "users": 1
+      "users": 2
     }
   ]
 }
