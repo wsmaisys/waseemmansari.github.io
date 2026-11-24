@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T03:41:35.481745+00:00",
+  "lastUpdated": "2026-11-24T16:49:33.427289+00:00",
   "status": "live_synced",
   "kpis": {
     "totalVisitors30D": "6",
@@ -221,7 +221,7 @@
       "gradient": "linear-gradient(90deg, #06b6d4, #10b981)"
     },
     {
-      "name": "",
+      "name": "(not set)",
       "flag": "\ud83c\udf10",
       "visitors": 1,
       "percentage": 17,
